@@ -1,0 +1,888 @@
+22:59:46 INFO  : Registering command handlers for SDK TCF services
+22:59:48 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\danie\Documents\Repaso_VIVADO\comblock\comblock.sdk\temp_xsdb_launch_script.tcl
+22:59:52 INFO  : XSCT server has started successfully.
+22:59:53 INFO  : Successfully done setting XSCT server connection channel  
+22:59:53 INFO  : Processing command line option -hwspec C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper.hdf.
+22:59:53 INFO  : Successfully done setting SDK workspace  
+23:29:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:29:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+23:29:04 INFO  : FPGA configured successfully with bitstream "C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/Comblock_desing_wrapper.bit"
+23:29:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+23:29:36 INFO  : 'fpga -state' command is executed.
+23:29:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:29:36 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+23:29:36 INFO  : 'jtag frequency' command is executed.
+23:29:36 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:29:36 INFO  : Context for 'APU' is selected.
+23:29:36 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+23:29:36 INFO  : 'configparams force-mem-access 1' command is executed.
+23:29:36 INFO  : Context for 'APU' is selected.
+23:29:36 INFO  : 'stop' command is executed.
+23:29:37 INFO  : 'ps7_init' command is executed.
+23:29:37 INFO  : 'ps7_post_config' command is executed.
+23:29:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:29:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:29:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:29:37 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:29:37 INFO  : 'configparams force-mem-access 0' command is executed.
+23:29:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:29:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:29:37 INFO  : 'con' command is executed.
+23:29:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+23:29:37 INFO  : Disconnected from the channel tcfchan#1.
+23:30:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+23:30:41 INFO  : 'fpga -state' command is executed.
+23:30:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:30:41 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+23:30:41 INFO  : 'jtag frequency' command is executed.
+23:30:41 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:30:41 INFO  : Context for 'APU' is selected.
+23:30:41 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+23:30:41 INFO  : 'configparams force-mem-access 1' command is executed.
+23:30:41 INFO  : Context for 'APU' is selected.
+23:30:41 INFO  : 'stop' command is executed.
+23:30:42 INFO  : 'ps7_init' command is executed.
+23:30:42 INFO  : 'ps7_post_config' command is executed.
+23:30:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:30:42 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:30:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:30:42 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:30:42 INFO  : 'configparams force-mem-access 0' command is executed.
+23:30:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:30:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:30:42 INFO  : 'con' command is executed.
+23:30:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+23:30:42 INFO  : Disconnected from the channel tcfchan#2.
+23:31:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+23:31:13 INFO  : 'fpga -state' command is executed.
+23:31:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:31:14 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+23:31:14 INFO  : 'jtag frequency' command is executed.
+23:31:14 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:31:14 INFO  : Context for 'APU' is selected.
+23:31:14 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+23:31:14 INFO  : 'configparams force-mem-access 1' command is executed.
+23:31:14 INFO  : Context for 'APU' is selected.
+23:31:14 INFO  : 'stop' command is executed.
+23:31:14 INFO  : 'ps7_init' command is executed.
+23:31:14 INFO  : 'ps7_post_config' command is executed.
+23:31:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:31:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:31:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:31:15 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:31:15 INFO  : 'configparams force-mem-access 0' command is executed.
+23:31:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:31:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:31:15 INFO  : 'con' command is executed.
+23:31:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+23:31:15 INFO  : Disconnected from the channel tcfchan#3.
+23:31:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+23:31:40 INFO  : 'fpga -state' command is executed.
+23:31:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:31:40 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+23:31:40 INFO  : 'jtag frequency' command is executed.
+23:31:40 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:31:40 INFO  : Context for 'APU' is selected.
+23:31:40 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+23:31:40 INFO  : 'configparams force-mem-access 1' command is executed.
+23:31:40 INFO  : Context for 'APU' is selected.
+23:31:40 INFO  : 'stop' command is executed.
+23:31:40 INFO  : 'ps7_init' command is executed.
+23:31:40 INFO  : 'ps7_post_config' command is executed.
+23:31:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:31:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:31:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:31:41 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:31:41 INFO  : 'configparams force-mem-access 0' command is executed.
+23:31:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:31:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:31:41 INFO  : 'con' command is executed.
+23:31:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+23:31:41 INFO  : Disconnected from the channel tcfchan#4.
+23:33:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+23:33:16 INFO  : 'fpga -state' command is executed.
+23:33:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:33:16 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+23:33:16 INFO  : 'jtag frequency' command is executed.
+23:33:16 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:33:16 INFO  : Context for 'APU' is selected.
+23:33:16 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+23:33:16 INFO  : 'configparams force-mem-access 1' command is executed.
+23:33:16 INFO  : Context for 'APU' is selected.
+23:33:16 INFO  : 'stop' command is executed.
+23:33:17 INFO  : 'ps7_init' command is executed.
+23:33:17 INFO  : 'ps7_post_config' command is executed.
+23:33:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:33:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:33:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:33:17 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:33:17 INFO  : 'configparams force-mem-access 0' command is executed.
+23:33:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:33:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:33:17 INFO  : 'con' command is executed.
+23:33:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+23:33:17 INFO  : Disconnected from the channel tcfchan#5.
+00:06:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+00:06:35 INFO  : 'fpga -state' command is executed.
+00:06:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:06:35 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+00:06:35 INFO  : 'jtag frequency' command is executed.
+00:06:35 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:06:35 INFO  : Context for 'APU' is selected.
+00:06:35 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+00:06:35 INFO  : 'configparams force-mem-access 1' command is executed.
+00:06:35 INFO  : Context for 'APU' is selected.
+00:06:35 INFO  : 'stop' command is executed.
+00:06:36 INFO  : 'ps7_init' command is executed.
+00:06:36 INFO  : 'ps7_post_config' command is executed.
+00:06:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:06:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:06:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:06:36 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:06:36 INFO  : 'configparams force-mem-access 0' command is executed.
+00:06:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:06:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:06:36 INFO  : 'con' command is executed.
+00:06:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+00:06:36 INFO  : Disconnected from the channel tcfchan#6.
+00:12:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+00:12:24 INFO  : 'fpga -state' command is executed.
+00:12:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:12:24 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+00:12:24 INFO  : 'jtag frequency' command is executed.
+00:12:24 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:12:24 INFO  : Context for 'APU' is selected.
+00:12:24 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+00:12:24 INFO  : 'configparams force-mem-access 1' command is executed.
+00:12:24 INFO  : Context for 'APU' is selected.
+00:12:24 INFO  : 'stop' command is executed.
+00:12:25 INFO  : 'ps7_init' command is executed.
+00:12:25 INFO  : 'ps7_post_config' command is executed.
+00:12:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:12:25 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:12:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:12:25 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:12:25 INFO  : 'configparams force-mem-access 0' command is executed.
+00:12:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:12:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:12:25 INFO  : 'con' command is executed.
+00:12:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+00:12:25 INFO  : Disconnected from the channel tcfchan#7.
+00:48:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+00:48:16 INFO  : 'fpga -state' command is executed.
+00:48:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:48:16 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+00:48:16 INFO  : 'jtag frequency' command is executed.
+00:48:16 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:48:16 INFO  : Context for 'APU' is selected.
+00:48:16 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+00:48:16 INFO  : 'configparams force-mem-access 1' command is executed.
+00:48:16 INFO  : Context for 'APU' is selected.
+00:48:16 INFO  : 'stop' command is executed.
+00:48:16 INFO  : 'ps7_init' command is executed.
+00:48:16 INFO  : 'ps7_post_config' command is executed.
+00:48:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:48:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:48:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:48:17 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:48:17 INFO  : 'configparams force-mem-access 0' command is executed.
+00:48:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:48:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:48:17 INFO  : 'con' command is executed.
+00:48:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+00:48:17 INFO  : Disconnected from the channel tcfchan#8.
+00:50:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+00:50:16 INFO  : 'fpga -state' command is executed.
+00:50:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:50:17 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+00:50:17 INFO  : 'jtag frequency' command is executed.
+00:50:17 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:50:17 INFO  : Context for 'APU' is selected.
+00:50:17 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+00:50:17 INFO  : 'configparams force-mem-access 1' command is executed.
+00:50:17 INFO  : Context for 'APU' is selected.
+00:50:17 INFO  : 'stop' command is executed.
+00:50:17 INFO  : 'ps7_init' command is executed.
+00:50:17 INFO  : 'ps7_post_config' command is executed.
+00:50:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:50:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:50:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:50:18 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:50:18 INFO  : 'configparams force-mem-access 0' command is executed.
+00:50:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:50:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:50:18 INFO  : 'con' command is executed.
+00:50:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+00:50:18 INFO  : Disconnected from the channel tcfchan#9.
+00:55:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+00:55:50 INFO  : 'fpga -state' command is executed.
+00:55:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:55:50 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+00:55:50 INFO  : 'jtag frequency' command is executed.
+00:55:50 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:55:51 INFO  : Context for 'APU' is selected.
+00:55:51 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+00:55:51 INFO  : 'configparams force-mem-access 1' command is executed.
+00:55:51 INFO  : Context for 'APU' is selected.
+00:55:51 INFO  : 'stop' command is executed.
+00:55:52 INFO  : 'ps7_init' command is executed.
+00:55:52 INFO  : 'ps7_post_config' command is executed.
+00:55:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:55:52 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:55:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:55:52 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:55:52 INFO  : 'configparams force-mem-access 0' command is executed.
+00:55:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:55:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:55:52 INFO  : 'con' command is executed.
+00:55:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+00:55:52 INFO  : Disconnected from the channel tcfchan#10.
+00:56:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+00:56:16 INFO  : 'fpga -state' command is executed.
+00:56:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:56:17 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+00:56:17 INFO  : 'jtag frequency' command is executed.
+00:56:17 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:56:17 INFO  : Context for 'APU' is selected.
+00:56:17 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+00:56:17 INFO  : 'configparams force-mem-access 1' command is executed.
+00:56:17 INFO  : Context for 'APU' is selected.
+00:56:17 INFO  : 'stop' command is executed.
+00:56:17 INFO  : 'ps7_init' command is executed.
+00:56:17 INFO  : 'ps7_post_config' command is executed.
+00:56:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:56:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:56:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:56:18 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:56:18 INFO  : 'configparams force-mem-access 0' command is executed.
+00:56:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:56:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:56:18 INFO  : 'con' command is executed.
+00:56:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+00:56:18 INFO  : Disconnected from the channel tcfchan#11.
+00:57:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+00:57:10 INFO  : 'fpga -state' command is executed.
+00:57:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:57:11 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+00:57:11 INFO  : 'jtag frequency' command is executed.
+00:57:11 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:57:11 INFO  : Context for 'APU' is selected.
+00:57:11 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+00:57:11 INFO  : 'configparams force-mem-access 1' command is executed.
+00:57:11 INFO  : Context for 'APU' is selected.
+00:57:11 INFO  : 'stop' command is executed.
+00:57:11 INFO  : 'ps7_init' command is executed.
+00:57:12 INFO  : 'ps7_post_config' command is executed.
+00:57:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:57:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:57:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:57:12 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:57:12 INFO  : 'configparams force-mem-access 0' command is executed.
+00:57:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:57:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:57:12 INFO  : 'con' command is executed.
+00:57:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+00:57:12 INFO  : Disconnected from the channel tcfchan#12.
+00:59:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+00:59:06 INFO  : 'fpga -state' command is executed.
+00:59:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:59:06 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+00:59:06 INFO  : 'jtag frequency' command is executed.
+00:59:06 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:59:06 INFO  : Context for 'APU' is selected.
+00:59:06 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+00:59:06 INFO  : 'configparams force-mem-access 1' command is executed.
+00:59:06 INFO  : Context for 'APU' is selected.
+00:59:06 INFO  : 'stop' command is executed.
+00:59:07 INFO  : 'ps7_init' command is executed.
+00:59:07 INFO  : 'ps7_post_config' command is executed.
+00:59:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:59:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:59:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:59:07 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:59:07 INFO  : 'configparams force-mem-access 0' command is executed.
+00:59:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:59:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:59:07 INFO  : 'con' command is executed.
+00:59:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+00:59:07 INFO  : Disconnected from the channel tcfchan#13.
+01:09:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+01:09:08 INFO  : 'fpga -state' command is executed.
+01:09:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:09:08 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+01:09:08 INFO  : 'jtag frequency' command is executed.
+01:09:08 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:09:08 INFO  : Context for 'APU' is selected.
+01:09:08 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+01:09:08 INFO  : 'configparams force-mem-access 1' command is executed.
+01:09:08 INFO  : Context for 'APU' is selected.
+01:09:08 INFO  : 'stop' command is executed.
+01:09:08 INFO  : 'ps7_init' command is executed.
+01:09:08 INFO  : 'ps7_post_config' command is executed.
+01:09:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:09:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:09:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:09:09 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:09:09 INFO  : 'configparams force-mem-access 0' command is executed.
+01:09:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:09:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:09:09 INFO  : 'con' command is executed.
+01:09:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+01:09:09 INFO  : Disconnected from the channel tcfchan#14.
+01:09:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:09:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+01:09:52 INFO  : FPGA configured successfully with bitstream "C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/Comblock_desing_wrapper.bit"
+01:10:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+01:10:04 INFO  : 'fpga -state' command is executed.
+01:10:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:10:05 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+01:10:05 INFO  : 'jtag frequency' command is executed.
+01:10:05 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:10:05 INFO  : Context for 'APU' is selected.
+01:10:05 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+01:10:05 INFO  : 'configparams force-mem-access 1' command is executed.
+01:10:05 INFO  : Context for 'APU' is selected.
+01:10:05 INFO  : 'stop' command is executed.
+01:10:05 INFO  : 'ps7_init' command is executed.
+01:10:05 INFO  : 'ps7_post_config' command is executed.
+01:10:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:10:06 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:10:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:10:06 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:10:06 INFO  : 'configparams force-mem-access 0' command is executed.
+01:10:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:10:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:10:06 INFO  : 'con' command is executed.
+01:10:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+01:10:06 INFO  : Disconnected from the channel tcfchan#15.
+01:10:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+01:10:51 INFO  : 'fpga -state' command is executed.
+01:10:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:10:52 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+01:10:52 INFO  : 'jtag frequency' command is executed.
+01:10:52 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:10:52 INFO  : Context for 'APU' is selected.
+01:10:52 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+01:10:52 INFO  : 'configparams force-mem-access 1' command is executed.
+01:10:52 INFO  : Context for 'APU' is selected.
+01:10:52 INFO  : 'stop' command is executed.
+01:10:53 INFO  : 'ps7_init' command is executed.
+01:10:53 INFO  : 'ps7_post_config' command is executed.
+01:10:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:10:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:10:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:10:53 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:10:53 INFO  : 'configparams force-mem-access 0' command is executed.
+01:10:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:10:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:10:53 INFO  : 'con' command is executed.
+01:10:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+01:10:53 INFO  : Disconnected from the channel tcfchan#16.
+01:12:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+01:12:31 INFO  : 'fpga -state' command is executed.
+01:12:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:12:32 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+01:12:32 INFO  : 'jtag frequency' command is executed.
+01:12:32 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:12:32 INFO  : Context for 'APU' is selected.
+01:12:32 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+01:12:32 INFO  : 'configparams force-mem-access 1' command is executed.
+01:12:32 INFO  : Context for 'APU' is selected.
+01:12:32 INFO  : 'stop' command is executed.
+01:12:32 INFO  : 'ps7_init' command is executed.
+01:12:32 INFO  : 'ps7_post_config' command is executed.
+01:12:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:12:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:12:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:12:33 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:12:33 INFO  : 'configparams force-mem-access 0' command is executed.
+01:12:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:12:35 INFO  : Disconnected from the channel tcfchan#17.
+01:12:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:12:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+01:12:46 INFO  : FPGA configured successfully with bitstream "C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/Comblock_desing_wrapper.bit"
+01:12:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+01:12:53 INFO  : 'fpga -state' command is executed.
+01:12:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:12:53 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+01:12:53 INFO  : 'jtag frequency' command is executed.
+01:12:53 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:12:53 INFO  : Context for 'APU' is selected.
+01:12:53 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+01:12:53 INFO  : 'configparams force-mem-access 1' command is executed.
+01:12:53 INFO  : Context for 'APU' is selected.
+01:12:53 INFO  : 'stop' command is executed.
+01:12:54 INFO  : 'ps7_init' command is executed.
+01:12:54 INFO  : 'ps7_post_config' command is executed.
+01:12:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:12:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:12:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:12:54 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:12:54 INFO  : 'configparams force-mem-access 0' command is executed.
+01:12:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:12:55 INFO  : Disconnected from the channel tcfchan#18.
+01:14:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:14:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+01:14:21 INFO  : FPGA configured successfully with bitstream "C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/Comblock_desing_wrapper.bit"
+01:14:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+01:14:28 INFO  : 'fpga -state' command is executed.
+01:14:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:14:28 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+01:14:28 INFO  : 'jtag frequency' command is executed.
+01:14:28 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:14:28 INFO  : Context for 'APU' is selected.
+01:14:28 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+01:14:28 INFO  : 'configparams force-mem-access 1' command is executed.
+01:14:29 INFO  : Context for 'APU' is selected.
+01:14:29 INFO  : 'stop' command is executed.
+01:14:29 INFO  : 'ps7_init' command is executed.
+01:14:29 INFO  : 'ps7_post_config' command is executed.
+01:14:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:14:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:14:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:14:29 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:14:29 INFO  : 'configparams force-mem-access 0' command is executed.
+01:14:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:14:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:14:30 INFO  : 'con' command is executed.
+01:14:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+01:14:30 INFO  : Disconnected from the channel tcfchan#19.
+01:15:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:15:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+01:15:32 INFO  : FPGA configured successfully with bitstream "C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/Comblock_desing_wrapper.bit"
+01:15:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA" && level==0} -index 1' command is executed.
+01:15:42 INFO  : 'fpga -state' command is executed.
+01:15:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:15:43 INFO  : Jtag cable 'Digilent Arty Z7 003017A7006CA' is selected.
+01:15:43 INFO  : 'jtag frequency' command is executed.
+01:15:43 INFO  : Sourcing of 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:15:43 INFO  : Context for 'APU' is selected.
+01:15:43 INFO  : Hardware design information is loaded from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf'.
+01:15:43 INFO  : 'configparams force-mem-access 1' command is executed.
+01:15:43 INFO  : Context for 'APU' is selected.
+01:15:43 INFO  : 'stop' command is executed.
+01:15:43 INFO  : 'ps7_init' command is executed.
+01:15:43 INFO  : 'ps7_post_config' command is executed.
+01:15:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:15:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:15:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:15:44 INFO  : The application 'C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:15:44 INFO  : 'configparams force-mem-access 0' command is executed.
+01:15:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+loadhw -hw C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+dow C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/complock_test/Debug/complock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:15:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:15:44 INFO  : 'con' command is executed.
+01:15:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A7006CA"} -index 0
+con
+----------------End of Script----------------
+
+01:15:44 INFO  : Disconnected from the channel tcfchan#20.
+20:08:35 INFO  : Registering command handlers for SDK TCF services
+20:08:37 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\danie\Documents\Repaso_VIVADO\comblock\comblock.sdk\temp_xsdb_launch_script.tcl
+20:08:43 INFO  : XSCT server has started successfully.
+20:08:44 INFO  : Successfully done setting XSCT server connection channel  
+20:08:44 INFO  : Successfully done setting SDK workspace  
+20:08:44 INFO  : Processing command line option -hwspec C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper.hdf.
+20:08:44 INFO  : Checking for hwspec changes in the project Comblock_desing_wrapper_hw_platform_0.
+01:59:11 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\danie\Documents\Repaso_VIVADO\comblock\comblock.sdk\temp_xsdb_launch_script.tcl
+01:59:15 INFO  : XSCT server has started successfully.
+01:59:23 INFO  : Successfully done setting XSCT server connection channel  
+01:59:23 INFO  : Successfully done setting SDK workspace  
+01:59:27 INFO  : Registering command handlers for SDK TCF services
+01:59:29 INFO  : Processing command line option -hwspec C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper.hdf.
+01:59:29 INFO  : Checking for hwspec changes in the project Comblock_desing_wrapper_hw_platform_0.
+03:50:33 INFO  : Registering command handlers for SDK TCF services
+03:50:35 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\danie\Documents\Repaso_VIVADO\comblock\comblock.sdk\temp_xsdb_launch_script.tcl
+03:50:39 INFO  : XSCT server has started successfully.
+03:50:40 INFO  : Successfully done setting XSCT server connection channel  
+03:50:40 INFO  : Successfully done setting SDK workspace  
+03:50:40 INFO  : Processing command line option -hwspec C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper.hdf.
+03:50:40 INFO  : Checking for hwspec changes in the project Comblock_desing_wrapper_hw_platform_0.

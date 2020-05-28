@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1585082283">
+  <File Type="PA-TCL" Name="Generator.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Generator_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Generator_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Generator.vds"/>
+  <File Type="RDS-UTIL" Name="Generator_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Generator_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Generator.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Generator_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Generator_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo_etapasLab/square_pulseGenerator.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Codigo_etapasLab/square_pulseGenerator.vhd"/>
+        <Attr Name="ImportTime" Val="1583909743"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Generator"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../ARTYZ720.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../ARTYZ720.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

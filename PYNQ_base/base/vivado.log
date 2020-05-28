@@ -1,0 +1,514 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun May 10 02:12:36 2020
+# Process ID: 10224
+# Current directory: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12768 C:\Users\danie\Documents\Repaso_VIVADO\PYNQ_base\base\base.xpr
+# Log file: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/vivado.log
+# Journal file: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/PYNQ/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:01:16 ; elapsed = 00:01:01 . Memory (MB): peak = 1248.836 ; gain = 638.504
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/base.bd}
+Adding component instance block -- xilinx.com:user:audio_direct:1.1 - audio_direct_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - audio_path_sel
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s02_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - btns_gpio
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - concat_arduino
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - concat_interrupts
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - concat_pmoda
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - constant_10bit_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - constant_8bit_0
+Adding component instance block -- xilinx.com:user:dff_en_reset_vector:1.0 - dff_en_reset_vector_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - arduino_gpio
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - ck_gpio
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - iic_direct
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - intc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - intr
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - intr_concat
+Adding component instance block -- xilinx.com:user:io_switch:1.1 - io_switch_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - lmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - mb
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - mb_bram_ctrl
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_2
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m10_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m11_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m12_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m13_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m14_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m15_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m16_regslice
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - spi_direct
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - spi_shared
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_2
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_3
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_4
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_5
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_6
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_7
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - mb3_timer_generate
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - mb3_timer_pwm
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - mb3_timers_interrupt
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - timer_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - timer_1
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - timer_2
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - timer_3
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - timer_4
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - timer_5
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - uartlite
+Adding component instance block -- xilinx.com:ip:xadc_wiz:3.3 - xadc
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_arduino/clk_100M(clk) and /iop_arduino/dff_en_reset_vector_0/clk(undef)
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - iop_interrupts
+Adding component instance block -- xilinx.com:user:dff_en_reset_vector:1.0 - dff_en_reset_vector_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - gpio
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - iic
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - intc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - intr
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - intr_concat
+Adding component instance block -- xilinx.com:user:io_switch:1.1 - io_switch
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - lmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - mb
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - mb_bram_ctrl
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - spi
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - timer
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_pmoda/clk_100M(clk) and /iop_pmoda/dff_en_reset_vector_0/clk(undef)
+Adding component instance block -- xilinx.com:user:dff_en_reset_vector:1.0 - dff_en_reset_vector_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - gpio
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - iic
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - intc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - intr
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - intr_concat
+Adding component instance block -- xilinx.com:user:io_switch:1.1 - io_switch
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - lmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - mb
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - mb_bram_ctrl
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - spi
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - timer
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_pmodb/clk_100M(clk) and /iop_pmodb/dff_en_reset_vector_0/clk(undef)
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb_iop_arduino_intr_ack
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb_iop_arduino_reset
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb_iop_pmoda_intr_ack
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb_iop_pmoda_reset
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb_iop_pmodb_intr_ack
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mb_iop_pmodb_reset
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - ps7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - rgbleds_gpio
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk3
+Adding component instance block -- xilinx.com:user:interface_slice:1.0 - slice_arduino_direct_iic
+Adding component instance block -- xilinx.com:user:interface_slice:1.0 - slice_arduino_gpio
+Adding component instance block -- xilinx.com:user:interface_slice:1.0 - slice_pmoda_gpio
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - switches_gpio
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - system_interrupts
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - constant_tkeep_tstrb
+Adding component instance block -- xilinx.com:hls:trace_cntrl_64:1.4 - trace_cntrl_64_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - constant_tkeep_tstrb
+Adding component instance block -- xilinx.com:hls:trace_cntrl_32:1.4 - trace_cntrl_32_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma
+Adding component instance block -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_0
+Adding component instance block -- xilinx.com:hls:color_convert:1.0 - color_convert
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_hdmiin
+Adding component instance block -- xilinx.com:user:color_swap:1.1 - color_swap_0
+Adding component instance block -- digilentinc.com:ip:dvi2rgb:1.7 - dvi2rgb_0
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.1 - vtc_in
+Adding component instance block -- xilinx.com:hls:pixel_pack:1.0 - pixel_pack
+Adding component instance block -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_0
+Adding component instance block -- xilinx.com:hls:color_convert:1.0 - color_convert
+Adding component instance block -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk
+Adding component instance block -- xilinx.com:user:color_swap:1.1 - color_swap_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - hdmi_out_hpd_video
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.2 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.1 - vtc_out
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video/hdmi_out/frontend/axi_dynclk/LOCKED_O(undef) and /video/hdmi_out/frontend/rgb2dvi_0/aRst_n(rst)
+Adding component instance block -- xilinx.com:hls:pixel_unpack:1.0 - pixel_unpack
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_pixelclk
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Successfully read diagram <base> from BD file <C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/base.bd>
+open_bd_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1908.980 ; gain = 50.078
+add_files -fileset constrs_1 -norecurse C:/PYNQ/boards/Pynq-Z1/base/vivado/constraints/base.xdc
+import_files -fileset constrs_1 C:/PYNQ/boards/Pynq-Z1/base/vivado/constraints/base.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sun May 10 02:29:49 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1908.980 ; gain = 0.000
+launch_runs impl_1 -jobs 2
+[Sun May 10 02:33:25 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun May 10 02:53:07 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/impl_1/runme.log
+write_bd_tcl -force C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base_woleds.tcl
+INFO: [BD 5-148] Tcl file written out <C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base_woleds.tcl>.
+
+file copy -force C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/impl_1/base_wrapper.bit C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base_woleds.bit
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+close_project
+close_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1908.980 ; gain = 0.000
+create_project comblock_pynq C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock -part xc7z020clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1908.980 ; gain = 0.000
+set_property board_part digilentinc.com:arty-z7-20:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+set_property  ip_repo_paths  C:/Users/danie/Documents/Repaso_VIVADO/core-comblock-master/src/comblock [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/danie/Documents/Repaso_VIVADO/core-comblock-master/src/comblock'.
+create_bd_design "comblock_desing"
+Wrote  : <C:\Users\danie\Documents\Repaso_VIVADO\PYNQ_comblock\comblock_pynq.srcs\sources_1\bd\comblock_desing\comblock_desing.bd> 
+create_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1908.980 ; gain = 0.000
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv www.ictp.it:user:comblock:2.0 comblock_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: IN_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IN_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IN_REGS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: OUT_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: OUT_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: OUT_REGS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: IO_DRAM 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IO_DRAM 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IO_DRAM 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: IN_FIFO 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IN_FIFO 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IN_FIFO 
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+apply_bd_automation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1908.980 ; gain = 0.000
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/comblock_0/AXIL} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins comblock_0/AXIL]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment </comblock_0/AXIL/AXIL> is being mapped into address space </processing_system7_0/Data> at <0x43C0_0000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/comblock_0/AXIF} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins comblock_0/AXIF]
+Slave segment </comblock_0/AXIF/AXIF> is being mapped into address space </processing_system7_0/Data> at <0x43C4_0000 [ 256K ]>
+endgroup
+regenerate_bd_layout
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+set_property name comblock_ip [get_bd_cells comblock_0]
+startgroup
+set_property -dict [list CONFIG.REGS_IN_DWIDTH {2} CONFIG.REGS_IN_DEPTH {1} CONFIG.REGS_OUT_DWIDTH {4} CONFIG.REGS_OUT_DEPTH {1} CONFIG.DRAM_IO_ENA {false} CONFIG.FIFO_IN_ENA {false}] [get_bd_cells comblock_ip]
+WARNING: [BD 41-1684] Pin /comblock_ip/axif_aclk is now disabled. All connections to this pin have been removed. 
+WARNING: [BD 41-1684] Pin /comblock_ip/axif_aresetn is now disabled. All connections to this pin have been removed. 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: IN_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IN_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IN_REGS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: OUT_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: OUT_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: OUT_REGS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: IO_DRAM 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IO_DRAM 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: IN_FIFO 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IN_FIFO 
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M01_AXI]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins comblock_ip/IN_REGS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: ictp:user:IREGS_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'ictp:user:IREGS_rtl:1.0', cannot be found. Interface port: 'IN_REGS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: ictp:user:IREGS_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'ictp:user:IREGS_rtl:1.0', cannot be found. Interface port: 'IN_REGS_0' cannot be created
+endgroup
+set_property location {3 899 304} [get_bd_cells comblock_ip]
+regenerate_bd_layout
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins comblock_ip/OUT_REGS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: ictp:user:OREGS_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'ictp:user:OREGS_rtl:1.0', cannot be found. Interface port: 'OUT_REGS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: ictp:user:OREGS_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'ictp:user:OREGS_rtl:1.0', cannot be found. Interface port: 'OUT_REGS_0' cannot be created
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins comblock_ip/OUT_REGS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: ictp:user:OREGS_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'ictp:user:OREGS_rtl:1.0', cannot be found. Interface port: 'OUT_REGS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: ictp:user:OREGS_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'ictp:user:OREGS_rtl:1.0', cannot be found. Interface port: 'OUT_REGS_0' cannot be created
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins comblock_ip/IN_REGS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: ictp:user:IREGS_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'ictp:user:IREGS_rtl:1.0', cannot be found. Interface port: 'IN_REGS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: ictp:user:IREGS_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'ictp:user:IREGS_rtl:1.0', cannot be found. Interface port: 'IN_REGS_0' cannot be created
+endgroup
+create_bd_port -dir I -from 1 -to 0 sw
+set_property location {725 27} [get_bd_ports sw]
+undo
+INFO: [Common 17-17] undo 'set_property location {725 27} [get_bd_ports sw]'
+regenerate_bd_layout
+set_property location {376 2} [get_bd_ports sw]
+set_property location {850 7} [get_bd_ports sw]
+delete_bd_objs [get_bd_ports sw]
+startgroup
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins comblock_ip/reg0_i]
+WARNING: [BD 41-1306] The connection to interface pin /comblock_ip/reg0_i is being overridden by the user. This pin will not be connected as a part of interface connection IN_REGS
+endgroup
+set_property name sw [get_bd_ports reg0_i_0]
+startgroup
+make_bd_pins_external  [get_bd_pins comblock_ip/reg0_o]
+WARNING: [BD 41-1306] The connection to interface pin /comblock_ip/reg0_o is being overridden by the user. This pin will not be connected as a part of interface connection OUT_REGS
+endgroup
+set_property name leds [get_bd_ports reg0_o_0]
+set_property name sws [get_bd_ports sw]
+set_property location {1 271 349} [get_bd_cells processing_system7_0]
+save_bd_design
+Wrote  : <C:\Users\danie\Documents\Repaso_VIVADO\PYNQ_comblock\comblock_pynq.srcs\sources_1\bd\comblock_desing\comblock_desing.bd> 
+Wrote  : <C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/ui/bd_96af4703.ui> 
+make_wrapper -files [get_files C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/comblock_desing.bd] -top
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IN_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: OUT_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IN_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: OUT_REGS 
+Wrote  : <C:\Users\danie\Documents\Repaso_VIVADO\PYNQ_comblock\comblock_pynq.srcs\sources_1\bd\comblock_desing\comblock_desing.bd> 
+VHDL Output written to : C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/synth/comblock_desing.vhd
+VHDL Output written to : C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/sim/comblock_desing.vhd
+VHDL Output written to : C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/hdl/comblock_desing_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1908.980 ; gain = 0.000
+add_files -norecurse C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/hdl/comblock_desing_wrapper.vhd
+add_files -fileset constrs_1 -norecurse C:/Users/danie/Documents/Repaso_VIVADO/ARTYZ720.xdc
+import_files -fileset constrs_1 C:/Users/danie/Documents/Repaso_VIVADO/ARTYZ720.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [BD 41-1662] The design 'comblock_desing.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IN_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: OUT_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: IN_REGS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: OUT_REGS 
+Wrote  : <C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/ui/bd_96af4703.ui> 
+VHDL Output written to : C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/synth/comblock_desing.vhd
+VHDL Output written to : C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/sim/comblock_desing.vhd
+VHDL Output written to : C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/hdl/comblock_desing_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block comblock_ip .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/ip/comblock_desing_auto_pc_1/comblock_desing_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/ip/comblock_desing_auto_pc_0/comblock_desing_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+Exporting to file C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/hw_handoff/comblock_desing.hwh
+Generated Block Design Tcl file C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/hw_handoff/comblock_desing_bd.tcl
+Generated Hardware Definition File C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/synth/comblock_desing.hwdef
+[Sun May 10 04:34:27 2020] Launched comblock_desing_xbar_0_synth_1, comblock_desing_auto_pc_1_synth_1, comblock_desing_auto_pc_0_synth_1, comblock_desing_comblock_0_0_synth_1, comblock_desing_processing_system7_0_0_synth_1, comblock_desing_rst_ps7_0_100M_0_synth_1, synth_1...
+Run output will be captured here:
+comblock_desing_xbar_0_synth_1: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.runs/comblock_desing_xbar_0_synth_1/runme.log
+comblock_desing_auto_pc_1_synth_1: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.runs/comblock_desing_auto_pc_1_synth_1/runme.log
+comblock_desing_auto_pc_0_synth_1: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.runs/comblock_desing_auto_pc_0_synth_1/runme.log
+comblock_desing_comblock_0_0_synth_1: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.runs/comblock_desing_comblock_0_0_synth_1/runme.log
+comblock_desing_processing_system7_0_0_synth_1: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.runs/comblock_desing_processing_system7_0_0_synth_1/runme.log
+comblock_desing_rst_ps7_0_100M_0_synth_1: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.runs/comblock_desing_rst_ps7_0_100M_0_synth_1/runme.log
+synth_1: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.runs/synth_1/runme.log
+[Sun May 10 04:34:28 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1908.980 ; gain = 0.000
+write_bd_tcl -force C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_sw_led.tcl
+INFO: [BD 5-148] Tcl file written out <C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_sw_led.tcl>.
+
+file copy -force C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.runs/impl_1/comblock_desing_wrapper.bit C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_sw_led.bit
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.688 . Memory (MB): peak = 2645.574 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.697 . Memory (MB): peak = 2645.574 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2645.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  SRLC32E => SRL16E: 1 instances
+
+open_run: Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 2776.586 ; gain = 867.605
+file mkdir C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.sdk
+file copy -force C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.runs/impl_1/comblock_desing_wrapper.sysdef C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.sdk/comblock_desing_wrapper.hdf
+
+launch_sdk -workspace C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.sdk -hwspec C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.sdk/comblock_desing_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.sdk -hwspec C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.sdk/comblock_desing_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/comblock_desing.bd}
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 10 05:36:11 2020...

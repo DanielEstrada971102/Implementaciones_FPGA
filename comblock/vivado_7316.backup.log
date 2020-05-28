@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Apr 26 19:46:08 2020
+# Process ID: 7316
+# Current directory: C:/Users/danie/Documents/Repaso_VIVADO/comblock
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent688 C:\Users\danie\Documents\Repaso_VIVADO\comblock\comblock.xpr
+# Log file: C:/Users/danie/Documents/Repaso_VIVADO/comblock/vivado.log
+# Journal file: C:/Users/danie/Documents/Repaso_VIVADO/comblock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/danie/Documents/Repaso_VIVADO/core-comblock-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 796.383 ; gain = 186.496
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.srcs/sources_1/bd/Comblock_desing/Comblock_desing.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- www.ictp.it:user:comblock:2.0 - comblock_0
+Adding component instance block -- xilinx.com:ip:c_counter_binary:12.0 - c_counter_binary_0
+Adding component instance block -- xilinx.com:ip:c_counter_binary:12.0 - c_counter_binary_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Successfully read diagram <Comblock_desing> from BD file <C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.srcs/sources_1/bd/Comblock_desing/Comblock_desing.bd>
+open_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1139.453 ; gain = 10.773
+write_bd_tcl -force C:/Users/danie/Documents/Repaso_VIVADO/comblock/Comblock.tcl
+INFO: [BD 5-148] Tcl file written out <C:/Users/danie/Documents/Repaso_VIVADO/comblock/Comblock.tcl>.
+
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Netlist 29-17] Analyzing 113 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.803 . Memory (MB): peak = 1909.258 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.814 . Memory (MB): peak = 1909.258 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1909.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  SRLC32E => SRL16E: 2 instances
+
+open_run: Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 2027.043 ; gain = 887.590
+launch_sdk -workspace C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk -hwspec C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk -hwspec C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/Comblock_desing_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.srcs/sources_1/bd/Comblock_desing/Comblock_desing.bd}
+close_project
+open_project C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Gpio.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2089.965 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Gpio.srcs/sources_1/bd/led_control_desing/led_control_desing.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - board_leds_4b
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - board_sw_2b
+Successfully read diagram <led_control_desing> from BD file <C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Gpio.srcs/sources_1/bd/led_control_desing/led_control_desing.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2495.148 ; gain = 28.914
+write_bd_tcl -force C:/Users/danie/Documents/Repaso_VIVADO/Gpio/led_control_desing.tcl
+INFO: [BD 5-148] Tcl file written out <C:/Users/danie/Documents/Repaso_VIVADO/Gpio/led_control_desing.tcl>.
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 26 23:55:27 2020...

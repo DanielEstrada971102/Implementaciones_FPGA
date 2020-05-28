@@ -1,0 +1,501 @@
+
+*** Running vivado
+    with args -log base_audio_direct_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_audio_direct_0_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source base_audio_direct_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/PYNQ/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top base_audio_direct_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3832 
+WARNING: [Synth 8-2611] redeclaration of ansi port dout is not allowed [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/PdmDes.v:26]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 767.746 ; gain = 184.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'base_audio_direct_0_0' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ip/base_audio_direct_0_0/synth/base_audio_direct_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'audio_direct_v1_1' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/hdl/audio_direct_v1_1.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'd_axi_pdm_v1_2_S_AXI' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/d_axi_pdm_v1_2_S_AXI.vhd:97]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'pdm_rxtx' declared at 'c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_rxtx.vhd:23' bound to instance 'Inst_PdmCtl' of component 'pdm_rxtx' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/d_axi_pdm_v1_2_S_AXI.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'pdm_rxtx' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_rxtx.vhd:62]
+	Parameter C_NR_OF_BITS bound to: 16 - type: integer 
+	Parameter C_SYS_CLK_FREQ_MHZ bound to: 100 - type: integer 
+	Parameter C_PDM_FREQ_MHZ bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'pdm_des' declared at 'c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_des.vhd:34' bound to instance 'Inst_Deserializer' of component 'pdm_des' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_rxtx.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'pdm_des' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_des.vhd:55]
+	Parameter C_NR_OF_BITS bound to: 16 - type: integer 
+	Parameter C_SYS_CLK_FREQ_MHZ bound to: 100 - type: integer 
+	Parameter C_PDM_FREQ_MHZ bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pdm_des' (1#1) [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_des.vhd:55]
+	Parameter C_NR_OF_BITS bound to: 16 - type: integer 
+	Parameter C_SYS_CLK_FREQ_MHZ bound to: 100 - type: integer 
+	Parameter C_PDM_FREQ_MHZ bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'pdm_ser' declared at 'c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_ser.vhd:34' bound to instance 'Inst_Serializer' of component 'pdm_ser' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_rxtx.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'pdm_ser' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_ser.vhd:56]
+	Parameter C_NR_OF_BITS bound to: 16 - type: integer 
+	Parameter C_SYS_CLK_FREQ_MHZ bound to: 100 - type: integer 
+	Parameter C_PDM_FREQ_MHZ bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pdm_ser' (2#1) [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_ser.vhd:56]
+INFO: [Synth 8-637] synthesizing blackbox instance 'Inst_PdmTxFifo' of component 'fifo_512' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_rxtx.vhd:210]
+INFO: [Synth 8-637] synthesizing blackbox instance 'Inst_PdmRxFifo' of component 'fifo_512' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_rxtx.vhd:226]
+INFO: [Synth 8-226] default block is never used [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_rxtx.vhd:254]
+INFO: [Synth 8-256] done synthesizing module 'pdm_rxtx' (3#1) [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/pdm_rxtx.vhd:62]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/d_axi_pdm_v1_2_S_AXI.vhd:308]
+INFO: [Synth 8-256] done synthesizing module 'd_axi_pdm_v1_2_S_AXI' (4#1) [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/d_axi_pdm_v1_2_S_AXI.vhd:97]
+INFO: [Synth 8-6157] synthesizing module 'audio_direct_path' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/audio_direct_path.v:11]
+INFO: [Synth 8-6157] synthesizing module 'PdmDes' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/PdmDes.v:11]
+	Parameter C_PDM_FREQ_HZ bound to: 2000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PdmDes' (5#1) [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/PdmDes.v:11]
+WARNING: [Synth 8-7023] instance 'PdmDes_Inst' of module 'PdmDes' has 6 connections declared, but only 5 given [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/audio_direct_path.v:29]
+INFO: [Synth 8-6157] synthesizing module 'PdmSer' [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/PdmSer.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'PdmSer' (6#1) [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/PdmSer.v:11]
+WARNING: [Synth 8-3848] Net PdmDes_done in module/entity audio_direct_path does not have driver. [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/audio_direct_path.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'audio_direct_path' (7#1) [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/src/audio_direct_path.v:11]
+WARNING: [Synth 8-3848] Net pwm_audio_i in module/entity audio_direct_v1_1 does not have driver. [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/hdl/audio_direct_v1_1.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'audio_direct_v1_1' (8#1) [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ipshared/0403/hdl/audio_direct_v1_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'base_audio_direct_0_0' (9#1) [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ip/base_audio_direct_0_0/synth/base_audio_direct_0_0.v:57]
+WARNING: [Synth 8-3331] design pdm_ser has unconnected port pwm_audio_i
+WARNING: [Synth 8-3331] design d_axi_pdm_v1_2_S_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design d_axi_pdm_v1_2_S_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design d_axi_pdm_v1_2_S_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design d_axi_pdm_v1_2_S_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design d_axi_pdm_v1_2_S_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design d_axi_pdm_v1_2_S_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 809.355 ; gain = 226.406
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 821.563 ; gain = 238.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 821.563 ; gain = 238.613
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 950.324 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 951.328 ; gain = 1.004
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 951.328 ; gain = 368.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 951.328 ; gain = 368.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 951.328 ; gain = 368.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'CState_reg' in module 'pdm_rxtx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   sidle |                               00 |                               00
+               scheckrnw |                               01 |                               01
+                   sread |                               10 |                               10
+                  swrite |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CState_reg' using encoding 'sequential' in module 'pdm_rxtx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 951.328 ; gain = 368.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 11    
+	               16 Bit    Registers := 7     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pdm_des 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module pdm_ser 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module pdm_rxtx 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module d_axi_pdm_v1_2_S_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 7     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module PdmDes 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module PdmSer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+Module audio_direct_path 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module audio_direct_v1_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design base_audio_direct_0_0 has unconnected port s_axi_awprot[2]
+WARNING: [Synth 8-3331] design base_audio_direct_0_0 has unconnected port s_axi_awprot[1]
+WARNING: [Synth 8-3331] design base_audio_direct_0_0 has unconnected port s_axi_awprot[0]
+WARNING: [Synth 8-3331] design base_audio_direct_0_0 has unconnected port s_axi_arprot[2]
+WARNING: [Synth 8-3331] design base_audio_direct_0_0 has unconnected port s_axi_arprot[1]
+WARNING: [Synth 8-3331] design base_audio_direct_0_0 has unconnected port s_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[2]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[3]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[4]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[5]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[6]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[7]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[8]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[9]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[10]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[11]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[12]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[13]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[14]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[15]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[16]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[17]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[18]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[18]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[19]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[19]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[20]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[20]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[21]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[21]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[22]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[22]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[23]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[23]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[24]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[24]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[25]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[25]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[26]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[26]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[27]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[27]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[28]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[28]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[29]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[29]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[30]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[30]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_STATUS_REG_reg[31]' (FDR) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/d_axi_pdm_v1_2_S_AXI_inst/PDM_DATA_OUT_REG_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/d_axi_pdm_v1_2_S_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/d_axi_pdm_v1_2_S_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/d_axi_pdm_v1_2_S_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/d_axi_pdm_v1_2_S_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/audio_direct_path_inst/en_i_sync_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 951.328 ; gain = 368.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 951.328 ; gain = 368.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 951.328 ; gain = 368.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 951.328 ; gain = 368.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 953.547 ; gain = 370.598
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 953.547 ; gain = 370.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 953.547 ; gain = 370.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 953.547 ; gain = 370.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 953.547 ; gain = 370.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 953.547 ; gain = 370.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |fifo_512      |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |fifo_512_bbox_1 |     1|
+|2     |fifo_512_bbox_2 |     1|
+|3     |CARRY4          |    32|
+|4     |LUT1            |    10|
+|5     |LUT2            |    13|
+|6     |LUT3            |     9|
+|7     |LUT4            |    40|
+|8     |LUT5            |   146|
+|9     |LUT6            |    92|
+|10    |FDRE            |   470|
+|11    |FDSE            |     3|
++------+----------------+------+
+
+Report Instance Areas: 
++------+------------------------------+---------------------+------+
+|      |Instance                      |Module               |Cells |
++------+------------------------------+---------------------+------+
+|1     |top                           |                     |   851|
+|2     |  inst                        |audio_direct_v1_1    |   851|
+|3     |    audio_direct_path_inst    |audio_direct_path    |   385|
+|4     |      PdmDes_Inst             |PdmDes               |   172|
+|5     |      PdmSer_Inst             |PdmSer               |   197|
+|6     |    d_axi_pdm_v1_2_S_AXI_inst |d_axi_pdm_v1_2_S_AXI |   466|
+|7     |      Inst_PdmCtl             |pdm_rxtx             |   178|
+|8     |        Inst_Deserializer     |pdm_des              |    63|
+|9     |        Inst_Serializer       |pdm_ser              |    63|
++------+------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 953.547 ; gain = 370.598
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 953.547 ; gain = 240.832
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 953.547 ; gain = 370.598
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ip/base_audio_direct_0_0/src/fifo_512.edif]
+Finished Parsing EDIF File [c:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.srcs/sources_1/bd/base/ip/base_audio_direct_0_0/src/fifo_512.edif]
+INFO: [Netlist 29-17] Analyzing 336 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 983.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 192 instances were transformed.
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 160 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+90 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 983.160 ; gain = 672.082
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 983.160 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_audio_direct_0_0_synth_1/base_audio_direct_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP base_audio_direct_0_0, cache-ID = 49f406b0e07f5535
+INFO: [Coretcl 2-1174] Renamed 26 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.004 . Memory (MB): peak = 983.160 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_audio_direct_0_0_synth_1/base_audio_direct_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file base_audio_direct_0_0_utilization_synth.rpt -pb base_audio_direct_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 06:54:06 2020...

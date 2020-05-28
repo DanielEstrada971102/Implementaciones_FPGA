@@ -1,0 +1,7 @@
+1584038858178	Delete resource 'ledControlwithSW/src/lab_gpio_in_out.c'
+1584066439344	Delete resource 'ledControlwithSW_bsp_xgpiops_intr_example_1'
+1584066444096	Delete resource 'ledControlwithSW_bsp_xuartps_low_echo_example_1'
+1584069591228	Delete resource 'ledControlwithSW'
+1584069666315	Delete resource 'LedControlCustom'
+1584069671099	Delete resource 'ledControlwithSW_bsp'
+1584241582346	Delete resource 'controlLedCustom/src/ledControlCustom.c'

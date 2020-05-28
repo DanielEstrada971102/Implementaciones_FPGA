@@ -1,0 +1,46 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Mar 16 01:35:45 2020
+| Host         : DESKTOP-B2I46DP running 64-bit major release  (build 9200)
+| Command      : report_methodology -file customIp2_wrapper_methodology_drc_routed.rpt -pb customIp2_wrapper_methodology_drc_routed.pb -rpx customIp2_wrapper_methodology_drc_routed.rpx
+| Design       : customIp2_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 2
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
+| TIMING-18 | Warning  | Missing input or output delay | 1          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/aw_en_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[0]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[10]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[11]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[12]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[13]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[14]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[15]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[1]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[2]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[3]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[4]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[5]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[6]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[7]/CLR, customIp2_i/SecondIP_PWM_0/U0/SecondIP_PWM_v2_0_S00_AXI_inst/U1/counter_reg[8]/CLR (the first 15 of 17 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on pwm_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+

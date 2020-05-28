@@ -1,0 +1,1668 @@
+13:35:18 **** Build of project ledControlwithSW_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project ledControlwithSW ****
+
+Nothing to build for project ledControlwithSW
+13:41:33 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab_gpio_in_out.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab_gpio_in_out.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab_gpio_in_out.d" -MT"src/lab_gpio_in_out.o" -o "src/lab_gpio_in_out.o" "../src/lab_gpio_in_out.c"
+../src/lab_gpio_in_out.c: In function 'main':
+../src/lab_gpio_in_out.c:25:26: error: 'XPAR_BOARD_SW_8B_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_BOARD_SW_2B_DEVICE_ID'?
+    XGpio_Initialize(&sw, XPAR_BOARD_SW_8B_DEVICE_ID);
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                          XPAR_BOARD_SW_2B_DEVICE_ID
+../src/lab_gpio_in_out.c:25:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab_gpio_in_out.c:28:27: error: 'XPAR_BOARD_LEDS_8B_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_BOARD_LEDS_4B_DEVICE_ID'?
+    XGpio_Initialize(&led, XPAR_BOARD_LEDS_8B_DEVICE_ID);
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           XPAR_BOARD_LEDS_4B_DEVICE_ID
+../src/lab_gpio_in_out.c:57:11: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+           if(sw_check==0xFF)
+           ^~
+../src/lab_gpio_in_out.c:59:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     for (i=0; i<9999999; i++); // delay loop
+     ^~~
+../src/lab_gpio_in_out.c:15:17: warning: unused variable 'GPIOInstance_Ptr' [-Wunused-variable]
+    static XGpio GPIOInstance_Ptr;
+                 ^~~~~~~~~~~~~~~~
+At top level:
+../src/lab_gpio_in_out.c:15:17: warning: 'GPIOInstance_Ptr' defined but not used [-Wunused-variable]
+make: *** [src/subdir.mk:23: src/lab_gpio_in_out.o] Error 1
+13:47:38 **** Clean-only build of configuration Debug for project ledControlwithSW ****
+make clean 
+rm -rf  ./src/lab_gpio_in_out.o  ./src/lab_gpio_in_out.d  ledControlwithSW.elf.size  ledControlwithSW.elf
+' '
+
+****  of configuration Debug for project ledControlwithSW ****
+
+Nothing to build for project ledControlwithSW
+13:48:13 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before string constant
+ include "xparameters.h"
+         ^~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2019.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdint.h:14,
+                 from c:\xilinx\sdk\2019.1\gnu\aarch32\nt\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\8.2.0\include\stdint.h:9,
+                 from ../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xil_types.h:60,
+                 from ../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:130,
+                 from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+c:\xilinx\sdk\2019.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\sys\_stdint.h:20:9: error: unknown type name '__int8_t'
+ typedef __int8_t int8_t ;
+         ^~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:7:1: error: expected '=', ',', ';', 'asm' or '__attribute__' at end of input
+ i
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+13:48:22 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:7:1: error: expected '=', ',', ';', 'asm' or '__attribute__' at end of input
+ i
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+13:48:46 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:7:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ main(){
+ ^~~~
+'Finished building: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+' '
+'Building target: ledControlwithSW.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ledControlwithSW_bsp/ps7_cortexa9_0/lib -o "ledControlwithSW.elf"  ./src/Control_Gpio.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ledControlwithSW.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ledControlwithSW.elf  |tee "ledControlwithSW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18728	   1144	  22616	  42488	   a5f8	ledControlwithSW.elf
+'Finished building: ledControlwithSW.elf.size'
+' '
+13:50:21 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:8:12: warning: unused variable 'led' [-Wunused-variable]
+  XGpio sw, led;
+            ^~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:8:8: warning: unused variable 'sw' [-Wunused-variable]
+  XGpio sw, led;
+        ^~
+'Finished building: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+' '
+'Building target: ledControlwithSW.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ledControlwithSW_bsp/ps7_cortexa9_0/lib -o "ledControlwithSW.elf"  ./src/Control_Gpio.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ledControlwithSW.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ledControlwithSW.elf  |tee "ledControlwithSW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18732	   1144	  22616	  42492	   a5fc	ledControlwithSW.elf
+'Finished building: ledControlwithSW.elf.size'
+' '
+13:50:25 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:8:12: warning: unused variable 'led' [-Wunused-variable]
+  XGpio sw, led;
+            ^~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:8:8: warning: unused variable 'sw' [-Wunused-variable]
+  XGpio sw, led;
+        ^~
+'Finished building: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+' '
+'Building target: ledControlwithSW.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ledControlwithSW_bsp/ps7_cortexa9_0/lib -o "ledControlwithSW.elf"  ./src/Control_Gpio.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ledControlwithSW.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ledControlwithSW.elf  |tee "ledControlwithSW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18732	   1144	  22616	  42492	   a5fc	ledControlwithSW.elf
+'Finished building: ledControlwithSW.elf.size'
+' '
+13:52:29 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId);
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:24: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:14:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+13:53:32 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:24: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:13:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&led, XPAR_BOARD_LEDS_4B_DEVICE_ID);
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:187:38: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_LEDS_4B_DEVICE_ID 0
+                                      ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:13:25: note: in expansion of macro 'XPAR_BOARD_LEDS_4B_DEVICE_ID'
+  XGpio_Initialize(&led, XPAR_BOARD_LEDS_4B_DEVICE_ID);
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:16:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+13:55:35 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:13:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:13:24: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:14:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&led, XPAR_BOARD_LEDS_4B_DEVICE_ID);
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:187:38: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_LEDS_4B_DEVICE_ID 0
+                                      ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:14:25: note: in expansion of macro 'XPAR_BOARD_LEDS_4B_DEVICE_ID'
+  XGpio_Initialize(&led, XPAR_BOARD_LEDS_4B_DEVICE_ID);
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:16:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:17:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+13:55:47 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:24: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:13:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&led, XPAR_BOARD_LEDS_4B_DEVICE_ID);
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:187:38: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_LEDS_4B_DEVICE_ID 0
+                                      ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:13:25: note: in expansion of macro 'XPAR_BOARD_LEDS_4B_DEVICE_ID'
+  XGpio_Initialize(&led, XPAR_BOARD_LEDS_4B_DEVICE_ID);
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:16:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+14:02:19 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:24: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:13:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&led, XPAR_BOARD_LEDS_4B_DEVICE_ID);
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:187:38: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_LEDS_4B_DEVICE_ID 0
+                                      ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:13:25: note: in expansion of macro 'XPAR_BOARD_LEDS_4B_DEVICE_ID'
+  XGpio_Initialize(&led, XPAR_BOARD_LEDS_4B_DEVICE_ID);
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:2: warning: data definition has no type or storage class
+  GpioPsconfigPtr = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+  ^~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:2: warning: type defaults to 'int' in declaration of 'GpioPsconfigPtr' [-Wimplicit-int]
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:2: error: conflicting types for 'GpioPsconfigPtr'
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:10:18: note: previous declaration of 'GpioPsconfigPtr' was here
+  XGpioPs_Config *GpioPsconfigPtr;
+                  ^~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:20: warning: initialization of 'int' from 'XGpioPs_Config *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  GpioPsconfigPtr = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+                    ^~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:20: error: initializer element is not constant
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:17:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+14:07:17 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:14:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:14:24: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&led, XPAR_BOARD_LEDS_4B_DEVICE_ID);
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:187:38: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_LEDS_4B_DEVICE_ID 0
+                                      ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:25: note: in expansion of macro 'XPAR_BOARD_LEDS_4B_DEVICE_ID'
+  XGpio_Initialize(&led, XPAR_BOARD_LEDS_4B_DEVICE_ID);
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:17:2: warning: data definition has no type or storage class
+  GpioConfigPtr = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+  ^~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:17:2: warning: type defaults to 'int' in declaration of 'GpioConfigPtr' [-Wimplicit-int]
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:17:18: warning: initialization of 'int' from 'XGpioPs_Config *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  GpioConfigPtr = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+                  ^~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:17:18: error: initializer element is not constant
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:2: warning: data definition has no type or storage class
+  xStatus = XGpioPs_CfgInitialize(&psGpioInstancePtr, GpioConfigPtr, GpioConfigPtr->BaseAddr);
+  ^~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:2: warning: type defaults to 'int' in declaration of 'xStatus' [-Wimplicit-int]
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:82: error: invalid type argument of '->' (have 'int')
+  xStatus = XGpioPs_CfgInitialize(&psGpioInstancePtr, GpioConfigPtr, GpioConfigPtr->BaseAddr);
+                                                                                  ^~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:54: warning: passing argument 2 of 'XGpioPs_CfgInitialize' makes pointer from integer without a cast [-Wint-conversion]
+  xStatus = XGpioPs_CfgInitialize(&psGpioInstancePtr, GpioConfigPtr, GpioConfigPtr->BaseAddr);
+                                                      ^~~~~~~~~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:3:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpiops.h:224:71: note: expected 'const XGpioPs_Config *' {aka 'const struct <anonymous> *'} but argument is of type 'int'
+ s32 XGpioPs_CfgInitialize(XGpioPs *InstancePtr, const XGpioPs_Config *ConfigPtr,
+                                                 ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:21:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:22:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+14:17:44 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:13:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:13:24: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:14:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&led, XPAR_BOARD_LEDS_4B_DEVICE_ID);
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:187:38: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_LEDS_4B_DEVICE_ID 0
+                                      ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:14:25: note: in expansion of macro 'XPAR_BOARD_LEDS_4B_DEVICE_ID'
+  XGpio_Initialize(&led, XPAR_BOARD_LEDS_4B_DEVICE_ID);
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:16:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:23:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:25:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:26:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+14:23:40 **** Build of configuration Debug for project ledControlwithSW_bsp_xgpiops_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xgpiops_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpiops_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xgpiops_intr_example.d" -MT"src/xgpiops_intr_example.o" -o "src/xgpiops_intr_example.o" "../src/xgpiops_intr_example.c"
+'Finished building: ../src/xgpiops_intr_example.c'
+' '
+'Building target: ledControlwithSW_bsp_xgpiops_intr_example_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ledControlwithSW_bsp/ps7_cortexa9_0/lib -o "ledControlwithSW_bsp_xgpiops_intr_example_1.elf"  ./src/xgpiops_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ledControlwithSW_bsp_xgpiops_intr_example_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ledControlwithSW_bsp_xgpiops_intr_example_1.elf  |tee "ledControlwithSW_bsp_xgpiops_intr_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40848	   2328	  23336	  66512	  103d0	ledControlwithSW_bsp_xgpiops_intr_example_1.elf
+'Finished building: ledControlwithSW_bsp_xgpiops_intr_example_1.elf.size'
+' '
+14:30:43 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:14:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:21:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:23:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:24:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+14:31:26 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:11:22: error: expected ')' before numeric constant
+  XGpio_Initialize(sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                      ^
+                      )
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:14:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:21:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:23:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:24:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+14:31:42 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:11:22: error: expected ')' before numeric constant
+  XGpio_Initialize(sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                      ^
+                      )
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:14:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:21:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:23:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:24:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+14:32:58 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:11:22: error: expected ')' before 'u16'
+  XGpio_Initialize(sw, u16 XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                      ^~~~
+                      )
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:14:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:21:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:23:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:24:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+14:35:46 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:22: error: expected ')' before 'u16'
+  XGpio_Initialize(sw, u16 XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                      ^~~~
+                      )
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:22:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:24:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:25:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:9:15: warning: 'GPIOInstance_Ptr' defined but not used [-Wunused-variable]
+  static XGpio GPIOInstance_Ptr;
+               ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+14:36:09 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&sw, u16 XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected ';', ',' or ')' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:28: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&sw, u16 XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:22:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:24:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:25:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:9:15: warning: 'GPIOInstance_Ptr' defined but not used [-Wunused-variable]
+  static XGpio GPIOInstance_Ptr;
+               ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+14:54:25 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:24: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:22:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:24:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:25:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:9:15: warning: 'GPIOInstance_Ptr' defined but not used [-Wunused-variable]
+  static XGpio GPIOInstance_Ptr;
+               ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+14:54:51 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&(sw), XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:12:26: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&(sw), XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:22:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:24:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:25:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:9:15: warning: 'GPIOInstance_Ptr' defined but not used [-Wunused-variable]
+  static XGpio GPIOInstance_Ptr;
+               ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:04:55 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:10:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&(sw), XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:10:26: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&(sw), XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:13:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:20:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:22:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:23:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:05:09 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:10:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:10:24: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:13:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:20:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:22:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:23:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:05:34 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:10:22: error: expected declaration specifiers or '...' before '&' token
+  XGpio_CfgInitialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                      ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:10:27: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_CfgInitialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:13:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:20:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:22:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:23:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:08:25 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:11:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:11:24: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:14:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:21:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:23:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:24:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:10:11 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:11:19: error: expected declaration specifiers or '...' before '&' token
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                   ^
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:1:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xparameters.h:195:36: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_BOARD_SW_2B_DEVICE_ID 1
+                                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:11:24: note: in expansion of macro 'XPAR_BOARD_SW_2B_DEVICE_ID'
+  XGpio_Initialize(&sw, XPAR_BOARD_SW_2B_DEVICE_ID);//(XGpio *InstancePtr, u16 DeviceId)
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:14:2: error: expected identifier or '(' before 'while'
+  while(1){
+  ^~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:21:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("---- End of program ----\r\n");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:23:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:24:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:11:22 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:13: warning: implicit declaration of function 'XGpio_DiscretedRead'; did you mean 'XGpio_DiscreteRead'? [-Wimplicit-function-declaration]
+   sw_check= XGpio_DiscretedRead(&sw, 1);
+             ^~~~~~~~~~~~~~~~~~~
+             XGpio_DiscreteRead
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:16:23: warning: passing argument 1 of 'XGpio_DiscreteWrite' from incompatible pointer type [-Wincompatible-pointer-types]
+   XGpio_DiscreteWrite(&led, sw_check);
+                       ^~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:33: note: expected 'XGpio *' {aka 'struct <anonymous> *'} but argument is of type 'XGpio **' {aka 'struct <anonymous> **'}
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+                          ~~~~~~~^~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:16:3: error: too few arguments to function 'XGpio_DiscreteWrite'
+   XGpio_DiscreteWrite(&led, sw_check);
+   ^~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:6: note: declared here
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+      ^~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+   for(int i = 0, i <9999999, i++);
+                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+  }
+  ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:11: warning: unused variable 'i' [-Wunused-variable]
+   for(int i = 0, i <9999999, i++);
+           ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:47:53 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:16:23: warning: passing argument 1 of 'XGpio_DiscreteWrite' from incompatible pointer type [-Wincompatible-pointer-types]
+   XGpio_DiscreteWrite(&led, sw_check);
+                       ^~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:33: note: expected 'XGpio *' {aka 'struct <anonymous> *'} but argument is of type 'XGpio **' {aka 'struct <anonymous> **'}
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+                          ~~~~~~~^~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:16:3: error: too few arguments to function 'XGpio_DiscreteWrite'
+   XGpio_DiscreteWrite(&led, sw_check);
+   ^~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:6: note: declared here
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+      ^~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+   for(int i = 0, i <9999999, i++);
+                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+  }
+  ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:11: warning: unused variable 'i' [-Wunused-variable]
+   for(int i = 0, i <9999999, i++);
+           ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:48:08 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:16:3: error: too few arguments to function 'XGpio_DiscreteWrite'
+   XGpio_DiscreteWrite(&led, sw_check);
+   ^~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:6: note: declared here
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+      ^~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+   for(int i = 0, i <9999999, i++);
+                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+  }
+  ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:11: warning: unused variable 'i' [-Wunused-variable]
+   for(int i = 0, i <9999999, i++);
+           ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:48:20 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:16:3: error: too few arguments to function 'XGpio_DiscreteWrite'
+   XGpio_DiscreteWrite(&led, sw_check);
+   ^~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:6: note: declared here
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+      ^~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+   for(int i = 0, i <9999999, i++);
+                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+  }
+  ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:11: warning: unused variable 'i' [-Wunused-variable]
+   for(int i = 0, i <9999999, i++);
+           ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:48:39 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:16:3: error: too few arguments to function 'XGpio_DiscreteWrite'
+   XGpio_DiscreteWrite(&led, sw_check);
+   ^~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:6: note: declared here
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+      ^~~~~~~~~~~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+   for(int i = 0, i <9999999, i++);
+                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+  }
+  ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:11: warning: unused variable 'i' [-Wunused-variable]
+   for(int i = 0, i <9999999, i++);
+           ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:49:25 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+   for(int i = 0, i <9999999, i++);
+                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+  }
+  ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:11: warning: unused variable 'i' [-Wunused-variable]
+   for(int i = 0, i <9999999, i++);
+           ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:49:36 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+   for(int i = 0, i <9999999, i++)
+                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:21:2: error: void value not ignored as it ought to be
+  xil_printf("---- End of program ----\r\n");
+  ^~~~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:23:2: error: expected expression before 'return'
+  return 0;
+  ^~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:24:1: error: expected expression before '}' token
+ }
+ ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:11: warning: unused variable 'i' [-Wunused-variable]
+   for(int i = 0, i <9999999, i++)
+           ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:24:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:49:53 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+   for(int i = 0, i <9999999, i++);
+                    ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+  }
+  ^
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:19:2: error: expected expression before '}' token
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:11: warning: unused variable 'i' [-Wunused-variable]
+   for(int i = 0, i <9999999, i++);
+           ^
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+15:50:05 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+'Finished building: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+' '
+'Building target: ledControlwithSW.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ledControlwithSW_bsp/ps7_cortexa9_0/lib -o "ledControlwithSW.elf"  ./src/Control_Gpio.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ledControlwithSW.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ledControlwithSW.elf  |tee "ledControlwithSW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20036	   1176	  22584	  43796	   ab14	ledControlwithSW.elf
+'Finished building: ledControlwithSW.elf.size'
+' '
+15:54:09 **** Incremental Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:55:49 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:32: error: 'sw_check' undeclared (first use in this function)
+   XGpio_DiscreteWrite(&led, 1, sw_check);
+                                ^~~~~~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:15:32: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:16:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+   xil_printf(sw_value);
+              ^~~~~~~~
+In file included from ../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio_l.h:83,
+                 from ../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:133,
+                 from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xil_printf.h:39:31: note: expected 'const char8 *' {aka 'const char *'} but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+                  ~~~~~~~~~~~~~^~~~~
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+20:56:41 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:16:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+   xil_printf(sw_value);
+              ^~~~~~~~
+In file included from ../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio_l.h:83,
+                 from ../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:133,
+                 from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xil_printf.h:39:31: note: expected 'const char8 *' {aka 'const char *'} but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+                  ~~~~~~~~~~~~~^~~~~
+'Finished building: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+' '
+'Building target: ledControlwithSW.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ledControlwithSW_bsp/ps7_cortexa9_0/lib -o "ledControlwithSW.elf"  ./src/Control_Gpio.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ledControlwithSW.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ledControlwithSW.elf  |tee "ledControlwithSW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30596	   1576	  23272	  55444	   d894	ledControlwithSW.elf
+'Finished building: ledControlwithSW.elf.size'
+' '
+20:57:56 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+'Finished building: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+' '
+'Building target: ledControlwithSW.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ledControlwithSW_bsp/ps7_cortexa9_0/lib -o "ledControlwithSW.elf"  ./src/Control_Gpio.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ledControlwithSW.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ledControlwithSW.elf  |tee "ledControlwithSW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30612	   1576	  23272	  55460	   d8a4	ledControlwithSW.elf
+'Finished building: ledControlwithSW.elf.size'
+' '
+20:58:31 **** Incremental Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:00:51 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+'Finished building: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+' '
+'Building target: ledControlwithSW.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ledControlwithSW_bsp/ps7_cortexa9_0/lib -o "ledControlwithSW.elf"  ./src/Control_Gpio.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ledControlwithSW.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ledControlwithSW.elf  |tee "ledControlwithSW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30612	   1576	  23272	  55460	   d8a4	ledControlwithSW.elf
+'Finished building: ledControlwithSW.elf.size'
+' '
+21:01:02 **** Incremental Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:07:22 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:34: warning: passing argument 3 of 'XGpio_DiscreteWrite' makes integer from pointer without a cast [-Wint-conversion]
+     XGpio_DiscreteWrite(&led, 1, "0010");
+                                  ^~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:68: note: expected 'u32' {aka 'long unsigned int'} but argument is of type 'char *'
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+                                                                ~~~~^~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:22:34: warning: passing argument 3 of 'XGpio_DiscreteWrite' makes integer from pointer without a cast [-Wint-conversion]
+     XGpio_DiscreteWrite(&led, 1, "0100");
+                                  ^~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:68: note: expected 'u32' {aka 'long unsigned int'} but argument is of type 'char *'
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+                                                                ~~~~^~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:25:4: error: duplicate case value
+    case 2:
+    ^~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:21:4: note: previously used here
+    case 2:
+    ^~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:26:34: warning: passing argument 3 of 'XGpio_DiscreteWrite' makes integer from pointer without a cast [-Wint-conversion]
+     XGpio_DiscreteWrite(&led, 1, "1000");
+                                  ^~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:68: note: expected 'u32' {aka 'long unsigned int'} but argument is of type 'char *'
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+                                                                ~~~~^~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:30:34: warning: passing argument 3 of 'XGpio_DiscreteWrite' makes integer from pointer without a cast [-Wint-conversion]
+     XGpio_DiscreteWrite(&led, 1, "1111");
+                                  ^~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:68: note: expected 'u32' {aka 'long unsigned int'} but argument is of type 'char *'
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+                                                                ~~~~^~~~
+make: *** [src/subdir.mk:23: src/Control_Gpio.o] Error 1
+21:07:37 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c: In function 'main':
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:18:34: warning: passing argument 3 of 'XGpio_DiscreteWrite' makes integer from pointer without a cast [-Wint-conversion]
+     XGpio_DiscreteWrite(&led, 1, "0010");
+                                  ^~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:68: note: expected 'u32' {aka 'long unsigned int'} but argument is of type 'char *'
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+                                                                ~~~~^~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:22:34: warning: passing argument 3 of 'XGpio_DiscreteWrite' makes integer from pointer without a cast [-Wint-conversion]
+     XGpio_DiscreteWrite(&led, 1, "0100");
+                                  ^~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:68: note: expected 'u32' {aka 'long unsigned int'} but argument is of type 'char *'
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+                                                                ~~~~^~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:26:34: warning: passing argument 3 of 'XGpio_DiscreteWrite' makes integer from pointer without a cast [-Wint-conversion]
+     XGpio_DiscreteWrite(&led, 1, "1000");
+                                  ^~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:68: note: expected 'u32' {aka 'long unsigned int'} but argument is of type 'char *'
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+                                                                ~~~~^~~~
+C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:30:34: warning: passing argument 3 of 'XGpio_DiscreteWrite' makes integer from pointer without a cast [-Wint-conversion]
+     XGpio_DiscreteWrite(&led, 1, "1111");
+                                  ^~~~~~
+In file included from C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c:2:
+../../ledControlwithSW_bsp/ps7_cortexa9_0/include/xgpio.h:181:68: note: expected 'u32' {aka 'long unsigned int'} but argument is of type 'char *'
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+                                                                ~~~~^~~~
+'Finished building: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+' '
+'Building target: ledControlwithSW.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ledControlwithSW_bsp/ps7_cortexa9_0/lib -o "ledControlwithSW.elf"  ./src/Control_Gpio.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ledControlwithSW.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ledControlwithSW.elf  |tee "ledControlwithSW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30856	   1576	  23272	  55704	   d998	ledControlwithSW.elf
+'Finished building: ledControlwithSW.elf.size'
+' '
+21:12:50 **** Build of configuration Debug for project ledControlwithSW_bsp_xuartps_low_echo_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xuartps_low_echo_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xuartps_low_echo_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xuartps_low_echo_example.d" -MT"src/xuartps_low_echo_example.o" -o "src/xuartps_low_echo_example.o" "../src/xuartps_low_echo_example.c"
+'Finished building: ../src/xuartps_low_echo_example.c'
+' '
+'Building target: ledControlwithSW_bsp_xuartps_low_echo_example_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ledControlwithSW_bsp/ps7_cortexa9_0/lib -o "ledControlwithSW_bsp_xuartps_low_echo_example_1.elf"  ./src/xuartps_low_echo_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ledControlwithSW_bsp_xuartps_low_echo_example_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ledControlwithSW_bsp_xuartps_low_echo_example_1.elf  |tee "ledControlwithSW_bsp_xuartps_low_echo_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29948	   1544	  23272	  54764	   d5ec	ledControlwithSW_bsp_xuartps_low_echo_example_1.elf
+'Finished building: ledControlwithSW_bsp_xuartps_low_echo_example_1.elf.size'
+' '
+21:17:52 **** Incremental Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:19:01 **** Incremental Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:22:06 **** Auto Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ledControlwithSW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c"
+'Finished building: C:/Users/danie/Documents/Repaso_VIVADO/Gpio/Control_Gpio.c'
+' '
+'Building target: ledControlwithSW.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ledControlwithSW_bsp/ps7_cortexa9_0/lib -o "ledControlwithSW.elf"  ./src/Control_Gpio.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ledControlwithSW.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ledControlwithSW.elf  |tee "ledControlwithSW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30824	   1576	  23272	  55672	   d978	ledControlwithSW.elf
+'Finished building: ledControlwithSW.elf.size'
+' '
+21:22:22 **** Incremental Build of configuration Debug for project ledControlwithSW ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+22:11:53 **** Build of configuration Debug for project LedControlCustom ****
+make all 
+'Building file: ../source/ledControlCustom.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -std=gnu11 -MMD -MP -MF"source/ledControlCustom.d" -MT"source/ledControlCustom.o" -c -o "source/ledControlCustom.o" "../source/ledControlCustom.c"
+'Finished building: ../source/ledControlCustom.c'
+' '
+'Building target: LedControlCustom.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -Xlinker --gc-sections -Wl,-Map,"LedControlCustom.map" -o "LedControlCustom.elf"  ./source/ledControlCustom.o   
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./source/ledControlCustom.o: in function `main':
+C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:19: undefined reference to `XGpio_Initialize'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:20: undefined reference to `XGpio_Initialize'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:23: undefined reference to `XGpio_DiscreteRead'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:28: undefined reference to `XGpio_DiscreteWrite'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:29: undefined reference to `xil_printf'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:27: undefined reference to `XGpio_DiscreteRead'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:34: undefined reference to `XGpio_DiscreteWrite'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:35: undefined reference to `xil_printf'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:33: undefined reference to `XGpio_DiscreteRead'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:40: undefined reference to `XGpio_DiscreteWrite'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:41: undefined reference to `xil_printf'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:39: undefined reference to `XGpio_DiscreteRead'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:45: undefined reference to `XGpio_DiscreteWrite'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:46: undefined reference to `xil_printf'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-exit.o): in function `exit':
+exit.c:(.text+0x1a): undefined reference to `_exit'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:44: LedControlCustom.elf] Error 1
+22:21:52 **** Build of project controlLedCustom_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project controlLedCustom ****
+
+Nothing to build for project controlLedCustom
+22:24:00 **** Auto Build of configuration Debug for project controlLedCustom ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ledControlCustom.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ledControlCustom.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../controlLedCustom_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ledControlCustom.d" -MT"src/ledControlCustom.o" -o "src/ledControlCustom.o" "../src/ledControlCustom.c"
+'Finished building: ../src/ledControlCustom.c'
+' '
+'Building target: controlLedCustom.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../controlLedCustom_bsp/ps7_cortexa9_0/lib -o "controlLedCustom.elf"  ./src/ledControlCustom.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ../../controlLedCustom_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): in function `_start':
+C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\controlLedCustom_bsp\ps7_cortexa9_0\libsrc\standalone_v7_0\src/xil-crt0.S:138: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: controlLedCustom.elf] Error 1
+22:24:15 **** Auto Build of configuration Debug for project controlLedCustom ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ledControlCustom.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ledControlCustom.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../controlLedCustom_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ledControlCustom.d" -MT"src/ledControlCustom.o" -o "src/ledControlCustom.o" "../src/ledControlCustom.c"
+../src/ledControlCustom.c: In function 'main':
+../src/ledControlCustom.c:15:6: warning: unused variable 'init_value' [-Wunused-variable]
+  int init_value = 0x1;
+      ^~~~~~~~~~
+'Finished building: ../src/ledControlCustom.c'
+' '
+'Building target: controlLedCustom.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../controlLedCustom_bsp/ps7_cortexa9_0/lib -o "controlLedCustom.elf"  ./src/ledControlCustom.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: controlLedCustom.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size controlLedCustom.elf  |tee "controlLedCustom.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30952	   1576	  23272	  55800	   d9f8	controlLedCustom.elf
+'Finished building: controlLedCustom.elf.size'
+' '
+22:24:27 **** Auto Build of configuration Debug for project controlLedCustom ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ledControlCustom.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ledControlCustom.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../controlLedCustom_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ledControlCustom.d" -MT"src/ledControlCustom.o" -o "src/ledControlCustom.o" "../src/ledControlCustom.c"
+../src/ledControlCustom.c: In function 'main':
+../src/ledControlCustom.c:15:6: warning: unused variable 'init_value' [-Wunused-variable]
+  int init_value = 0x1;
+      ^~~~~~~~~~
+'Finished building: ../src/ledControlCustom.c'
+' '
+'Building target: controlLedCustom.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../controlLedCustom_bsp/ps7_cortexa9_0/lib -o "controlLedCustom.elf"  ./src/ledControlCustom.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: controlLedCustom.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size controlLedCustom.elf  |tee "controlLedCustom.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30952	   1576	  23272	  55800	   d9f8	controlLedCustom.elf
+'Finished building: controlLedCustom.elf.size'
+' '
+22:24:35 **** Auto Build of configuration Debug for project controlLedCustom ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ledControlCustom.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ledControlCustom.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../controlLedCustom_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ledControlCustom.d" -MT"src/ledControlCustom.o" -o "src/ledControlCustom.o" "../src/ledControlCustom.c"
+'Finished building: ../src/ledControlCustom.c'
+' '
+'Building target: controlLedCustom.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../controlLedCustom_bsp/ps7_cortexa9_0/lib -o "controlLedCustom.elf"  ./src/ledControlCustom.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: controlLedCustom.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size controlLedCustom.elf  |tee "controlLedCustom.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30952	   1576	  23272	  55800	   d9f8	controlLedCustom.elf
+'Finished building: controlLedCustom.elf.size'
+' '
+22:26:19 **** Incremental Build of configuration Debug for project controlLedCustom ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+22:27:15 **** Auto Build of configuration Debug for project controlLedCustom ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ledControlCustom.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ledControlCustom.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../controlLedCustom_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ledControlCustom.d" -MT"src/ledControlCustom.o" -o "src/ledControlCustom.o" "../src/ledControlCustom.c"
+'Finished building: ../src/ledControlCustom.c'
+' '
+'Building target: controlLedCustom.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../controlLedCustom_bsp/ps7_cortexa9_0/lib -o "controlLedCustom.elf"  ./src/ledControlCustom.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: controlLedCustom.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size controlLedCustom.elf  |tee "controlLedCustom.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30952	   1576	  23272	  55800	   d9f8	controlLedCustom.elf
+'Finished building: controlLedCustom.elf.size'
+' '
+22:27:29 **** Incremental Build of configuration Debug for project controlLedCustom ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+22:06:10 **** Auto Build of configuration Debug for project controlLedCustom ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ledControlCustom.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ledControlCustom.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../controlLedCustom_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ledControlCustom.d" -MT"src/ledControlCustom.o" -o "src/ledControlCustom.o" "../src/ledControlCustom.c"
+'Finished building: ../src/ledControlCustom.c'
+' '
+'Building target: controlLedCustom.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../controlLedCustom_bsp/ps7_cortexa9_0/lib -o "controlLedCustom.elf"  ./src/ledControlCustom.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: controlLedCustom.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size controlLedCustom.elf  |tee "controlLedCustom.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30952	   1576	  23272	  55800	   d9f8	controlLedCustom.elf
+'Finished building: controlLedCustom.elf.size'
+' '
+22:06:22 **** Clean-only build of configuration Debug for project controlLedCustom ****
+make clean 
+rm -rf  ./src/ledControlCustom.o  ./src/ledControlCustom.d  controlLedCustom.elf.size  controlLedCustom.elf
+' '
+
+****  of configuration Debug for project controlLedCustom ****
+
+Nothing to build for project controlLedCustom
+22:07:19 **** Auto Build of configuration Debug for project controlLedCustom ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Control_Gpio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Control_Gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../controlLedCustom_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Control_Gpio.d" -MT"src/Control_Gpio.o" -o "src/Control_Gpio.o" "../src/Control_Gpio.c"
+'Finished building: ../src/Control_Gpio.c'
+' '
+'Building target: controlLedCustom.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../controlLedCustom_bsp/ps7_cortexa9_0/lib -o "controlLedCustom.elf"  ./src/Control_Gpio.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: controlLedCustom.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size controlLedCustom.elf  |tee "controlLedCustom.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30824	   1576	  23272	  55672	   d978	controlLedCustom.elf
+'Finished building: controlLedCustom.elf.size'
+' '

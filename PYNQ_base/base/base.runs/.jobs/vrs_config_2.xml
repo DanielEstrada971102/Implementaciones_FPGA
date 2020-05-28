@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="base_auto_pc_8_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_auto_pc_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m03_regslice_13_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_m03_regslice_13_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m02_regslice_17_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_m02_regslice_17_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m02_regslice_13_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_m02_regslice_13_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m06_regslice_14_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_m06_regslice_14_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m02_regslice_17_synth_1"/>
+	</Run>
+	<Run Id="base_s00_regslice_24_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_s00_regslice_24_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m02_regslice_16_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_m02_regslice_16_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m02_regslice_13_synth_1"/>
+	</Run>
+	<Run Id="base_m07_regslice_11_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_m07_regslice_11_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_s00_regslice_24_synth_1"/>
+	</Run>
+	<Run Id="base_m07_regslice_12_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_m07_regslice_12_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_s00_regslice_24_synth_1"/>
+	</Run>
+	<Run Id="base_m02_regslice_15_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_m02_regslice_15_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m02_regslice_13_synth_1"/>
+	</Run>
+	<Run Id="base_m07_regslice_13_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_m07_regslice_13_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_s00_regslice_24_synth_1"/>
+	</Run>
+	<Run Id="base_s00_regslice_23_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_s00_regslice_23_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_s00_regslice_24_synth_1"/>
+	</Run>
+	<Run Id="base_m00_regslice_23_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_m00_regslice_23_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_spi_shared_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_spi_shared_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_spi_direct_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_spi_direct_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_spi_shared_0_synth_1"/>
+	</Run>
+	<Run Id="base_uartlite_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_uartlite_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xadc_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_xadc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_mb_1_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_mb_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_lmb_bram_2_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_lmb_bram_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_lmb_bram_1_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_lmb_bram_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_lmb_bram_2_synth_1"/>
+	</Run>
+	<Run Id="base_xbar_3_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_xbar_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_spi_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_spi_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_spi_shared_0_synth_1"/>
+	</Run>
+	<Run Id="base_xbar_4_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_xbar_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_xbar_3_synth_1"/>
+	</Run>
+	<Run Id="base_ps7_0_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_ps7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_mb_2_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_mb_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_mb_1_synth_1"/>
+	</Run>
+	<Run Id="base_spi_1_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_spi_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_spi_shared_0_synth_1"/>
+	</Run>
+	<Run Id="base_switches_gpio_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_switches_gpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_rgbleds_gpio_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_rgbleds_gpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_rst_ps7_0_fclk1_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_rst_ps7_0_fclk1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_slice_pmoda_gpio_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_slice_pmoda_gpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axis_data_fifo_0_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_axis_data_fifo_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axi_dma_0_1_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_axi_dma_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xbar_7_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_xbar_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axis_data_fifo_0_1_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_axis_data_fifo_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xbar_8_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_xbar_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_v_axi4s_vid_out_0_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_v_axi4s_vid_out_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_pixel_unpack_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_pixel_unpack_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_pixel_pack_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_pixel_pack_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_color_swap_0_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_color_swap_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axis_register_slice_0_1_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_axis_register_slice_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_hdmi_out_hpd_video_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_hdmi_out_hpd_video_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axi_vdma_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_axi_vdma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_color_swap_0_1_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_color_swap_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_vtc_in_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_vtc_in_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_v_vid_in_axi4s_0_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_v_vid_in_axi4s_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axis_register_slice_0_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_axis_register_slice_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_axis_register_slice_0_1_synth_1"/>
+	</Run>
+	<Run Id="base_rgb2dvi_0_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_rgb2dvi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_s00_regslice_18_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_s00_regslice_18_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_s00_regslice_24_synth_1"/>
+	</Run>
+	<Run Id="base_s01_regslice_6_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_s01_regslice_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_s00_regslice_24_synth_1"/>
+	</Run>
+	<Run Id="base_m00_regslice_19_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_m00_regslice_19_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_auto_us_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_tier2_xbar_1_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_tier2_xbar_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m02_regslice_14_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_m02_regslice_14_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m02_regslice_13_synth_1"/>
+	</Run>
+	<Run Id="base_auto_pc_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_s02_regslice_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_s02_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_s00_regslice_24_synth_1"/>
+	</Run>
+	<Run Id="base_s00_regslice_22_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_s00_regslice_22_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_s00_regslice_24_synth_1"/>
+	</Run>
+	<Run Id="base_auto_pc_1_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_s00_regslice_19_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_s00_regslice_19_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_mb_bram_ctrl_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_mb_bram_ctrl_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_mb_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_mb_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_mb_1_synth_1"/>
+	</Run>
+	<Run Id="base_xbar_2_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_xbar_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_lmb_bram_0_synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/base_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_lmb_bram_2_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_base/base/base.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="base_auto_pc_8_synth_1"/>
+		<Parent Id="base_m03_regslice_13_synth_1"/>
+		<Parent Id="base_m02_regslice_17_synth_1"/>
+		<Parent Id="base_m02_regslice_13_synth_1"/>
+		<Parent Id="base_m06_regslice_14_synth_1"/>
+		<Parent Id="base_s00_regslice_24_synth_1"/>
+		<Parent Id="base_m02_regslice_16_synth_1"/>
+		<Parent Id="base_m07_regslice_11_synth_1"/>
+		<Parent Id="base_m07_regslice_12_synth_1"/>
+		<Parent Id="base_m02_regslice_15_synth_1"/>
+		<Parent Id="base_m07_regslice_13_synth_1"/>
+		<Parent Id="base_s00_regslice_23_synth_1"/>
+		<Parent Id="base_m00_regslice_23_synth_1"/>
+		<Parent Id="base_spi_shared_0_synth_1"/>
+		<Parent Id="base_spi_direct_0_synth_1"/>
+		<Parent Id="base_uartlite_0_synth_1"/>
+		<Parent Id="base_xadc_0_synth_1"/>
+		<Parent Id="base_mb_1_synth_1"/>
+		<Parent Id="base_lmb_bram_2_synth_1"/>
+		<Parent Id="base_lmb_bram_1_synth_1"/>
+		<Parent Id="base_xbar_3_synth_1"/>
+		<Parent Id="base_spi_0_synth_1"/>
+		<Parent Id="base_xbar_4_synth_1"/>
+		<Parent Id="base_ps7_0_0_synth_1"/>
+		<Parent Id="base_mb_2_synth_1"/>
+		<Parent Id="base_spi_1_synth_1"/>
+		<Parent Id="base_switches_gpio_0_synth_1"/>
+		<Parent Id="base_rgbleds_gpio_0_synth_1"/>
+		<Parent Id="base_rst_ps7_0_fclk1_0_synth_1"/>
+		<Parent Id="base_slice_pmoda_gpio_0_synth_1"/>
+		<Parent Id="base_axis_data_fifo_0_0_synth_1"/>
+		<Parent Id="base_axi_dma_0_1_synth_1"/>
+		<Parent Id="base_xbar_7_synth_1"/>
+		<Parent Id="base_axis_data_fifo_0_1_synth_1"/>
+		<Parent Id="base_xbar_8_synth_1"/>
+		<Parent Id="base_v_axi4s_vid_out_0_0_synth_1"/>
+		<Parent Id="base_pixel_unpack_0_synth_1"/>
+		<Parent Id="base_pixel_pack_0_synth_1"/>
+		<Parent Id="base_color_swap_0_0_synth_1"/>
+		<Parent Id="base_axis_register_slice_0_1_synth_1"/>
+		<Parent Id="base_hdmi_out_hpd_video_0_synth_1"/>
+		<Parent Id="base_axi_vdma_0_synth_1"/>
+		<Parent Id="base_color_swap_0_1_synth_1"/>
+		<Parent Id="base_vtc_in_0_synth_1"/>
+		<Parent Id="base_v_vid_in_axi4s_0_0_synth_1"/>
+		<Parent Id="base_axis_register_slice_0_0_synth_1"/>
+		<Parent Id="base_rgb2dvi_0_0_synth_1"/>
+		<Parent Id="base_s00_regslice_18_synth_1"/>
+		<Parent Id="base_s01_regslice_6_synth_1"/>
+		<Parent Id="base_m00_regslice_19_synth_1"/>
+		<Parent Id="base_auto_us_0_synth_1"/>
+		<Parent Id="base_tier2_xbar_1_0_synth_1"/>
+		<Parent Id="base_m02_regslice_14_synth_1"/>
+		<Parent Id="base_auto_pc_0_synth_1"/>
+		<Parent Id="base_s02_regslice_0_synth_1"/>
+		<Parent Id="base_s00_regslice_22_synth_1"/>
+		<Parent Id="base_auto_pc_1_synth_1"/>
+		<Parent Id="base_s00_regslice_19_synth_1"/>
+		<Parent Id="base_mb_bram_ctrl_0_synth_1"/>
+		<Parent Id="base_mb_0_synth_1"/>
+		<Parent Id="base_xbar_2_synth_1"/>
+		<Parent Id="base_lmb_bram_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

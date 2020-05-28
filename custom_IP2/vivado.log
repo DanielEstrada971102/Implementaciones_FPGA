@@ -1,0 +1,201 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Mar 16 16:23:10 2020
+# Process ID: 12516
+# Current directory: C:/Users/danie/Documents/Repaso_VIVADO/custom_IP2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8024 C:\Users\danie\Documents\Repaso_VIVADO\custom_IP2\custom_IP2.xpr
+# Log file: C:/Users/danie/Documents/Repaso_VIVADO/custom_IP2/vivado.log
+# Journal file: C:/Users/danie/Documents/Repaso_VIVADO/custom_IP2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/danie/Documents/Repaso_VIVADO/custom_IP2/custom_IP2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/danie/Documents/Repaso_VIVADO/IP_custom2/ip_repo/SecondIP_PWM_2.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 740.137 ; gain = 146.570
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/danie/Documents/Repaso_VIVADO/custom_IP2/custom_IP2.srcs/sources_1/bd/customIp2/customIp2.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:user:SecondIP_PWM:2.0 - SecondIP_PWM_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Successfully read diagram <customIp2> from BD file <C:/Users/danie/Documents/Repaso_VIVADO/custom_IP2/custom_IP2.srcs/sources_1/bd/customIp2/customIp2.bd>
+open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 913.105 ; gain = 24.836
+close_project
+open_project C:/Users/danie/Documents/Repaso_VIVADO/IP_custom2/managed_ip_project/managed_ip_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/danie/Documents/Repaso_VIVADO/IP_custom2/ip_repo/SecondIP_PWM_2.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 913.105 ; gain = 0.000
+set_property PR_FLOW 1 [current_project] 
+source C:/Users/danie/Documents/Repaso_VIVADO/IP_custom2/ip_repo/SecondIP_PWM_2.0/bd/bd.tcl
+# proc init { cellpath otherInfo } {                                                                   
+#                                                                                                              
+# 	set cell_handle [get_bd_cells $cellpath]                                                                 
+# 	set all_busif [get_bd_intf_pins $cellpath/*]		                                                     
+# 	set axi_standard_param_list [list ID_WIDTH AWUSER_WIDTH ARUSER_WIDTH WUSER_WIDTH RUSER_WIDTH BUSER_WIDTH]
+# 	set full_sbusif_list [list  ]
+# 			                                                                                                 
+# 	foreach busif $all_busif {                                                                               
+# 		if { [string equal -nocase [get_property MODE $busif] "slave"] == 1 } {                            
+# 			set busif_param_list [list]                                                                      
+# 			set busif_name [get_property NAME $busif]					                                     
+# 			if { [lsearch -exact -nocase $full_sbusif_list $busif_name ] == -1 } {					         
+# 			    continue                                                                                     
+# 			}                                                                                                
+# 			foreach tparam $axi_standard_param_list {                                                        
+# 				lappend busif_param_list "C_${busif_name}_${tparam}"                                       
+# 			}                                                                                                
+# 			bd::mark_propagate_only $cell_handle $busif_param_list			                                 
+# 		}		                                                                                             
+# 	}                                                                                                        
+# }
+# proc pre_propagate {cellpath otherInfo } {                                                           
+#                                                                                                              
+# 	set cell_handle [get_bd_cells $cellpath]                                                                 
+# 	set all_busif [get_bd_intf_pins $cellpath/*]		                                                     
+# 	set axi_standard_param_list [list ID_WIDTH AWUSER_WIDTH ARUSER_WIDTH WUSER_WIDTH RUSER_WIDTH BUSER_WIDTH]
+# 	                                                                                                         
+# 	foreach busif $all_busif {	                                                                             
+# 		if { [string equal -nocase [get_property CONFIG.PROTOCOL $busif] "AXI4"] != 1 } {                  
+# 			continue                                                                                         
+# 		}                                                                                                    
+# 		if { [string equal -nocase [get_property MODE $busif] "master"] != 1 } {                           
+# 			continue                                                                                         
+# 		}			                                                                                         
+# 		                                                                                                     
+# 		set busif_name [get_property NAME $busif]			                                                 
+# 		foreach tparam $axi_standard_param_list {		                                                     
+# 			set busif_param_name "C_${busif_name}_${tparam}"			                                     
+# 			                                                                                                 
+# 			set val_on_cell_intf_pin [get_property CONFIG.${tparam} $busif]                                  
+# 			set val_on_cell [get_property CONFIG.${busif_param_name} $cell_handle]                           
+# 			                                                                                                 
+# 			if { [string equal -nocase $val_on_cell_intf_pin $val_on_cell] != 1 } {                          
+# 				if { $val_on_cell != "" } {                                                                  
+# 					set_property CONFIG.${tparam} $val_on_cell $busif                                        
+# 				}                                                                                            
+# 			}			                                                                                     
+# 		}		                                                                                             
+# 	}                                                                                                        
+# }
+# proc propagate {cellpath otherInfo } {                                                               
+#                                                                                                              
+# 	set cell_handle [get_bd_cells $cellpath]                                                                 
+# 	set all_busif [get_bd_intf_pins $cellpath/*]		                                                     
+# 	set axi_standard_param_list [list ID_WIDTH AWUSER_WIDTH ARUSER_WIDTH WUSER_WIDTH RUSER_WIDTH BUSER_WIDTH]
+# 	                                                                                                         
+# 	foreach busif $all_busif {                                                                               
+# 		if { [string equal -nocase [get_property CONFIG.PROTOCOL $busif] "AXI4"] != 1 } {                  
+# 			continue                                                                                         
+# 		}                                                                                                    
+# 		if { [string equal -nocase [get_property MODE $busif] "slave"] != 1 } {                            
+# 			continue                                                                                         
+# 		}			                                                                                         
+# 	                                                                                                         
+# 		set busif_name [get_property NAME $busif]		                                                     
+# 		foreach tparam $axi_standard_param_list {			                                                 
+# 			set busif_param_name "C_${busif_name}_${tparam}"			                                     
+#                                                                                                              
+# 			set val_on_cell_intf_pin [get_property CONFIG.${tparam} $busif]                                  
+# 			set val_on_cell [get_property CONFIG.${busif_param_name} $cell_handle]                           
+# 			                                                                                                 
+# 			if { [string equal -nocase $val_on_cell_intf_pin $val_on_cell] != 1 } {                          
+# 				#override property of bd_interface_net to bd_cell -- only for slaves.  May check for supported values..
+# 				if { $val_on_cell_intf_pin != "" } {                                                         
+# 					set_property CONFIG.${busif_param_name} $val_on_cell_intf_pin $cell_handle               
+# 				}                                                                                            
+# 			}                                                                                                
+# 		}		                                                                                             
+# 	}                                                                                                        
+# }
+source C:/Users/danie/Documents/Repaso_VIVADO/IP_custom2/ip_repo/SecondIP_PWM_2.0/bd/bd.tcl
+# proc init { cellpath otherInfo } {                                                                   
+#                                                                                                              
+# 	set cell_handle [get_bd_cells $cellpath]                                                                 
+# 	set all_busif [get_bd_intf_pins $cellpath/*]		                                                     
+# 	set axi_standard_param_list [list ID_WIDTH AWUSER_WIDTH ARUSER_WIDTH WUSER_WIDTH RUSER_WIDTH BUSER_WIDTH]
+# 	set full_sbusif_list [list  ]
+# 			                                                                                                 
+# 	foreach busif $all_busif {                                                                               
+# 		if { [string equal -nocase [get_property MODE $busif] "slave"] == 1 } {                            
+# 			set busif_param_list [list]                                                                      
+# 			set busif_name [get_property NAME $busif]					                                     
+# 			if { [lsearch -exact -nocase $full_sbusif_list $busif_name ] == -1 } {					         
+# 			    continue                                                                                     
+# 			}                                                                                                
+# 			foreach tparam $axi_standard_param_list {                                                        
+# 				lappend busif_param_list "C_${busif_name}_${tparam}"                                       
+# 			}                                                                                                
+# 			bd::mark_propagate_only $cell_handle $busif_param_list			                                 
+# 		}		                                                                                             
+# 	}                                                                                                        
+# }
+# proc pre_propagate {cellpath otherInfo } {                                                           
+#                                                                                                              
+# 	set cell_handle [get_bd_cells $cellpath]                                                                 
+# 	set all_busif [get_bd_intf_pins $cellpath/*]		                                                     
+# 	set axi_standard_param_list [list ID_WIDTH AWUSER_WIDTH ARUSER_WIDTH WUSER_WIDTH RUSER_WIDTH BUSER_WIDTH]
+# 	                                                                                                         
+# 	foreach busif $all_busif {	                                                                             
+# 		if { [string equal -nocase [get_property CONFIG.PROTOCOL $busif] "AXI4"] != 1 } {                  
+# 			continue                                                                                         
+# 		}                                                                                                    
+# 		if { [string equal -nocase [get_property MODE $busif] "master"] != 1 } {                           
+# 			continue                                                                                         
+# 		}			                                                                                         
+# 		                                                                                                     
+# 		set busif_name [get_property NAME $busif]			                                                 
+# 		foreach tparam $axi_standard_param_list {		                                                     
+# 			set busif_param_name "C_${busif_name}_${tparam}"			                                     
+# 			                                                                                                 
+# 			set val_on_cell_intf_pin [get_property CONFIG.${tparam} $busif]                                  
+# 			set val_on_cell [get_property CONFIG.${busif_param_name} $cell_handle]                           
+# 			                                                                                                 
+# 			if { [string equal -nocase $val_on_cell_intf_pin $val_on_cell] != 1 } {                          
+# 				if { $val_on_cell != "" } {                                                                  
+# 					set_property CONFIG.${tparam} $val_on_cell $busif                                        
+# 				}                                                                                            
+# 			}			                                                                                     
+# 		}		                                                                                             
+# 	}                                                                                                        
+# }
+# proc propagate {cellpath otherInfo } {                                                               
+#                                                                                                              
+# 	set cell_handle [get_bd_cells $cellpath]                                                                 
+# 	set all_busif [get_bd_intf_pins $cellpath/*]		                                                     
+# 	set axi_standard_param_list [list ID_WIDTH AWUSER_WIDTH ARUSER_WIDTH WUSER_WIDTH RUSER_WIDTH BUSER_WIDTH]
+# 	                                                                                                         
+# 	foreach busif $all_busif {                                                                               
+# 		if { [string equal -nocase [get_property CONFIG.PROTOCOL $busif] "AXI4"] != 1 } {                  
+# 			continue                                                                                         
+# 		}                                                                                                    
+# 		if { [string equal -nocase [get_property MODE $busif] "slave"] != 1 } {                            
+# 			continue                                                                                         
+# 		}			                                                                                         
+# 	                                                                                                         
+# 		set busif_name [get_property NAME $busif]		                                                     
+# 		foreach tparam $axi_standard_param_list {			                                                 
+# 			set busif_param_name "C_${busif_name}_${tparam}"			                                     
+#                                                                                                              
+# 			set val_on_cell_intf_pin [get_property CONFIG.${tparam} $busif]                                  
+# 			set val_on_cell [get_property CONFIG.${busif_param_name} $cell_handle]                           
+# 			                                                                                                 
+# 			if { [string equal -nocase $val_on_cell_intf_pin $val_on_cell] != 1 } {                          
+# 				#override property of bd_interface_net to bd_cell -- only for slaves.  May check for supported values..
+# 				if { $val_on_cell_intf_pin != "" } {                                                         
+# 					set_property CONFIG.${busif_param_name} $val_on_cell_intf_pin $cell_handle               
+# 				}                                                                                            
+# 			}                                                                                                
+# 		}		                                                                                             
+# 	}                                                                                                        
+# }
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 16 16:37:58 2020...

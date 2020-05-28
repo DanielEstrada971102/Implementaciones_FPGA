@@ -1,0 +1,571 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-atexit.o)
+                              c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o (atexit)
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-exit.o)
+                              c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o (exit)
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-fini.o)
+                              c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o (__libc_fini_array)
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-impure.o)
+                              c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-exit.o) (_global_impure_ptr)
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-init.o)
+                              c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o (__libc_init_array)
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-memset.o)
+                              c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o (memset)
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-__atexit.o)
+                              c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-atexit.o) (__register_exitproc)
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-__call_atexit.o)
+                              c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-exit.o) (__call_exitprocs)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crti.o
+ .data          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crti.o
+ .bss           0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crti.o
+ .data          0x0000000000000000        0x4 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtbegin.o
+ .data          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o
+ .bss           0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .group         0x0000000000000000        0xc ./source/ledControlCustom.o
+ .text          0x0000000000000000        0x0 ./source/ledControlCustom.o
+ .data          0x0000000000000000        0x0 ./source/ledControlCustom.o
+ .bss           0x0000000000000000        0x0 ./source/ledControlCustom.o
+ .data          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-atexit.o)
+ .bss           0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-atexit.o)
+ .data          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-fini.o)
+ .bss           0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-fini.o)
+ .text          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-__atexit.o)
+ .bss           0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-__atexit.o)
+ .data          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-__call_atexit.o)
+ .text          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtend.o
+ .data          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtend.o
+ .bss           0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtend.o
+ .text          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtn.o
+ .data          0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtn.o
+ .bss           0x0000000000000000        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crti.o
+LOAD c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtbegin.o
+LOAD c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o
+LOAD ./source/ledControlCustom.o
+START GROUP
+LOAD c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp\libgcc.a
+LOAD c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a
+LOAD c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libc.a
+END GROUP
+LOAD c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtend.o
+LOAD c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtn.o
+                [!provide]                        PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x8000))
+                0x0000000000008000                . = SEGMENT_START ("text-segment", 0x8000)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+                0x0000000000008000       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000008000       0x24 linker stubs
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn        0x0000000000008024        0x0
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+                [!provide]                        PROVIDE (__rel_iplt_start = .)
+ *(.rel.iplt)
+ .rel.iplt      0x0000000000008024        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtbegin.o
+                [!provide]                        PROVIDE (__rel_iplt_end = .)
+
+.rela.dyn       0x0000000000008024        0x0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init           0x0000000000008024        0xc
+ *(SORT_NONE(.init))
+ .init          0x0000000000008024        0x4 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crti.o
+                0x0000000000008024                _init
+ .init          0x0000000000008028        0x8 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtn.o
+
+.plt
+ *(.plt)
+
+.iplt           0x0000000000008030        0x0
+ *(.iplt)
+ .iplt          0x0000000000008030        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtbegin.o
+
+.text           0x0000000000008030      0x5f8
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000008030       0xb4 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtbegin.o
+ .text          0x00000000000080e4      0x104 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o
+                0x00000000000080e4                _start
+                0x00000000000080e4                _mainCRTStartup
+ .text.main     0x00000000000081e8       0xfc ./source/ledControlCustom.o
+                0x00000000000081e8                main
+ .text          0x00000000000082e4       0x14 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-atexit.o)
+                0x00000000000082e4                atexit
+ .text          0x00000000000082f8       0x28 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-exit.o)
+                0x00000000000082f8                exit
+ .text          0x0000000000008320       0x30 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-fini.o)
+                0x0000000000008320                __libc_fini_array
+ .text          0x0000000000008350       0x50 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-init.o)
+                0x0000000000008350                __libc_init_array
+ .text          0x00000000000083a0       0xb0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-memset.o)
+                0x00000000000083a0                memset
+ .text          0x0000000000008450       0xd4 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-__atexit.o)
+                0x0000000000008450                __register_exitproc
+ .text          0x0000000000008524      0x104 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-__call_atexit.o)
+                0x0000000000008524                __call_exitprocs
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x0000000000008628        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x0000000000008628        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x0000000000008628        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x0000000000008628        0x0 linker stubs
+
+.fini           0x0000000000008628        0xc
+ *(SORT_NONE(.fini))
+ .fini          0x0000000000008628        0x4 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crti.o
+                0x0000000000008628                _fini
+ .fini          0x000000000000862c        0x8 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtn.o
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000008634       0x68
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000008634       0x64 ./source/ledControlCustom.o
+ .rodata        0x0000000000008698        0x4 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-impure.o)
+                0x0000000000008698                _global_impure_ptr
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                [!provide]                        PROVIDE (__exidx_start = .)
+
+.ARM.exidx      0x000000000000869c        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x000000000000869c        0x8 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o
+                [!provide]                        PROVIDE (__exidx_end = .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x00000000000086a4        0x4
+ *(.eh_frame)
+ .eh_frame      0x00000000000086a4        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtbegin.o
+ .eh_frame      0x00000000000086a4        0x4 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtend.o
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x00000000000186a8                . = (ALIGN (CONSTANT (MAXPAGESIZE)) + (. & (CONSTANT (MAXPAGESIZE) - 0x1)))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata          0x00000000000186a8        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x00000000000186a8        0x0
+                0x00000000000186a8                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x00000000000186a8                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x00000000000186a8        0x4
+                0x00000000000186a8                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x00000000000186a8        0x4 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtbegin.o
+                0x00000000000186ac                PROVIDE (__init_array_end = .)
+
+.fini_array     0x00000000000186ac        0x4
+                0x00000000000186ac                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x00000000000186ac        0x4 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtbegin.o
+                0x00000000000186b0                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic
+ *(.dynamic)
+
+.got            0x00000000000186b0        0x0
+ *(.got.plt)
+ *(.igot.plt)
+ .igot.plt      0x00000000000186b0        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtbegin.o
+ *(.got)
+ *(.igot)
+
+.data           0x00000000000186b0      0x430
+                0x00000000000186b0                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00000000000186b0      0x430 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-impure.o)
+                0x00000000000186b0                _impure_ptr
+
+.tm_clone_table
+                0x0000000000018ae0        0x0
+ .tm_clone_table
+                0x0000000000018ae0        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtbegin.o
+ .tm_clone_table
+                0x0000000000018ae0        0x0 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtend.o
+
+.data1
+ *(.data1)
+                0x0000000000018ae0                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000018ae0                . = .
+                0x0000000000018ae0                __bss_start = .
+                0x0000000000018ae0                __bss_start__ = .
+
+.bss            0x0000000000018ae0       0x1c
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000018ae0       0x1c c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtbegin.o
+ *(COMMON)
+                0x0000000000018afc                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0000000000018afc                _bss_end__ = .
+                0x0000000000018afc                __bss_end__ = .
+                0x0000000000018afc                . = ALIGN (0x4)
+                0x0000000000018afc                . = SEGMENT_START ("ldata-segment", .)
+                0x0000000000018afc                . = ALIGN (0x4)
+                0x0000000000018afc                __end__ = .
+                0x0000000000018afc                _end = .
+                [!provide]                        PROVIDE (end = .)
+
+.stack          0x0000000000080000        0x0
+                0x0000000000080000                _stack = .
+ *(.stack)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtbegin.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000011       0x12 ./source/ledControlCustom.o
+ .comment       0x0000000000000011       0x12 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-atexit.o)
+ .comment       0x0000000000000011       0x12 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-exit.o)
+ .comment       0x0000000000000011       0x12 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-fini.o)
+ .comment       0x0000000000000011       0x12 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-impure.o)
+ .comment       0x0000000000000011       0x12 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-init.o)
+ .comment       0x0000000000000011       0x12 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-memset.o)
+ .comment       0x0000000000000011       0x12 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-__atexit.o)
+ .comment       0x0000000000000011       0x12 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-__call_atexit.o)
+ .comment       0x0000000000000011       0x12 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtend.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0x40
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o
+ .debug_aranges
+                0x0000000000000020       0x20 ./source/ledControlCustom.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0xa87
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x26 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o
+ .debug_info    0x0000000000000026      0xa61 ./source/ledControlCustom.o
+
+.debug_abbrev   0x0000000000000000      0x227
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x14 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o
+ .debug_abbrev  0x0000000000000014      0x213 ./source/ledControlCustom.o
+
+.debug_line     0x0000000000000000      0x50e
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0xd1 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o
+ .debug_line    0x00000000000000d1      0x43d ./source/ledControlCustom.o
+
+.debug_frame    0x0000000000000000       0x30
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x30 ./source/ledControlCustom.o
+
+.debug_str      0x0000000000000000     0xdfc6
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0xfc c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o
+ .debug_str     0x00000000000000fc     0xdeca ./source/ledControlCustom.o
+                                       0xe121 (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000       0x10
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x10 ./source/ledControlCustom.o
+
+.debug_macro    0x0000000000000000     0x2fae
+ *(.debug_macro)
+ .debug_macro   0x0000000000000000      0x1d7 ./source/ledControlCustom.o
+ .debug_macro   0x00000000000001d7      0xa78 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000000c4f       0x1c ./source/ledControlCustom.o
+ .debug_macro   0x0000000000000c6b      0x588 ./source/ledControlCustom.o
+ .debug_macro   0x00000000000011f3      0x371 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000001564       0x22 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000001586       0x8e ./source/ledControlCustom.o
+ .debug_macro   0x0000000000001614       0x51 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000001665       0xef ./source/ledControlCustom.o
+ .debug_macro   0x0000000000001754       0x6a ./source/ledControlCustom.o
+ .debug_macro   0x00000000000017be      0x1df ./source/ledControlCustom.o
+ .debug_macro   0x000000000000199d      0x174 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000001b11       0x4a ./source/ledControlCustom.o
+ .debug_macro   0x0000000000001b5b       0x36 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000001b91      0x413 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000001fa4       0x58 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000001ffc       0x17 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000002013       0x35 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000002048       0x34 ./source/ledControlCustom.o
+ .debug_macro   0x000000000000207c      0x330 ./source/ledControlCustom.o
+ .debug_macro   0x00000000000023ac      0x10b ./source/ledControlCustom.o
+ .debug_macro   0x00000000000024b7       0x52 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000002509       0x1f ./source/ledControlCustom.o
+ .debug_macro   0x0000000000002528       0x43 ./source/ledControlCustom.o
+ .debug_macro   0x000000000000256b       0x20 ./source/ledControlCustom.o
+ .debug_macro   0x000000000000258b      0x18e ./source/ledControlCustom.o
+ .debug_macro   0x0000000000002719       0x10 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000002729       0x35 ./source/ledControlCustom.o
+ .debug_macro   0x000000000000275e       0x58 ./source/ledControlCustom.o
+ .debug_macro   0x00000000000027b6       0x16 ./source/ledControlCustom.o
+ .debug_macro   0x00000000000027cc      0x692 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000002e5e       0x94 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000002ef2       0x54 ./source/ledControlCustom.o
+ .debug_macro   0x0000000000002f46       0x68 ./source/ledControlCustom.o
+
+.debug_addr
+ *(.debug_addr)
+
+.ARM.attributes
+                0x0000000000000000       0x2b
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x1c c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crti.o
+ .ARM.attributes
+                0x000000000000001c       0x2a c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtbegin.o
+ .ARM.attributes
+                0x0000000000000046       0x1a c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/crt0.o
+ .ARM.attributes
+                0x0000000000000060       0x2d ./source/ledControlCustom.o
+ .ARM.attributes
+                0x000000000000008d       0x2a c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x00000000000000b7       0x2a c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000000000000e1       0x2a c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-fini.o)
+ .ARM.attributes
+                0x000000000000010b       0x30 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000000000000013b       0x2a c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000165       0x2a c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000000000000018f       0x2a c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x00000000000001b9       0x2a c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x00000000000001e3       0x30 c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtend.o
+ .ARM.attributes
+                0x0000000000000213       0x1c c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/nofp/crtn.o
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(LedControlCustom.elf elf32-littlearm)

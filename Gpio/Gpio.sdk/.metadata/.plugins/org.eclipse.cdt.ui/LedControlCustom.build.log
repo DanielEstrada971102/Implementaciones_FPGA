@@ -1,0 +1,32 @@
+22:11:53 **** Build of configuration Debug for project LedControlCustom ****
+make all 
+'Building file: ../source/ledControlCustom.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -std=gnu11 -MMD -MP -MF"source/ledControlCustom.d" -MT"source/ledControlCustom.o" -c -o "source/ledControlCustom.o" "../source/ledControlCustom.c"
+'Finished building: ../source/ledControlCustom.c'
+' '
+'Building target: LedControlCustom.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -Xlinker --gc-sections -Wl,-Map,"LedControlCustom.map" -o "LedControlCustom.elf"  ./source/ledControlCustom.o   
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./source/ledControlCustom.o: in function `main':
+C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:19: undefined reference to `XGpio_Initialize'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:20: undefined reference to `XGpio_Initialize'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:23: undefined reference to `XGpio_DiscreteRead'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:28: undefined reference to `XGpio_DiscreteWrite'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:29: undefined reference to `xil_printf'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:27: undefined reference to `XGpio_DiscreteRead'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:34: undefined reference to `XGpio_DiscreteWrite'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:35: undefined reference to `xil_printf'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:33: undefined reference to `XGpio_DiscreteRead'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:40: undefined reference to `XGpio_DiscreteWrite'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:41: undefined reference to `xil_printf'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:39: undefined reference to `XGpio_DiscreteRead'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:45: undefined reference to `XGpio_DiscreteWrite'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\danie\Documents\Repaso_VIVADO\Gpio\Gpio.sdk\LedControlCustom\Debug/../source/ledControlCustom.c:46: undefined reference to `xil_printf'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/nofp\libg.a(lib_a-exit.o): in function `exit':
+exit.c:(.text+0x1a): undefined reference to `_exit'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:44: LedControlCustom.elf] Error 1
+
+22:11:54 Build Finished (took 1s.182ms)
+

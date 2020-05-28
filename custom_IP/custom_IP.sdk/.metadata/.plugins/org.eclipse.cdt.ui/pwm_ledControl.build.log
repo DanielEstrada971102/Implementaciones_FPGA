@@ -1,0 +1,23 @@
+23:58:54 **** Auto Build of configuration Debug for project pwm_ledControl ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/PWMled.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PWMled.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pwm_ledControl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PWMled.d" -MT"src/PWMled.o" -o "src/PWMled.o" "../src/PWMled.c"
+'Finished building: ../src/PWMled.c'
+' '
+'Building target: pwm_ledControl.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pwm_ledControl_bsp/ps7_cortexa9_0/lib -o "pwm_ledControl.elf"  ./src/PWMled.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_ledControl.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_ledControl.elf  |tee "pwm_ledControl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28636	   2184	  22632	  53452	   d0cc	pwm_ledControl.elf
+'Finished building: pwm_ledControl.elf.size'
+' '
+
+23:58:56 Build Finished (took 1s.636ms)
+

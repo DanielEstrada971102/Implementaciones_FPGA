@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 21 03:35:50 2020
+# Process ID: 14500
+# Current directory: C:/Users/danie/Documents/Repaso_VIVADO/custom_IP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12040 C:\Users\danie\Documents\Repaso_VIVADO\custom_IP\custom_IP.xpr
+# Log file: C:/Users/danie/Documents/Repaso_VIVADO/custom_IP/vivado.log
+# Journal file: C:/Users/danie/Documents/Repaso_VIVADO/custom_IP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/danie/Documents/Repaso_VIVADO/custom_IP/custom_IP.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/danie/Documents/Repaso_VIVADO/custom_IP/custom_IP.srcs/sources_1/bd/custom_Ip_design/custom_Ip_design.bd}
+launch_sdk -workspace C:/Users/danie/Documents/Repaso_VIVADO/custom_IP/custom_IP.sdk -hwspec C:/Users/danie/Documents/Repaso_VIVADO/custom_IP/custom_IP.sdk/custom_Ip_design_wrapper.hdf
+write_bd_tcl -force C:/Users/danie/Documents/Repaso_VIVADO/custom_IP/custom_Ip_pwm.tcl
+close_project
+open_project C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.srcs/sources_1/bd/comblock_desing/comblock_desing.bd}
+startgroup
+set_property -dict [list CONFIG.REGS_IN_DEPTH {16} CONFIG.DRAM_IO_ENA {false} CONFIG.FIFO_IN_ENA {false}] [get_bd_cells comblock_ip]
+endgroup
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg1_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg2_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg3_i]
+connect_bd_net [get_bd_pins comblock_ip/reg4_i] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+disconnect_bd_net /rst_ps7_0_100M_peripheral_aresetn [get_bd_pins comblock_ip/reg4_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg4_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg5_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg6_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg7_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg8_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg9_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg10_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg11_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg12_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg13_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg14_i]
+connect_bd_net [get_bd_ports sws] [get_bd_pins comblock_ip/reg15_i]
+validate_bd_design
+save_bd_design
+reset_run synth_1
+reset_run comblock_desing_comblock_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+write_bd_tcl -force C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_sw_led.tcl

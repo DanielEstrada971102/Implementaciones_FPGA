@@ -1,0 +1,23 @@
+18:48:42 **** Build of configuration Debug for project PwmLed2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pwmLed.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pwmLed.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PwmLed2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pwmLed.d" -MT"src/pwmLed.o" -o "src/pwmLed.o" "../src/pwmLed.c"
+'Finished building: ../src/pwmLed.c'
+' '
+'Building target: PwmLed2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PwmLed2_bsp/ps7_cortexa9_0/lib -o "PwmLed2.elf"  ./src/pwmLed.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PwmLed2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PwmLed2.elf  |tee "PwmLed2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18868	   1144	  22568	  42580	   a654	PwmLed2.elf
+'Finished building: PwmLed2.elf.size'
+' '
+
+18:48:44 Build Finished (took 2s.274ms)
+

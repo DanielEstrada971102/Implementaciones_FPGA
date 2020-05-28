@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Mar 14 22:42:38 2020
+# Process ID: 8972
+# Current directory: C:/Users/danie/Documents/Repaso_VIVADO/gpio_emio/gpio_emio.runs/emio_desing_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log emio_desing_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source emio_desing_processing_system7_0_0.tcl
+# Log file: C:/Users/danie/Documents/Repaso_VIVADO/gpio_emio/gpio_emio.runs/emio_desing_processing_system7_0_0_synth_1/emio_desing_processing_system7_0_0.vds
+# Journal file: C:/Users/danie/Documents/Repaso_VIVADO/gpio_emio/gpio_emio.runs/emio_desing_processing_system7_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source emio_desing_processing_system7_0_0.tcl -notrace

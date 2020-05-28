@@ -1,0 +1,15 @@
+vhdl xil_defaultlib  \
+"../../../bd/Comblock_desing/ipshared/2cb9/hdl/axil.vhdl" \
+"../../../bd/Comblock_desing/ipshared/2cb9/hdl/axif.vhdl" \
+"../../../bd/Comblock_desing/ipshared/2cb9/hdl/tdpram.vhdl" \
+"../../../bd/Comblock_desing/ipshared/2cb9/hdl/graysync.vhdl" \
+"../../../bd/Comblock_desing/ipshared/2cb9/hdl/fifo.vhdl" \
+"../../../bd/Comblock_desing/ipshared/2cb9/hdl/comblock.vhdl" \
+"../../../bd/Comblock_desing/ipshared/2cb9/hdl/axi_comblock.vhdl" \
+"../../../bd/Comblock_desing/ip/Comblock_desing_comblock_0_0/sim/Comblock_desing_comblock_0_0.vhd" \
+"../../../bd/Comblock_desing/ip/Comblock_desing_c_counter_binary_0_0/sim/Comblock_desing_c_counter_binary_0_0.vhd" \
+"../../../bd/Comblock_desing/ip/Comblock_desing_c_counter_binary_1_0/sim/Comblock_desing_c_counter_binary_1_0.vhd" \
+"../../../bd/Comblock_desing/ip/Comblock_desing_rst_ps7_0_100M_0/sim/Comblock_desing_rst_ps7_0_100M_0.vhd" \
+"../../../bd/Comblock_desing/sim/Comblock_desing.vhd" \
+
+nosort

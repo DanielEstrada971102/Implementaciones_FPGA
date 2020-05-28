@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Mar 14 00:39:50 2020
+# Process ID: 4396
+# Current directory: C:/Users/danie/Documents/Repaso_VIVADO/pulse_generator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6632 C:\Users\danie\Documents\Repaso_VIVADO\pulse_generator\pulse_generator.xpr
+# Log file: C:/Users/danie/Documents/Repaso_VIVADO/pulse_generator/vivado.log
+# Journal file: C:/Users/danie/Documents/Repaso_VIVADO/pulse_generator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/danie/Documents/Repaso_VIVADO/pulse_generator/pulse_generator.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 740.086 ; gain = 110.129
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sat Mar 14 00:41:45 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Repaso_VIVADO/pulse_generator/pulse_generator.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/danie/Documents/Repaso_VIVADO/ARTYZ720.xdc]
+Finished Parsing XDC File [C:/Users/danie/Documents/Repaso_VIVADO/ARTYZ720.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1089.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 1244.703 ; gain = 472.664
+launch_runs impl_1 -jobs 2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1659.598 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1682.398 ; gain = 8.969
+[Sat Mar 14 00:45:51 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Repaso_VIVADO/pulse_generator/pulse_generator.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Mar 14 00:47:31 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Repaso_VIVADO/pulse_generator/pulse_generator.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 14 00:54:51 2020...

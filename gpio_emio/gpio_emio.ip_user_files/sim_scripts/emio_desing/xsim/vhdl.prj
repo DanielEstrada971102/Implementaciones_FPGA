@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/emio_desing/sim/emio_desing.vhd" \
+
+nosort
