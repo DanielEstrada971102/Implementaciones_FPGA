@@ -1,7 +1,7 @@
 # Implementaciones en FPGA con Vivado
 
 En este repositorio se puede encontrar un conjunto de implementaciones sencillas que sirven como iniciación al trabajo con FPGAs 
-desde el software *Vivado Design suite*(en este caso se utilizó la versión [2019.1](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2019-1.html),y la tarjeta [Arty Z7-20](https://store.digilentinc.com/arty-z7-apsoc-zynq-7000-development-board-for-makers-and-hobbyists/)).
+desde el software *Vivado Design suite*(en este caso se utilizó la versión [2019.1](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2019-1.html) y la tarjeta [Arty Z7-20](https://store.digilentinc.com/arty-z7-apsoc-zynq-7000-development-board-for-makers-and-hobbyists/)).
 
 Los proyectos se agruparon en 4 carpetas: 
 1. **Repaso_Vivado:** En donde se encuentran algunos ejemplos del manejo básico de los IPs (_Intellectual properties_) proporcionados por defecto con el software, también, ejemplos de la personalización de un IP controlado por AXI_BUS desde el procesador. Además se utiliza el [SDK](https://www.xilinx.com/products/design-tools/embedded-software/sdk.html)(_Software development kid_) para la programación del procesador de la tarjeta y el control de los diseños implementados en el la electrónica programable.
