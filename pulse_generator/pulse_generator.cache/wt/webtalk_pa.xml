@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Mar 24 15:58:54 2020">
+<application name="pa" timeStamp="Thu May 28 02:39:57 2020">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="efcbc1c2125b47efba0e6a799511e5cb" type="ProjectID"/>
 <property name="ProjectIteration" value="12" type="ProjectIteration"/>
@@ -43,7 +43,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CmdMsgDialog_OK" value="5" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_ADD_FILES" value="3" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_COPY_CONSTRAINTS_FILES_INTO_PROJECT" value="1" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="40" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="42" type="GuiHandlerData"/>
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="21" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="HPopupTitle_CLOSE" value="1" type="GuiHandlerData"/>
@@ -89,9 +89,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="TclObjectView_RESET_PROPERTIES" value="1" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="35" type="GuiMode"/>
+<property name="GuiMode" value="71" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="27" type="TclMode"/>
+<property name="TclMode" value="60" type="TclMode"/>
 </item>
 </section>
 </application>

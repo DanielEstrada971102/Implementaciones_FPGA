@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 28 02:26:40 2020
+# Process ID: 14296
+# Current directory: C:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/comblock
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4680 C:\Users\danie\Documents\Implementaciones_FPGA\Repaso_Vivado\comblock\comblock.xpr
+# Log file: C:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/comblock/vivado.log
+# Journal file: C:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/comblock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/comblock/comblock.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/danie/Documents/Repaso_VIVADO/comblock' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/core-comblock-master', nor could it be found using path 'C:/Users/danie/Documents/Repaso_VIVADO/core-comblock-master'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/core-comblock-master'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'Comblock_desing.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+Comblock_desing_comblock_0_0
+
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:21 . Memory (MB): peak = 863.879 ; gain = 21.512
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu May 28 02:27:59 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/comblock/comblock.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 28 02:30:49 2020...

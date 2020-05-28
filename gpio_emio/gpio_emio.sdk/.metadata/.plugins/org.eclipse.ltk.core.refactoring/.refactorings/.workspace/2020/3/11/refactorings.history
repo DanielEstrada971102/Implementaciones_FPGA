@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;led_EMIO/src/LedEMIOcontrol&apos;" deleteContents="false" description="Delete resource &apos;led_EMIO/src/LedEMIOcontrol&apos;" element1="/led_EMIO/src/LedEMIOcontrol" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1584166275055"/>
-</session>

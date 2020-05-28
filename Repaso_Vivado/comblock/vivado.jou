@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 28 02:26:40 2020
+# Process ID: 14296
+# Current directory: C:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/comblock
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4680 C:\Users\danie\Documents\Implementaciones_FPGA\Repaso_Vivado\comblock\comblock.xpr
+# Log file: C:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/comblock/vivado.log
+# Journal file: C:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/comblock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/comblock/comblock.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
