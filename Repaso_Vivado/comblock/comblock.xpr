@@ -68,29 +68,29 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_c_counter_binary_0_0/Comblock_desing_c_counter_binary_0_0.xci">
+          <Proxy FileSetName="Comblock_desing_c_counter_binary_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_processing_system7_0_0/Comblock_desing_processing_system7_0_0.xci">
+          <Proxy FileSetName="Comblock_desing_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_c_counter_binary_1_0/Comblock_desing_c_counter_binary_1_0.xci">
+          <Proxy FileSetName="Comblock_desing_c_counter_binary_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_comblock_0_0/Comblock_desing_comblock_0_0.xci">
+          <Proxy FileSetName="Comblock_desing_comblock_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_auto_pc_0/Comblock_desing_auto_pc_0.xci">
+          <Proxy FileSetName="Comblock_desing_auto_pc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_auto_pc_1/Comblock_desing_auto_pc_1.xci">
+          <Proxy FileSetName="Comblock_desing_auto_pc_1"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_xbar_0/Comblock_desing_xbar_0.xci">
           <Proxy FileSetName="Comblock_desing_xbar_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_rst_ps7_0_100M_0/Comblock_desing_rst_ps7_0_100M_0.xci">
           <Proxy FileSetName="Comblock_desing_rst_ps7_0_100M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_auto_pc_1/Comblock_desing_auto_pc_1.xci">
-          <Proxy FileSetName="Comblock_desing_auto_pc_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_auto_pc_0/Comblock_desing_auto_pc_0.xci">
-          <Proxy FileSetName="Comblock_desing_auto_pc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_c_counter_binary_1_0/Comblock_desing_c_counter_binary_1_0.xci">
-          <Proxy FileSetName="Comblock_desing_c_counter_binary_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_processing_system7_0_0/Comblock_desing_processing_system7_0_0.xci">
-          <Proxy FileSetName="Comblock_desing_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_comblock_0_0/Comblock_desing_comblock_0_0.xci">
-          <Proxy FileSetName="Comblock_desing_comblock_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Comblock_desing.bd" FileRelPathName="ip/Comblock_desing_c_counter_binary_0_0/Comblock_desing_c_counter_binary_0_0.xci">
-          <Proxy FileSetName="Comblock_desing_c_counter_binary_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/Comblock_desing/hdl/Comblock_desing_wrapper.vhd">

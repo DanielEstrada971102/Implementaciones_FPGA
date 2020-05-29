@@ -2,11 +2,11 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # 
-# Start of session at: Fri Mar 27 01:16:43 2020
-# Process ID: 9508
-# Current directory: C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/webtalk
+# Start of session at: Thu May 28 21:57:51 2020
+# Process ID: 17316
+# Current directory: C:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/comblock/comblock.sdk/webtalk
 # Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
-# Log file: C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/webtalk/webtalk.log
-# Journal file: C:/Users/danie/Documents/Repaso_VIVADO/comblock/comblock.sdk/webtalk\webtalk.jou
+# Log file: C:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/comblock/comblock.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/danie/Documents/Implementaciones_FPGA/Repaso_Vivado/comblock/comblock.sdk/webtalk\webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

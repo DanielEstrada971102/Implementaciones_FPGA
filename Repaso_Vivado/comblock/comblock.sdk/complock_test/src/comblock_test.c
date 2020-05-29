@@ -23,7 +23,6 @@
 int main(){
 
 	int value, sw;
-	int Dram_values[1024];
 	int FIFO_values[1024];
 
 	// Checking the loopBack of REG1================
@@ -32,13 +31,6 @@ int main(){
 
 	xil_printf("this is the value readed from Reg1_IN : %d\n\r", value);
 
-	//No se puedo chequear la DRAM porque no se encontre la dirección base.
-	//==============================================
-	// checking the content of the DRAM
-	/*cbReadBulk(Dram_values, baseaddr_dram,0);
-	for(int i=0; i < 1024; i++){
-		xil_printf("DRAM[%d] = %d \n\r", i, Dram_values[i]);
-	}*/
 	// checking the content of the FIFO memory
 	xil_printf("status = %d\n\r", cbRead(baseaddr_regs, reg_FIFO_inVal + 2));
 	for(int i=0; i<1024; i++){
@@ -48,7 +40,7 @@ int main(){
 			xil_printf("FIFO_val[%d] = %d \n\r", i, FIFO_values[i]);
 	xil_printf("status = %d\n\r", cbRead(baseaddr_regs, reg_FIFO_inVal + 2));
 
-	// conencting switches to leds
+	// Connecting switches to leds
 	while(sw != 0xC){
 		sw = cbRead(baseaddr_regs, reg_in0);
 		cbWrite(baseaddr_regs, reg_out0, sw);
