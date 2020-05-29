@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Apr 10 23:25:53 2020
+# Process ID: 16276
+# Current directory: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1536 C:\Users\danie\Documents\Lab3_FPGA_codes\System_etapa1_V2\System_etapa1_V2.xpr
+# Log file: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/vivado.log
+# Journal file: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 858.633 ; gain = 11.121
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Apr 10 23:28:28 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 858.633 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A7006CA
+ERROR: [Labtools 27-3244] Could not start or connect to xsdb server.
+open_hw_target: Time (s): cpu = 00:00:09 ; elapsed = 00:01:09 . Memory (MB): peak = 1930.609 ; gain = 1071.977
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/S1_Reception.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Apr 10 23:43:35 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+[Fri Apr 10 23:43:35 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/S1_Reception.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Apr 10 23:58:52 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+[Fri Apr 10 23:58:52 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 00:01:35 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+[Sat Apr 11 00:01:35 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/S1_Reception.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 00:11:19 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+[Sat Apr 11 00:11:19 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/S1_Reception.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 11 00:19:00 2020...

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UartRecvMainW</class>
+ <widget class="QMainWindow" name="UartRecvMainW">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>351</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="panelText">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>531</width>
+      <height>251</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonclear">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>20</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Read buf</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comportCombox">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>20</y>
+      <width>92</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="comportLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>COM port:</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="ASCIIButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>320</y>
+      <width>119</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ASCII</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="baudCombox">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>320</y>
+      <width>92</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="baudLabel">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>320</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>baud Rate:</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonclear</sender>
+   <signal>clicked()</signal>
+   <receiver>panelText</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>449</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>449</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,97 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu May 21 00:28:35 2020
+| Host         : DESKTOP-B2I46DP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file S1_Reception_control_sets_placed.rpt
+| Design       : S1_Reception
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    53 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    19 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             139 |           62 |
+| No           | No                    | Yes                    |              11 |            5 |
+| No           | Yes                   | No                     |              28 |            9 |
+| Yes          | No                    | No                     |              85 |           27 |
+| Yes          | No                    | Yes                    |              33 |            9 |
+| Yes          | Yes                   | No                     |             179 |           58 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+----------------------------------+-----------------------------------+------------------+----------------+
+|      Clock Signal     |           Enable Signal          |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++-----------------------+----------------------------------+-----------------------------------+------------------+----------------+
+|  clk_125Mhz_IBUF_BUFG |                                  | S_uart/ut0/data_packet            |                1 |              1 |
+|  clk_125Mhz_IBUF_BUFG | S_uart/state_reg[1]_0            | rst_IBUF                          |                1 |              1 |
+|  clk_125Mhz_IBUF_BUFG | S_uart/ack0                      |                                   |                1 |              1 |
+|  clk_125Mhz_IBUF_BUFG | S_uart/ut0/bit_cnt               | S_uart/ut0/data_packet            |                1 |              4 |
+|  clk_125Mhz_IBUF_BUFG | S_uart/data_in[7]_i_2_n_0        | S_uart/data_in[7]_i_1_n_0         |                4 |              8 |
+|  clk_125Mhz_IBUF_BUFG | S_uart/ur0/E[0]                  |                                   |                2 |              8 |
+|  clk_125Mhz_IBUF_BUFG | S_uart/ut0/data_packet           | S_uart/ut0/data_packet[8]_i_1_n_0 |                3 |              8 |
+|  clk_125Mhz_IBUF_BUFG |                                  | rst_IBUF                          |                5 |             11 |
+|  clk_125Mhz_IBUF_BUFG | S_uart/command_echo0             |                                   |                6 |             12 |
+|  clk_125Mhz_IBUF_BUFG |                                  | S_uart/ur0/clk_cnt[13]_i_1_n_0    |                4 |             13 |
+|  clk_125Mhz_IBUF_BUFG |                                  | S_uart/ut0/clk_cnt[0]_i_1__0_n_0  |                4 |             14 |
+|  clk_125Mhz_IBUF_BUFG | S_uart/command_echo0             | S_uart/Super_string_rx_reg[109]_0 |               11 |             27 |
+|  clk_125Mhz_IBUF_BUFG | S_uart/count_bits_rx0            | S_uart/count_bits_rx[31]_i_1_n_0  |                8 |             30 |
+|  clk_125Mhz_IBUF_BUFG | S_uart/count_bits_tx[31]_i_2_n_0 | S_uart/count_bits_tx[31]_i_1_n_0  |                8 |             30 |
+|  clk_125Mhz_IBUF_BUFG | S_uart/E[0]                      |                                   |                9 |             32 |
+|  clk_125Mhz_IBUF_BUFG | count0__3                        |                                   |                9 |             32 |
+|  clk_125Mhz_IBUF_BUFG | enable_PulseG_reg_n_0            | rst_IBUF                          |                8 |             32 |
+|  clk_125Mhz_IBUF_BUFG | S_uart/command_echo0             | S_uart/enable_PulseG_reg_0        |               23 |             72 |
+|  clk_125Mhz_IBUF_BUFG |                                  |                                   |               62 |            139 |
++-----------------------+----------------------------------+-----------------------------------+------------------+----------------+
+
+

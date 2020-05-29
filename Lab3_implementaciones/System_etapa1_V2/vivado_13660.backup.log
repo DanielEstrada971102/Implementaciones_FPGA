@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 15 01:32:16 2020
+# Process ID: 13660
+# Current directory: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7868 C:\Users\danie\Documents\Lab3_FPGA_codes\System_etapa1_V2\System_etapa1_V2.xpr
+# Log file: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/vivado.log
+# Journal file: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 716.535 ; gain = 99.309
+update_compile_order -fileset sources_1

@@ -1,0 +1,114 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr 11 00:31:25 2020
+# Process ID: 4700
+# Current directory: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16000 C:\Users\danie\Documents\Lab3_FPGA_codes\System_etapa1_V2\System_etapa1_V2.xpr
+# Log file: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/vivado.log
+# Journal file: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 741.434 ; gain = 134.648
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sat Apr 11 00:52:05 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Sat Apr 11 00:54:48 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 00:58:03 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sat Apr 11 01:13:45 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sat Apr 11 01:17:38 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sat Apr 11 01:20:22 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Sat Apr 11 01:22:19 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 01:24:36 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 01:33:42 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+[Sat Apr 11 01:33:42 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 01:49:32 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 01:59:27 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+[Sat Apr 11 01:59:27 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 02:59:13 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+[Sat Apr 11 02:59:13 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 03:36:49 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+[Sat Apr 11 03:36:49 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 04:51:30 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+[Sat Apr 11 04:51:30 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 05:01:35 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+[Sat Apr 11 05:01:35 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sat Apr 11 05:05:20 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sat Apr 11 05:08:20 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 05:09:16 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 05:17:56 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+[Sat Apr 11 05:17:56 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 05:20:13 2020] Launched synth_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/synth_1/runme.log
+[Sat Apr 11 05:20:13 2020] Launched impl_1...
+Run output will be captured here: C:/Users/danie/Documents/Lab3_FPGA_codes/System_etapa1_V2/System_etapa1_V2.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 11 05:38:45 2020...
