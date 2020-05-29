@@ -20,8 +20,12 @@ class selectorGui(Ui_SelectroDeFrecuencias):
         self.serialport = serial.Serial()
         self.serialport.port = "COM9"
         self.serialport.baud = "9600"
-        self.serialport.open()
-
+        
+        try:
+            self.serialport.open()
+        except:
+            pass
+            
         self.redLedIcon = QPixmap("led-red-on.png").scaled(30,30)
         self.greenLedIcon = QPixmap("green-led-on.png").scaled(30,30)
 
