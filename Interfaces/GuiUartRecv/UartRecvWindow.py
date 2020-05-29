@@ -46,10 +46,20 @@ class Ui_UartRecvMainW(object):
 
     def retranslateUi(self, UartRecvMainW):
         _translate = QtCore.QCoreApplication.translate
-        UartRecvMainW.setWindowTitle(_translate("UartRecvMainW", "Simple GUI for Read Message from FTDI"))
+        UartRecvMainW.setWindowTitle(_translate("UartRecvMainW", "MainWindow"))
         self.buttonclear.setText(_translate("UartRecvMainW", "Clear"))
         self.pushButton.setText(_translate("UartRecvMainW", "Read buf"))
         self.comportLabel.setText(_translate("UartRecvMainW", "COM port:"))
         self.ASCIIButton.setText(_translate("UartRecvMainW", "ASCII"))
         self.baudLabel.setText(_translate("UartRecvMainW", "baud Rate:"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    UartRecvMainW = QtWidgets.QMainWindow()
+    ui = Ui_UartRecvMainW()
+    ui.setupUi(UartRecvMainW)
+    UartRecvMainW.show()
+    sys.exit(app.exec_())
 
