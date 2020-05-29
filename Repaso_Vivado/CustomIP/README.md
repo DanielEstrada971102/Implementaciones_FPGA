@@ -8,8 +8,8 @@ De forma rápida se puede mencionar que los pasos clave son:
 <img src="/.images/CIP_packager.jpg" width="400">
 <img src="/.images/CIP_makeIP.jpg" width="600">
 
-En este punto es donde se hace la personalización, hasta acá se tiene solo el esqueleto de un IP con interfaz AXI, a partir de los registros definidos
-se modifica el código fuente para conectar estos a las entradas y salidas del módulo que queremos instanciar (en este caso el módulo que se encuentra 
+En este punto es donde se hace la personalización, hasta acá se tiene solo el esqueleto de un IP con interfaz AXI, a partir de los registros definidos,
+se modifica el código fuente para conectar estos a las entradas y salidas del módulo que queremos instanciar (en este caso el módulo que se encuentra en
 el archivo "pwm_simple.vhd").
 
 <img src="/.images/CIP_source.jpg" width="600">
