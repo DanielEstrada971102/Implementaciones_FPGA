@@ -8,26 +8,23 @@ class Simple_window(QMainWindow):
 	"""
 	def __init__(self):
 		super(Simple_window, self).__init__()
-		self.setGeometry(300, 300, 200, 200) # x, y, w, h
+		self.setGeometry(300, 300, 320, 300) # x, y, w, h
 		self.setWindowTitle("Venta sencilla de prueba")
 		self.initUI()
 
 	def initUI(self):
 		self.label1 = QtWidgets.QLabel(self)
+		self.label1.setGeometry(60,50,200,90)
 		self.label1.setText("This is the first Simple GUI")
-		self.label1.move(50,50)
-
-		#self.entry1 = QtWidgets.QTextLine(self)
-		#self.entry1.setGeometry(10,10, 20, 20)
 
 		self.boton1 = QtWidgets.QPushButton(self)
 		self.boton1.setText("Press to Change the label")
-		self.boton1.setGeometry(50, 110, 130, 30)
+		self.boton1.setGeometry(50, 110, 200, 30)
 		self.boton1.clicked.connect(lambda: self.changeLabel(1))
 
 		self.boton2 = QtWidgets.QPushButton(self)
 		self.boton2.setText("Press to ReChange the label")
-		self.boton2.setGeometry(50, 160, 130, 30)
+		self.boton2.setGeometry(50, 160, 250, 30)
 		self.boton2.clicked.connect(lambda: self.changeLabel(2))
 
 
