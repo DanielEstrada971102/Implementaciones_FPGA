@@ -3,7 +3,7 @@
 Para ver un paso a paso detallado de cómo realizar este ejemplo puede consultar la [guía](https://github.com/DanielEstrada971102/Implementaciones_FPGA/blob/master/Repaso_Vivado/guias/lab_custom_ip.pdf).
 De forma rápida se puede mencionar que los pasos clave son:
 
-1. Utilizar el _Vivado IP Packager_ para crear un una Ip personalizada con interfaz AXI para la comunicación entre el PS y el PL.
+1. Utilizar el _Vivado IP Packager_ para crear un Ip personalizado con interfaz AXI para la comunicación entre el PS y el PL.
 
 <img src="/.images/CIP_packager.jpg" width="400">
 <img src="/.images/CIP_makeIP.jpg" width="600">
