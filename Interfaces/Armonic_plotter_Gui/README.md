@@ -1,4 +1,4 @@
-# visualización gráfica de datos en la interfaz 2
+# visualización gráfica de datos en tiempo real
 
 Este Gui también es una forma de aprender la visualización de datos de forma gráfica, e igual que en el ejemplo de ["Cos_plotter_Gui"](https://github.com/DanielEstrada971102/Implementaciones_FPGA/tree/master/Interfaces/Cos_plotter_Gui)
 se utiliza el _widget_ personalizado "MplWidget". La diferencia en esta interfaz consiste en la utilización de la clase QTimer de PyQt5 para 
