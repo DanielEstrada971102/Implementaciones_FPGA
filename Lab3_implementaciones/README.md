@@ -23,8 +23,8 @@ de lo que se plantea es el siguiente.
 
 <img src="/.images/etapa2.jpg" width="400x">
 
-
-
+En el proceso de culminar la primera etapa, se han implementado dos proyectos. El primero de ellos ("System_Etapa1") solamente ejecuta una rutina para enviar un mensaje al PC por serial cuando uno de los botones de la tarjeta es presionado, a esta implementación se le hizo la correspondiente interfaz para la visualización de la información enviada[("GuiUartRecv")](https://github.com/DanielEstrada971102/Implementaciones_FPGA/tree/master/Interfaces/GuiUartRecv)
+La segunda implementación ("System_Etapa1_V2") va un paso más allá e incluye la opción de una comunicación bidireccional. En este caso, se implementa la comunicación serial para controlar una versión modificada de "pulse_generator", la cual, puede activase y desactivarse, además de cambiarse la frecuencia, a partir de comandos enviados desde el pc. Para esta implementación también se creó la interfaz[("Selector_frecuencias")](https://github.com/DanielEstrada971102/Implementaciones_FPGA/tree/master/Interfaces/Selector_frecuencias)
 
 
 
