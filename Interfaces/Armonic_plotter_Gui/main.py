@@ -11,7 +11,7 @@ class gen_graf(Ui_MainWindow):
 		self.setupUi(MainWindow)
 
 		self.function = ""
-
+		self.counter = 0
 		self.xdata=[]
 		self.ydata=[]
 
@@ -35,6 +35,7 @@ class gen_graf(Ui_MainWindow):
 
 	def run(self):
 		self.timer.start(1000)
+		self.counter = 0
 
 
 	def stop(self):
@@ -57,6 +58,7 @@ class gen_graf(Ui_MainWindow):
 
 		self.widget_grafica.canvas.axes.plot(self.xdata, self.ydata, '-ok')
 		self.widget_grafica.canvas.draw()
+		self.counter += 1
 
 def main():
 	app = QApplication(sys.argv)
