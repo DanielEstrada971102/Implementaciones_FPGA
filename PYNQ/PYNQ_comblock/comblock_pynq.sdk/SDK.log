@@ -1,6 +1,0 @@
-05:04:42 INFO  : Registering command handlers for SDK TCF services
-05:04:46 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\danie\Documents\Repaso_VIVADO\PYNQ_comblock\comblock_pynq.sdk\temp_xsdb_launch_script.tcl
-05:04:53 INFO  : XSCT server has started successfully.
-05:04:53 INFO  : Successfully done setting XSCT server connection channel  
-05:04:54 INFO  : Successfully done setting SDK workspace  
-05:04:54 INFO  : Processing command line option -hwspec C:/Users/danie/Documents/Repaso_VIVADO/PYNQ_comblock/comblock_pynq.sdk/comblock_desing_wrapper.hdf.
