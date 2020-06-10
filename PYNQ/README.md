@@ -1,5 +1,5 @@
 
-# Comblock (communication block IP)
+# Comblock (communication block IP) - Ejemplo del uso del API 
 
 ### Lectura y escritura de registros
 
