@@ -1,7 +1,7 @@
 
 # Sistema de comunicación Basado en FPGA
 
-<img src="Block_design.png" width=1000x>
+<img src="/.images/Block_design.png" width=1000x>
 
 El proceso para enviar información con el sistema presentado se puede definir en los siguientes pasos:
 * Asegurarse que el interruptor $0$ (enb-*enable*) esta activado, pues así, el sistema estará en funcionamiento.
@@ -17,7 +17,7 @@ Todo el proceso mencionado ya ha sido condensado en un par de funciones. Para en
 
 ## Esquema real del sistema de comunicación
 
-<img src="DescripcionFisicadelSistema.png" width=x600>
+<img src="/.images/DescripcionFisicadelSistema.png" width=x600>
 
 
 ```python
