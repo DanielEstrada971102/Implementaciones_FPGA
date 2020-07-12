@@ -1,0 +1,61 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1210 -y 270 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1210 -y 300 -defaultsOSRD
+preplace port rst -pg 1 -lvl 0 -x -10 -y 1210 -defaultsOSRD
+preplace port enb -pg 1 -lvl 0 -x -10 -y 1240 -defaultsOSRD
+preplace port led_done_trans -pg 1 -lvl 4 -x 1210 -y 1160 -defaultsOSRD
+preplace port pmod_TXD_OUT -pg 1 -lvl 4 -x 1210 -y 1130 -defaultsOSRD
+preplace port led_out_trans -pg 1 -lvl 4 -x 1210 -y 1100 -defaultsOSRD
+preplace port led_done_recv -pg 1 -lvl 4 -x 1210 -y 1340 -defaultsOSRD
+preplace port clk -pg 1 -lvl 0 -x -10 -y 1180 -defaultsOSRD
+preplace port clk_led_out -pg 1 -lvl 4 -x 1210 -y 1070 -defaultsOSRD
+preplace port pmod_RXD_IN -pg 1 -lvl 0 -x -10 -y 1340 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 220 -y 330 -defaultsOSRD
+preplace inst comblock_0 -pg 1 -lvl 3 -x 1000 -y 840 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 610 -y 140 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 220 -y 550 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 610 -y 1490 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 220 -y 1510 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 2 -x 610 -y 1180 -defaultsOSRD
+preplace inst Transmitter_0 -pg 1 -lvl 3 -x 1000 -y 1140 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 2 -x 610 -y 930 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 2 -x 610 -y 810 -defaultsOSRD
+preplace inst negation_0 -pg 1 -lvl 3 -x 1000 -y 1280 -defaultsOSRD
+preplace inst Generator_uartContro_0 -pg 1 -lvl 1 -x 220 -y 1210 -defaultsOSRD
+preplace inst Receiver_0 -pg 1 -lvl 2 -x 610 -y 1310 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 10 210 450 740 810
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 220 430
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 460 750 780
+preplace netloc comblock_0_reg0_o 1 0 4 30 1000 NJ 1000 NJ 1000 1180
+preplace netloc rst_0_1 1 0 3 10 1300 430 1120 NJ
+preplace netloc enb_1 1 0 3 20 1310 440 1110 760J
+preplace netloc Generator_uartContro_0_Signal_out 1 1 2 420 1400 830J
+preplace netloc comblock_0_reg2_o 1 1 3 450 1020 NJ 1020 1160
+preplace netloc comblock_0_reg1_o 1 2 2 840 1010 1170
+preplace netloc Transmitter_0_out_date 1 3 1 1180 1100n
+preplace netloc Transmitter_0_done 1 1 3 460 1040 NJ 1040 1160
+preplace netloc xlconcat_0_dout 1 2 1 790 780n
+preplace netloc Receiver_0_data_ready 1 1 3 460 1570 820 1340 NJ
+preplace netloc Receiver_0_data_received 1 2 1 770 800n
+preplace netloc clk_0_1 1 0 1 NJ 1180
+preplace netloc xlslice_0_Dout 1 2 1 NJ 1180
+preplace netloc xlconstant_0_dout 1 1 1 NJ 1510
+preplace netloc UART_TXD_IN_0_1 1 0 2 NJ 1340 NJ
+preplace netloc xlconstant_1_dout 1 2 1 800J 900n
+preplace netloc xlconstant_2_dout 1 2 1 800J 810n
+preplace netloc Generator_uartContro_0_led_out 1 1 3 410 1410 NJ 1410 1170J
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 300 NJ 300 NJ
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 280 NJ 280 1180J
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 820 130n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 440 60n
+levelinfo -pg 1 -10 220 610 1000 1210
+pagesize -pg 1 -db -bbox -sgen -150 0 1370 1580
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_ps7_cnt":"1"
+}

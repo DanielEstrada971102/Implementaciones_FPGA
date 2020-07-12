@@ -163,6 +163,7 @@ begin
 		   		when S0 =>
 					count_bits_rx <= (N_bits-1);
 				 	Done_rx_string <= '0';
+				 	Super_string_rx <= (others => '0');
 					if(Do_rx_string = '1') then
 						est_Super_rx <=S1;
 					end if;
@@ -176,7 +177,13 @@ begin
 					if(count_bits_rx >= 7)then
 						Super_string_rx((count_bits_rx) downto (count_bits_rx-7)) <= byte_read;	  
 						count_bits_rx <= count_bits_rx - 8;
-						est_Super_rx <= S3;
+						--------------------------------------------------------
+						if byte_read = x"03" then --ETX: caracer de finalizacion de texto
+							est_Super_rx <=S4;
+						else
+							est_Super_rx <= S3;	
+						end if;
+						--------------------------------------------------------
 					else
 						est_Super_rx <= S4; 
 					end if;
@@ -187,6 +194,9 @@ begin
 					 end if;
 				 
 				when S4 =>    --estado terminar 
+					------------------------------------------------------------
+					--Super_string_rx(N_bits-1 downto count_bits_rx) <= Super_string_rx(N_bits-1 downto count_bits_rx);
+					------------------------------------------------------------
 					Done_rx_string <= '1';
 					count_bits_rx <= (N_bits-1);
 					if(Do_rx_string = '0')then 

@@ -1,0 +1,98 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun 11 00:09:20 2020
+| Host         : DESKTOP-B2I46DP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Transmitter_control_sets_placed.rpt
+| Design       : Transmitter
+| Device       : xc7z020
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    48 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             140 |           59 |
+| No           | No                    | Yes                    |               8 |            6 |
+| No           | Yes                   | No                     |              28 |            9 |
+| Yes          | No                    | No                     |             291 |           82 |
+| Yes          | No                    | Yes                    |              32 |            5 |
+| Yes          | Yes                   | No                     |             101 |           27 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------+--------------------------------------+------------------+----------------+
+|  Clock Signal  |           Enable Signal          |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++----------------+----------------------------------+--------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                  | SuperUart/ut0/data_packet            |                1 |              1 |
+|  clk_IBUF_BUFG | outputDate0                      |                                      |                1 |              1 |
+|  clk_IBUF_BUFG | SuperUart/done0                  |                                      |                1 |              1 |
+|  clk_IBUF_BUFG | SuperUart/ut0/bit_cnt[3]_i_1_n_0 | SuperUart/ut0/data_packet            |                1 |              4 |
+|  clk_IBUF_BUFG |                                  | rst_IBUF                             |                6 |              8 |
+|  clk_IBUF_BUFG | SuperUart/ut0/data_packet        | SuperUart/ut0/data_packet[8]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG | SuperUart/ur0/E[0]               |                                      |                1 |              8 |
+|  clk_IBUF_BUFG | SuperUart/data_in0               |                                      |                4 |              8 |
+|  clk_IBUF_BUFG |                                  | SuperUart/ur0/clk_cnt[13]_i_1_n_0    |                4 |             13 |
+|  clk_IBUF_BUFG |                                  | SuperUart/ut0/clk_cnt[0]_i_1__0_n_0  |                4 |             14 |
+|  clk_IBUF_BUFG | count_transmittion0              | count_transmittion[31]_i_1_n_0       |                8 |             29 |
+|  clk_IBUF_BUFG | SuperUart/count_bits_rx0         | SuperUart/count_bits_rx[31]_i_1_n_0  |                8 |             30 |
+|  clk_IBUF_BUFG | SuperUart/count_bits_tx0         | SuperUart/count_bits_tx[31]_i_1_n_0  |                8 |             30 |
+|  clk_IBUF_BUFG | count_transmittion_min0          |                                      |                9 |             32 |
+|  clk_IBUF_BUFG | echo_mesagge0                    |                                      |                9 |             32 |
+|  clk_IBUF_BUFG | count                            | rst_IBUF                             |                5 |             32 |
+|  clk_IBUF_BUFG | count_max0__4                    |                                      |               10 |             32 |
+|  clk_IBUF_BUFG | mesagge_to_send_int0             |                                      |               17 |             73 |
+|  clk_IBUF_BUFG | SuperUart/command0               |                                      |               30 |            104 |
+|  clk_IBUF_BUFG |                                  |                                      |               59 |            140 |
++----------------+----------------------------------+--------------------------------------+------------------+----------------+
+
+

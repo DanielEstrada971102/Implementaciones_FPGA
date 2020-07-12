@@ -23,7 +23,7 @@ use ieee.std_logic_1164.all;
 use IEEE.std_logic_signed.all;
 
 entity main is
-	Generic ( Nbits : integer := 112;
+	Generic ( Nbits : integer := 1064;
 			  Baud : integer := 9600);
 	port (
 		clk : in std_logic; 		-- device clock 
@@ -87,7 +87,7 @@ architecture Behavioral of main is
 	signal command : std_logic_vector(31 downto 0);
 	signal value : std_logic_vector(Nbits - 33 downto 0);
 	
-	signal mesagge_to_send_int  : std_logic_vector(111 downto 0) := (others => '0');
+	signal mesagge_to_send_int  : std_logic_vector(Nbits-1 downto 0) := (others => '0');
 	signal RunTransmission : std_logic := '0';
 	signal DoneTransmission	: std_logic := '0';
 
@@ -127,7 +127,7 @@ begin
 			sent => DoneTransmission
 		);
 
-	main : process(clk, rst)
+	 main : process(clk, rst)
 	begin
 		if (rst = '1') then
 			do_rx_string_int <= '0';
@@ -167,7 +167,7 @@ begin
 					 	when x"42617450" => -- command = 'BatP' (bites at port) 
 					 		bits_to_send_int <= ((CONV_INTEGER(value(7  downto 0))-48)*1)+
 					                        ((CONV_INTEGER(value(15 downto 8))-48)*10)+
-					                        ((CONV_INTEGER(value(23 downto 16))-48)*100)+
+					                       ((CONV_INTEGER(value(23 downto 16))-48)*100)+
 					                        ((CONV_INTEGER(value(31 downto 24))-48)*1000)+
 					                        ((CONV_INTEGER(value(39 downto 32))-48)*10000)+
 					                        ((CONV_INTEGER(value(47 downto 40))-48)*100000)+

@@ -1,0 +1,41 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1100 -y 400 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1100 -y 430 -defaultsOSRD
+preplace port rst -pg 1 -lvl 0 -x -60 -y 570 -defaultsOSRD
+preplace port enb -pg 1 -lvl 0 -x -60 -y 530 -defaultsOSRD
+preplace port out_date -pg 1 -lvl 4 -x 1100 -y 510 -defaultsOSRD
+preplace port done -pg 1 -lvl 4 -x 1100 -y 540 -defaultsOSRD
+preplace port data_ready -pg 1 -lvl 4 -x 1100 -y 600 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 160 -y 460 -defaultsOSRD
+preplace inst comblock_0 -pg 1 -lvl 3 -x 910 -y 250 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 550 -y 140 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 160 -y 270 -defaultsOSRD
+preplace inst Receiver_0 -pg 1 -lvl 3 -x 910 -y 610 -defaultsOSRD
+preplace inst Transmitter_0 -pg 1 -lvl 2 -x 550 -y 530 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 -40 160 380 280 720
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 -30 170 350
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 370 290 N
+preplace netloc rst_0_1 1 0 3 -40J 580 370J 640 690
+preplace netloc enb_0_1 1 0 3 -30J 570 390J 630 720
+preplace netloc comblock_0_reg0_o 1 1 3 410 410 NJ 410 1080
+preplace netloc comblock_0_reg1_o 1 1 3 400 350 NJ 350 1070
+preplace netloc Transmitter_0_out_date 1 2 2 700J 510 NJ
+preplace netloc Transmitter_0_done 1 2 2 710J 520 1080J
+preplace netloc Receiver_0_data_ready 1 3 1 1080 600n
+preplace netloc Receiver_0_data_received 1 2 2 730 360 1070
+preplace netloc processing_system7_0_DDR 1 1 3 390J 400 NJ 400 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 430 NJ 430 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 360 60n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 730 130n
+levelinfo -pg 1 -60 160 550 910 1100
+pagesize -pg 1 -db -bbox -sgen -140 -90 1220 1060
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"1"
+}
