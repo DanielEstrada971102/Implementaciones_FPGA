@@ -238,7 +238,7 @@ import matplotlib.image as mpimg
 
 
 ```python
-img = mpimg.imread('bagheera.jpg')
+img = mpimg.imread('/.images/bagheera.jpg')
 im = img[100:-200,:,0]
 ```
 
@@ -255,7 +255,7 @@ plt.imshow(im)
 
 
 
-![png](output_22_1.png)
+![png](/.images/output_22_1.png)
 
 
 
@@ -1776,7 +1776,7 @@ plt.imshow(im_recv)
 
 
 
-![png](output_25_1.png)
+![png](/.images/output_25_1.png)
 
 
 
@@ -1801,7 +1801,7 @@ plt.imshow(im_recv2)
 
 
 
-![png](output_27_1.png)
+![png](/.images/output_27_1.png)
 
 
 
