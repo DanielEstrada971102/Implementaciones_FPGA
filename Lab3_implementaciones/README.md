@@ -23,4 +23,4 @@ De esta forma, la versión final del sistema de comunicación queda contenida en
 <img src="/.images/poster-1.png" width="900x">
 
 
-[![Watch the video](https://img.youtube.com/vi/Mtd0XG1G3Ks&t=6s/0.jpg)](https://www.youtube.com/watch?v=Mtd0XG1G3Ks&t=6s)
+[![Watch the video](https://img.youtube.com/vi/Mtd0XG1G3Ks&t=6s/maxresdefault.jpg)](https://www.youtube.com/watch?v=Mtd0XG1G3Ks&t=6s)
