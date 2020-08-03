@@ -22,7 +22,5 @@ La según versión opto por prescindir del FTDI para la comunicación serial y p
 De esta forma, la versión final del sistema de comunicación queda contenida en la carpeta [Comunication_with_comblock](https://github.com/DanielEstrada971102/Implementaciones_FPGA/tree/master/PYNQ/Comunication_with_comblock), allí puede ver con más detalle el programa implementado para el control del sistema mediante el API. A continuación, se presenta el resultado de este proyecto resumido en un poster y un video que fue expuesto durante la muestra experimental virtual de la facultad de ciencias exactas y naturales de la Universidad de Antioquia.
 <img src="/.images/poster-1.png" width="900x">
 
-<video width="320" height="240" controls>
-  <source src="/.images/Presentacon_posterLabIII.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+
+[![Watch the video](https://img.youtube.com/vi/Mtd0XG1G3Ks&t=6s/0.jpg)](https://www.youtube.com/watch?v=Mtd0XG1G3Ks&t=6s)
