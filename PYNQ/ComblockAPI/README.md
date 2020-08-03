@@ -275,3 +275,4 @@ cb2.FIFO_IN.getValues()
      1896]
 
 
+**NOTA:** Los códigos comblock_sw_led.py y comblock_fifo.py corresponden a una de las primeras versiones del API, en estas, la asignación de las propiedades del Comblock implementado se hacía prácticamente manual, y por ende se requería modificar el API para implementación que se hiciera como es evidente. Esto se solucionó e implemento en el comblock.py cuando se descubrió que estas propiedades se podían cargar de forma automática se incluía el junto con el archivo .bit y .tcl, un archivo que genera Vivado de extensión .hw
