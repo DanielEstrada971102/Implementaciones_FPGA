@@ -1,0 +1,125 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 32
+License: Customer
+
+Current time: 	Mon Aug 03 01:50:17 COT 2020
+Time zone: 	Colombia Standard Time (America/Bogota)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 150
+Available screens: 1
+Available disk space: 21 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	danie
+User home directory: C:/Users/danie
+User working directory: C:/Users/danie/Documents/Implementaciones_FPGA/Lab3_implementaciones/Transmitter
+User country: 	MX
+User language: 	es
+User locale: 	es_MX
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/danie/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/danie/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/danie/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/danie/Documents/Implementaciones_FPGA/Lab3_implementaciones/Transmitter/vivado.log
+Vivado journal file location: 	C:/Users/danie/Documents/Implementaciones_FPGA/Lab3_implementaciones/Transmitter/vivado.jou
+Engine tmp dir: 	C:/Users/danie/Documents/Implementaciones_FPGA/Lab3_implementaciones/Transmitter/.Xil/Vivado-32-DESKTOP-B2I46DP
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 538 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\danie\Documents\Implementaciones_FPGA\Lab3_implementaciones\Transmitter\Transmitter2.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/danie/Documents/Implementaciones_FPGA/Lab3_implementaciones/Transmitter/Transmitter2.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 544 MB. GUI used memory: 53 MB. Current time: 8/3/20, 1:50:19 AM COT
+// Tcl Message: open_project C:/Users/danie/Documents/Implementaciones_FPGA/Lab3_implementaciones/Transmitter/Transmitter2.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/danie/Documents/Implementaciones_FPGA/Lab3_implementaciones/Transmitter2' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 73 MB (+74277kb) [00:00:19]
+// [Engine Memory]: 561 MB (+437168kb) [00:00:19]
+// [GUI Memory]: 87 MB (+10816kb) [00:00:20]
+// [GUI Memory]: 112 MB (+21616kb) [00:00:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  6342 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 737.910 ; gain = 102.152 
+// [Engine Memory]: 608 MB (+19902kb) [00:00:25]
+// Project name: Transmitter2; location: C:/Users/danie/Documents/Implementaciones_FPGA/Lab3_implementaciones/Transmitter; part: xc7z020clg400-1
+dismissDialog("Open Project"); // by (cl)
+// [Engine Memory]: 643 MB (+4347kb) [00:00:27]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 57 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Transmitter(Behavioral) (Transmitter 2.vhd)]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Transmitter(Behavioral) (Transmitter 2.vhd), SuperUart : Super_Uart(Behavioral) (SuperUartMod.vhd)]", 2); // B (F, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 657 MB. GUI used memory: 58 MB. Current time: 8/3/20, 1:51:34 AM COT
+// PAPropertyPanels.initPanels (Transmitter 2.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Transmitter(Behavioral) (Transmitter 2.vhd)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Transmitter(Behavioral) (Transmitter 2.vhd)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 657 MB. GUI used memory: 61 MB. Current time: 8/3/20, 2:21:35 AM COT
