@@ -5,6 +5,7 @@
 ### Lectura y escritura de registros
 
 En este sencillo ejemplo se utiliza el "overlay comblock_sw_led.bit" para ilustrar el funcionamiento de la clase **Comblock**. El diagrama de bloques del Overlay instanciado es el siguiente:
+
 <img src="/.images/comblock_sw_led.jpg" width="600x">
 
 En este projecto solo se han habilitado $5$ de los $16$ posibles registros de entrada y $1$ solo registro de salida. Se utilizan dos valores numeros contantes ("constant_0"$=0$ y "constant_1"$=1$) y la lectura de los suiches para construir un numero de $4$ bits que se escribirá en el registro de salida.
