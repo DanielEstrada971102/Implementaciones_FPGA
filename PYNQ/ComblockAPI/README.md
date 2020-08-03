@@ -5,7 +5,7 @@
 ### Lectura y escritura de registros
 
 En este sencillo ejemplo se utiliza el "overlay comblock_sw_led.bit" para ilustrar el funcionamiento de la clase **Comblock**. El diagrama de bloques del Overlay instanciado es el siguiente:
-<img src="comblock_sw_led.jpg" width="600x">
+<img src="/.images/comblock_sw_led.jpg" width="600x">
 
 En este projecto solo se han habilitado $5$ de los $16$ posibles registros de entrada y $1$ solo registro de salida. Se utilizan dos valores numeros contantes ("constant_0"$=0$ y "constant_1"$=1$) y la lectura de los suiches para construir un numero de $4$ bits que se escribirá en el registro de salida.
 
@@ -147,7 +147,7 @@ cb.OUT_REGS.setValue(0, InReg_value[4]) # se ecribe el quinto registro de entrad
 A continuación utilizamos otro Ovarlay ("comblock_fifo.bit") para chequear el metodo **CB_read** en la lectura de la 
 memoria FIFO, el diagrama de bloque es el siguiente:
     
-<img src="comblock_fifo.jpg" width="600x">
+<img src="/.images/comblock_fifo.jpg" width="600x">
 
 Acá vemos que los registros no estan siendo utilizados, solo se usan un par de constantes para habilitar la escritura de la 
 memoria FIFO y para que esta no se limpie. En este proyecto se esta utilizando un contador binario de $16$ bits para llenar la 
