@@ -1,0 +1,3 @@
+# BaseOVerlay + COMmunication Block IP
+
+Con el fin de darle un Uso genérico al API diseñara para el Comblock en conjunto con la posibilidad de utilizar los periféricos y recursos de la Arty Z7-20, se realizó una simple modificación del [BaseOverlay](https://pynq.readthedocs.io/en/v2.0/pynq_overlays/base_overlay.html) que se incluye por defecto en el proyecto PYNQ. Básicamente, se incluyó el Comblock Ip a la implementación (Este aún no tiene más que la conexión al PS), de forma qué con los códigos fuente acá provistos, se puede generar un proyecto de vivado personalizable que deja el Comblock libre a cualquier conexión y que incluye los Ip para el control de los periféricos y demás, que ya venían en el BaseOverlay.
