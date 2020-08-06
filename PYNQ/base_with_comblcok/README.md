@@ -20,7 +20,7 @@ Luego de esto se puede desencadenar la compilación de los ip con el archivo "bu
 <img src="/.images/paso2_Basewc.jpg" width="400x">
 
 #### Paso 3. 
-Con esto, se procede a generar el proyecto de Vivado con el "base_with_comblock_ip.tcl"
+Con esto, se procede a generar el proyecto de Vivado con el "base_with_comblock.tcl"
 
 <img src="/.images/paso3_Basewc..jpg" width="400x">
 
