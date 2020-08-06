@@ -1,5 +1,7 @@
 
 # Ejemplo de Uso del API comblock 2.0
+La implementación usada para este ejemplo es [completo_Comblock](https://github.com/DanielEstrada971102/Implementaciones_FPGA/tree/master/PYNQ/completo_comblock).
+
 
 <img src='/.images/comblock_completo.jpg' width=600x>
 
