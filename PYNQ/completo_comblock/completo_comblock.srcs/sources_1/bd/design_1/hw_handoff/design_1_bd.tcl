@@ -166,8 +166,8 @@ proc create_root_design { parentCell } {
   # Create instance: RAMaddr_slice, and set properties
   set RAMaddr_slice [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 RAMaddr_slice ]
   set_property -dict [ list \
-   CONFIG.DIN_FROM {9} \
-   CONFIG.DOUT_WIDTH {10} \
+   CONFIG.DIN_FROM {3} \
+   CONFIG.DOUT_WIDTH {4} \
  ] $RAMaddr_slice
 
   # Create instance: clkRam_slice, and set properties
@@ -184,10 +184,12 @@ proc create_root_design { parentCell } {
   # Create instance: comblock, and set properties
   set comblock [ create_bd_cell -type ip -vlnv www.ictp.it:user:comblock:2.0 comblock ]
   set_property -dict [ list \
-   CONFIG.DRAM_IO_AWIDTH {10} \
-   CONFIG.DRAM_IO_DEPTH {1024} \
+   CONFIG.DRAM_IO_AWIDTH {4} \
+   CONFIG.DRAM_IO_DEPTH {20} \
    CONFIG.DRAM_IO_DWIDTH {32} \
+   CONFIG.FIFO_IN_DEPTH {20} \
    CONFIG.FIFO_IN_DWIDTH {32} \
+   CONFIG.FIFO_OUT_DEPTH {20} \
    CONFIG.FIFO_OUT_DWIDTH {32} \
    CONFIG.FIFO_OUT_ENA {true} \
    CONFIG.REGS_IN_DEPTH {3} \

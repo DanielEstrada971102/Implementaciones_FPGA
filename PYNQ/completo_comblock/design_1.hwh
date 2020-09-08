@@ -1,9 +1,39 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Aug  5 04:25:34 2020" VIVADOVERSION="2019.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Sep  7 13:47:02 2020" VIVADOVERSION="2019.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:arty-z7-20:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
+    <PORT DIR="IO" LEFT="53" NAME="FIXED_IO_mio" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_MIO">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="MIO"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrn" SIGIS="undef" SIGNAME="processing_system7_0_DDR_VRN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_VRN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrp" SIGIS="undef" SIGNAME="processing_system7_0_DDR_VRP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_VRP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ps_srstb" SIGIS="undef" SIGNAME="processing_system7_0_PS_SRSTB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="PS_SRSTB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ps_clk" SIGIS="undef" SIGNAME="processing_system7_0_PS_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="PS_CLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef" SIGNAME="processing_system7_0_PS_PORB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="PS_PORB"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT DIR="IO" NAME="DDR_cas_n" SIGIS="undef" SIGNAME="processing_system7_0_DDR_CAS_n">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_CAS_n"/>
@@ -79,36 +109,6 @@
         <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_DQS"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="IO" LEFT="53" NAME="FIXED_IO_mio" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_MIO">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="MIO"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrn" SIGIS="undef" SIGNAME="processing_system7_0_DDR_VRN">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_VRN"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrp" SIGIS="undef" SIGNAME="processing_system7_0_DDR_VRP">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_VRP"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ps_srstb" SIGIS="undef" SIGNAME="processing_system7_0_PS_SRSTB">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="PS_SRSTB"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ps_clk" SIGIS="undef" SIGNAME="processing_system7_0_PS_CLK">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="PS_CLK"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef" SIGNAME="processing_system7_0_PS_PORB">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="PS_PORB"/>
-      </CONNECTIONS>
-    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -163,10 +163,10 @@
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="DIN_FROM" VALUE="9"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="3"/>
         <PARAMETER NAME="DIN_TO" VALUE="0"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_xlslice_0_2"/>
-        <PARAMETER NAME="DOUT_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -175,7 +175,7 @@
             <CONNECTION INSTANCE="comblock" PORT="reg3_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="9" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="RAMaddr_slice_Dout">
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="RAMaddr_slice_Dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="comblock" PORT="ram_addr_i"/>
           </CONNECTIONS>
@@ -250,16 +250,16 @@
         <PARAMETER NAME="REGS_OUT_DEPTH" VALUE="5"/>
         <PARAMETER NAME="DRAM_IO_ENA" VALUE="true"/>
         <PARAMETER NAME="DRAM_IO_DWIDTH" VALUE="32"/>
-        <PARAMETER NAME="DRAM_IO_AWIDTH" VALUE="10"/>
-        <PARAMETER NAME="DRAM_IO_DEPTH" VALUE="1024"/>
+        <PARAMETER NAME="DRAM_IO_AWIDTH" VALUE="4"/>
+        <PARAMETER NAME="DRAM_IO_DEPTH" VALUE="20"/>
         <PARAMETER NAME="FIFO_IN_ENA" VALUE="true"/>
         <PARAMETER NAME="FIFO_IN_DWIDTH" VALUE="32"/>
-        <PARAMETER NAME="FIFO_IN_DEPTH" VALUE="1024"/>
+        <PARAMETER NAME="FIFO_IN_DEPTH" VALUE="20"/>
         <PARAMETER NAME="FIFO_IN_AFOFFSET" VALUE="1"/>
         <PARAMETER NAME="FIFO_IN_AEOFFSET" VALUE="1"/>
         <PARAMETER NAME="FIFO_OUT_ENA" VALUE="true"/>
         <PARAMETER NAME="FIFO_OUT_DWIDTH" VALUE="32"/>
-        <PARAMETER NAME="FIFO_OUT_DEPTH" VALUE="1024"/>
+        <PARAMETER NAME="FIFO_OUT_DEPTH" VALUE="20"/>
         <PARAMETER NAME="FIFO_OUT_AFOFFSET" VALUE="1"/>
         <PARAMETER NAME="FIFO_OUT_AEOFFSET" VALUE="1"/>
         <PARAMETER NAME="C_AXIF_ID_WIDTH" VALUE="12"/>
@@ -327,7 +327,7 @@
             <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="9" NAME="ram_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="RAMaddr_slice_Dout">
+        <PORT DIR="I" LEFT="3" NAME="ram_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="RAMaddr_slice_Dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="RAMaddr_slice" PORT="Dout"/>
           </CONNECTIONS>
@@ -495,7 +495,7 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_AXI_awid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="axif_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="comblock_axif_awaddr">
+        <PORT DIR="I" LEFT="5" NAME="axif_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="comblock_axif_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_AXI_awaddr"/>
           </CONNECTIONS>
@@ -603,7 +603,7 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_AXI_arid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="axif_araddr" RIGHT="0" SIGIS="undef" SIGNAME="comblock_axif_araddr">
+        <PORT DIR="I" LEFT="5" NAME="axif_araddr" RIGHT="0" SIGIS="undef" SIGNAME="comblock_axif_araddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_AXI_araddr"/>
           </CONNECTIONS>
@@ -751,7 +751,7 @@
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="12"/>
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="12"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="6"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="1"/>
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="1"/>
           <PARAMETER NAME="WUSER_WIDTH" VALUE="1"/>

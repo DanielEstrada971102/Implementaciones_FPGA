@@ -74,8 +74,7 @@ class Comblock(DefaultIP):
 
         elif self.description['mem_id'] == 'AXIF':
             if self.properties['DRAM_IO_ENA'] == "true":
-                self.DRAM = Dram(int(self.properties["DRAM_IO_AWIDTH"]), 
-                                 int(self.properties["DRAM_IO_DEPTH"]), self.mmio)
+                self.DRAM = Dram(int(self.properties["DRAM_IO_AWIDTH"]), self.mmio)
 
 
     bindto = ['www.ictp.it:user:comblock:2.0']
@@ -158,11 +157,11 @@ class Register(Comblock):
 
         """
         if self.kind == "in":
-            return "you can't write the input registers" 
+            return "Error: you can't write the input registers" 
         
         elif self.kind == "out":       
             if offset > 15:
-                return "this memory address  isn't an output register, verify the 'offset' parameter"
+                return "WARNING: this memory address  is not an input or output register, verify the 'offset' parameter"
             else:
                 if offset > self.depth:
                    return "WARNING: your overlay doesn't have this register connected"
@@ -188,7 +187,7 @@ class Register(Comblock):
             int
         """
         if offset > 15:
-                return "this memory address  is not an input or output register"
+                return "Erorr: this memory address  is not an input or output register, verify the 'offset' parameter"
 
         elif offset > self.depth:
             return "WARNING: your overlay doesn't have this register connected"
@@ -249,14 +248,13 @@ class Fifo(Comblock):
         """
         
         if self.kind == "in":
-            return "you can't write the input fifo "
+            return "Error: you can't write the input fifo "
 
         elif self.kind == "out":
-            status = self.Read(self.offset_status)
+            status = int(bin(self.Read(self.offset_status))[-16:], 2)
             
-            if status == 1:
-                return "The output fifo is FULL"
-            
+            if status == 3 or status == 2:
+                return "WARNING: The output fifo is FULL"
             else:
                 self.Write(self.offset_Value, value)
         
@@ -274,12 +272,12 @@ class Fifo(Comblock):
         """
         
         if self.kind == "out":
-            return "you can't read the output fifo"
+            return "Error: you can't read the output fifo"
         
         elif self.kind == "in":
             status = self.Read(self.offset_status)
             
-            if status == 1:
+            if status == 3 or status == 7:
                 return "The input fifo is empty"
             
             else:
@@ -298,10 +296,12 @@ class Fifo(Comblock):
             bloque de datos que se escribiran en la fifo
 
         """
+
+        depth_allowed =self.depth - int(bin(self.Read(self.offset_status))[:-16], 2) 
         depth = len(Buffer)
-        
-        if depth > self.depth:
-            return "you're trying to read %d data but output fifo has depth  %d"%(depth, self.depth)
+
+        if depth > depth_allowed:
+            return "you're trying to write %d data but output fifo has only %d free spaces"%(depth, depth_allowed)
         
         else:
             for i in Buffer:
@@ -325,41 +325,36 @@ class Fifo(Comblock):
             lista con los datos leidos.
 
         """
-        if depth > self.depth:
-            return "you're trying to read %d data but input fifo has depth %d"%(depth, self.depth)
+        dataAmount = int(self.Read(self.offset_status)[:-16], 2)
         
-        else:
-            data = []
-            
-            for i in range(depth):
-                data.append(self.readF())
+        if depth > self.depth:
+            return "Error: you're trying to read %d data but input fifo is just %d deep"%(depth, self.depth)
+        elif depth > dataAmount:
+            print("WARNING: Fifo has just %d data"%(dataAmount))
+            depth = dataAmount
 
-            return data
+        data = []
+        
+        for i in range(depth):
+            data.append(self.readF())
+
+        return data
 
 
-    def clear(self):
+    def reset(self):
         """
-        Esta función envía la señal de limpiado a la memoria fifo, 
+        Esta función envía la señal de reinicio a la memoria fifo, 
         es util para asegurarse del estado de las memorias fifos antes
         o despues de leerlas o escribirlas.
 
         """
         self.Write(self.offset_control, 1)
         
-        if self.kind == "in":
-            print("wait while the input fifo is cleaned...")
-            
-            while(self.Read(self.offset_status) != 1):
-                pass
+        if self.kind == "out":
+            self.writeBulk([0 for i in range(self.depth)])
+            self.Write(self.offset_control, 1)
 
-        elif self.kind == "out":
-            print("wait while the output fifo is cleaned...")
-            
-            while(self.Read(self.offset_status) != 0):
-                pass
-        
-        print("cleaning finished")
-        self.Write(self.offset_control, 0)
+        print("reset finished")
 
 
 
@@ -380,10 +375,9 @@ class Dram(Comblock):
         define la profundidad de la memoria Dram.
 
     """
-    def __init__(self,  awidth , depth, Mmio):
+    def __init__(self,  awidth , Mmio):
         self.mmio = Mmio
-        self.maxAddr = 2**awidth
-        self.depth = depth
+        self.depth = 2 ** awidth
         self.dataAmount = 0;
         self.mapAddrs = []
 
@@ -391,8 +385,7 @@ class Dram(Comblock):
     def writeRam(self, addr, value):
         """ 
         Usa el metodo Comblock.Write. discrimina si la direccion
-        de memoria ingresada es invalida según le tamaño de este
-        parametro en bits.
+        de memoria ingresada es invalida según la profundidad
         
         Parameters
         ----------
@@ -403,16 +396,11 @@ class Dram(Comblock):
             dato a escribir.
 
         """
-        if addr > self.maxAddr:
-            return "the memory address must be an integer between 0 to %d"%self.maxAddr
-
-        if self.dataAmount <= self.depth:
-            self.Write(addr, value)
-            self.mapAddrs.append(addr)
-            self.dataAmount += 1
+        if addr > self.depth:
+            return " WARNING: Dual Port RAM is just %d deep"%self.depth
 
         else:
-            return "the True Dual Port RAM is FULL"
+            self.Write(addr, value)
         
 
     def readRam(self, addr):
@@ -430,11 +418,10 @@ class Dram(Comblock):
             int
 
         """
-        if addr in self.mapAddrs:
-            return self.Read(addr)
-
+        if addr > self.depth:
+            return " WARNING: Dual Port RAM is just %d deep"%self.depth
         else:
-            return "the memory address that you're trying to read hasn't been defined"
+            return self.Read(addr)
 
 
     def writeBulk(self, baseAddr, Buffer):
@@ -451,11 +438,14 @@ class Dram(Comblock):
             bloque de datos a escribir.
 
         """
-        if (baseAddr > self.maxAddr) or (baseAddr + len(Buffer) > self.maxAddr):
-            return "you are trying to write out of the memory adderess range (0 to %d)"%self.maxAddr
-
-        for i in range(baseAddr, len(Buffer)):
-            self.writeRam(i, Buffer[i])
+        if self.depth - baseAddr < len(Buffer):
+            return "WARNING: you are trying to write in the interval {%d,%d} that is outside the allowed range {0, %d}"%\
+                                                                            (baseAddr, baseAddr + len(Buffer), self.depth)
+        else:
+            j = 0                                                            
+            for i in range(baseAddr, baseAddr + len(Buffer) - 1):
+                j += 1
+                self.writeRam(i, Buffer[j])
 
 
     def readBulk(self, baseAddr, depth):
@@ -472,14 +462,12 @@ class Dram(Comblock):
             cantidad de datos a leer.
         """ 
         data = []
-        index = self.mapAddrs.index(baseAddr)
-        diff = index + depth - self.dataAmount
-        
-        if diff > 0:
-            return "Change the depth parameter," + \
-            "from %d there are only %d (<%d) possible memory addresses"%(baseAddr, self.dataAmount - index , depth)
+        if self.depth - baseAddr < depth:
+            return "WARNING: Change the depth parameter,from %d there are only %d (<%d) possible memory addresses"%\
+                                                                            (baseAddr, self.depth - baseAddr , depth)
 
-        for i in self.mapAddrs[index:index + depth]:
-            data.append(self.readRam(i))
+        else:
+            for i in range(baseAddr, baseAddr + depth ):
+                data.append(self.readRam(i))
 
-        return data
+            return data

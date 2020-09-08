@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
 -- Date        : Mon Sep  7 13:48:31 2020
 -- Host        : DESKTOP-B2I46DP running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/danie/Documents/Implementaciones_FPGA/PYNQ/completo_comblock/completo_comblock.srcs/sources_1/bd/design_1/ip/design_1_comblock_0_0/design_1_comblock_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+--               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_comblock_0_0_sim_netlist.vhdl
 -- Design      : design_1_comblock_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,7 +14,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_comblock_0_0_AXIF is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_AXIF is
   port (
     axi_rvalid_reg_0 : out STD_LOGIC;
     axi_arready_reg_0 : out STD_LOGIC;
@@ -41,11 +41,9 @@ entity design_1_comblock_0_0_AXIF is
     axif_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
     axif_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_comblock_0_0_AXIF : entity is "AXIF";
-end design_1_comblock_0_0_AXIF;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_AXIF;
 
-architecture STRUCTURE of design_1_comblock_0_0_AXIF is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_AXIF is
   signal axi_araddr1 : STD_LOGIC;
   signal axi_araddr3 : STD_LOGIC;
   signal axi_araddr3_carry_i_1_n_0 : STD_LOGIC;
@@ -1719,7 +1717,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_comblock_0_0_AXIL is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_AXIL is
   port (
     axi_awready_reg_0 : out STD_LOGIC;
     axi_wready_reg_0 : out STD_LOGIC;
@@ -1813,11 +1811,9 @@ entity design_1_comblock_0_0_AXIL is
     axil_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
     axil_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_comblock_0_0_AXIL : entity is "AXIL";
-end design_1_comblock_0_0_AXIL;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_AXIL;
 
-architecture STRUCTURE of design_1_comblock_0_0_AXIL is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_AXIL is
   signal \^q\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal aw_en_i_1_n_0 : STD_LOGIC;
   signal aw_en_reg_n_0 : STD_LOGIC;
@@ -4100,7 +4096,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_comblock_0_0_GraySync is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync is
   port (
     S : out STD_LOGIC_VECTOR ( 1 downto 0 );
     \data_r_reg[1][3]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -4136,11 +4132,9 @@ entity design_1_comblock_0_0_GraySync is
     \data_r_reg[0][5]_0\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     axil_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_comblock_0_0_GraySync : entity is "GraySync";
-end design_1_comblock_0_0_GraySync;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync;
 
-architecture STRUCTURE of design_1_comblock_0_0_GraySync is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync is
   signal \^di\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \axi_rdata[16]_i_8_n_0\ : STD_LOGIC;
   signal \^axi_rdata[17]_i_7_0\ : STD_LOGIC;
@@ -4783,7 +4777,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_comblock_0_0_GraySync_1 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_1 is
   port (
     S : out STD_LOGIC_VECTOR ( 1 downto 0 );
     \data_r_reg[1][5]_0\ : out STD_LOGIC;
@@ -4816,10 +4810,10 @@ entity design_1_comblock_0_0_GraySync_1 is
     fifo_clk_i : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_comblock_0_0_GraySync_1 : entity is "GraySync";
-end design_1_comblock_0_0_GraySync_1;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_1 : entity is "GraySync";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_1;
 
-architecture STRUCTURE of design_1_comblock_0_0_GraySync_1 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_1 is
   signal \^di\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal bin2gray : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal \data_r[0][1]_i_1__2_n_0\ : STD_LOGIC;
@@ -5500,7 +5494,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_comblock_0_0_GraySync_2 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_2 is
   port (
     S : out STD_LOGIC_VECTOR ( 1 downto 0 );
     \data_r_reg[1][5]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -5528,10 +5522,10 @@ entity design_1_comblock_0_0_GraySync_2 is
     fifo_clk_i : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_comblock_0_0_GraySync_2 : entity is "GraySync";
-end design_1_comblock_0_0_GraySync_2;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_2 : entity is "GraySync";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_2;
 
-architecture STRUCTURE of design_1_comblock_0_0_GraySync_2 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_2 is
   signal \^di\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal bin2gray : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal \data_r[0][1]_i_1__0_n_0\ : STD_LOGIC;
@@ -6223,7 +6217,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_comblock_0_0_GraySync_3 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_3 is
   port (
     \data_r_reg[1][1]_0\ : out STD_LOGIC;
     S : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -6266,10 +6260,10 @@ entity design_1_comblock_0_0_GraySync_3 is
     axil_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_comblock_0_0_GraySync_3 : entity is "GraySync";
-end design_1_comblock_0_0_GraySync_3;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_3 : entity is "GraySync";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_3;
 
-architecture STRUCTURE of design_1_comblock_0_0_GraySync_3 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_3 is
   signal \axi_rdata[16]_i_9_n_0\ : STD_LOGIC;
   signal \axi_rdata[20]_i_6_n_0\ : STD_LOGIC;
   signal \axi_rdata[21]_i_7_n_0\ : STD_LOGIC;
@@ -6954,7 +6948,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_comblock_0_0_tdpram is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram is
   port (
     ram_data_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
     DOBDO : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -6967,11 +6961,9 @@ entity design_1_comblock_0_0_tdpram is
     ram_we_i : in STD_LOGIC;
     WEBWE : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_comblock_0_0_tdpram : entity is "tdpram";
-end design_1_comblock_0_0_tdpram;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram;
 
-architecture STRUCTURE of design_1_comblock_0_0_tdpram is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram is
   signal NLW_ram_reg_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
   signal NLW_ram_reg_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
   signal NLW_ram_reg_DBITERR_UNCONNECTED : STD_LOGIC;
@@ -7086,7 +7078,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_comblock_0_0_tdpram__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0\ is
   port (
     fifo_data_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
     fifo_clk_i : in STD_LOGIC;
@@ -7097,10 +7089,10 @@ entity \design_1_comblock_0_0_tdpram__parameterized0\ is
     ram_reg_1 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_comblock_0_0_tdpram__parameterized0\ : entity is "tdpram";
-end \design_1_comblock_0_0_tdpram__parameterized0\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0\ : entity is "tdpram";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0\;
 
-architecture STRUCTURE of \design_1_comblock_0_0_tdpram__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0\ is
   signal NLW_ram_reg_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_ram_reg_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute \MEM.PORTA.DATA_BIT_LAYOUT\ : string;
@@ -7189,7 +7181,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_comblock_0_0_tdpram__parameterized0_4\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0_4\ is
   port (
     ram_reg_0 : out STD_LOGIC_VECTOR ( 28 downto 0 );
     p_4_out : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -7203,10 +7195,10 @@ entity \design_1_comblock_0_0_tdpram__parameterized0_4\ is
     full_r : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_comblock_0_0_tdpram__parameterized0_4\ : entity is "tdpram";
-end \design_1_comblock_0_0_tdpram__parameterized0_4\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0_4\ : entity is "tdpram";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0_4\;
 
-architecture STRUCTURE of \design_1_comblock_0_0_tdpram__parameterized0_4\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0_4\ is
   signal \^webwe\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_ram_reg_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_ram_reg_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -7309,7 +7301,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_comblock_0_0_FIFO is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FIFO is
   port (
     ram_reg : out STD_LOGIC_VECTOR ( 28 downto 0 );
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -7342,11 +7334,9 @@ entity design_1_comblock_0_0_FIFO is
     \rd_ptr_r_reg[5]_4\ : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_comblock_0_0_FIFO : entity is "FIFO";
-end design_1_comblock_0_0_FIFO;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FIFO;
 
-architecture STRUCTURE of design_1_comblock_0_0_FIFO is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FIFO is
   signal \^q\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal diff_ptr0 : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal diff_ptr00_in : STD_LOGIC_VECTOR ( 5 downto 1 );
@@ -7769,7 +7759,7 @@ full_r_reg: unisim.vcomponents.FDRE
       Q => full_r,
       R => rst
     );
-\g_async.i_sync_rd2wr\: entity work.design_1_comblock_0_0_GraySync_2
+\g_async.i_sync_rd2wr\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_2
      port map (
       DI(2) => \g_async.i_sync_rd2wr_n_6\,
       DI(1) => \g_async.i_sync_rd2wr_n_7\,
@@ -7814,7 +7804,7 @@ full_r_reg: unisim.vcomponents.FDRE
       p_1_in(1 downto 0) => p_1_in(4 downto 3),
       wr_ptr(0) => wr_ptr(2)
     );
-\g_async.i_sync_wr2rd\: entity work.design_1_comblock_0_0_GraySync_3
+\g_async.i_sync_wr2rd\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_3
      port map (
       DI(0) => \g_async.i_sync_wr2rd_n_9\,
       O(3) => \diff_ptr0_inferred__2/i__carry_n_4\,
@@ -7901,7 +7891,7 @@ full_r_reg: unisim.vcomponents.FDRE
       I2 => fifo_we_i,
       O => \i__carry_i_2_n_0\
     );
-i_memory: entity work.\design_1_comblock_0_0_tdpram__parameterized0_4\
+i_memory: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0_4\
      port map (
       Q(4) => \rd_ptr_r_reg_n_0_[4]\,
       Q(3) => \rd_ptr_r_reg_n_0_[3]\,
@@ -8201,7 +8191,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_comblock_0_0_FIFO_0 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FIFO_0 is
   port (
     fifo_data_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
     full_r : out STD_LOGIC;
@@ -8230,10 +8220,10 @@ entity design_1_comblock_0_0_FIFO_0 is
     fifo_re_i : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_comblock_0_0_FIFO_0 : entity is "FIFO";
-end design_1_comblock_0_0_FIFO_0;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FIFO_0 : entity is "FIFO";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FIFO_0;
 
-architecture STRUCTURE of design_1_comblock_0_0_FIFO_0 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FIFO_0 is
   signal diff_ptr0 : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal diff_ptr00_in : STD_LOGIC_VECTOR ( 5 downto 1 );
   signal diff_ptr01_in : STD_LOGIC_VECTOR ( 5 downto 1 );
@@ -8712,7 +8702,7 @@ full_r_reg: unisim.vcomponents.FDRE
       Q => full_r,
       R => rst
     );
-\g_async.i_sync_rd2wr\: entity work.design_1_comblock_0_0_GraySync
+\g_async.i_sync_rd2wr\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync
      port map (
       DI(2) => \g_async.i_sync_rd2wr_n_6\,
       DI(1) => \g_async.i_sync_rd2wr_n_7\,
@@ -8773,7 +8763,7 @@ full_r_reg: unisim.vcomponents.FDRE
       p_8_out => p_8_out,
       wr_ptr(1 downto 0) => wr_ptr(2 downto 1)
     );
-\g_async.i_sync_wr2rd\: entity work.design_1_comblock_0_0_GraySync_1
+\g_async.i_sync_wr2rd\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_1
      port map (
       DI(2) => \g_async.i_sync_wr2rd_n_3\,
       DI(1 downto 0) => wr_in_rd_bin(1 downto 0),
@@ -8867,7 +8857,7 @@ full_r_reg: unisim.vcomponents.FDRE
       I1 => \wr_ptr_r_reg[3]_0\,
       O => \i__carry_i_2__4_n_0\
     );
-i_memory: entity work.\design_1_comblock_0_0_tdpram__parameterized0\
+i_memory: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0\
      port map (
       Q(4) => \rd_ptr_r_reg_n_0_[4]\,
       Q(3) => \rd_ptr_r_reg_n_0_[3]\,
@@ -9198,7 +9188,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_comblock_0_0_ComBlock is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ComBlock is
   port (
     ram_data_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
     DOBDO : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -9303,11 +9293,9 @@ entity design_1_comblock_0_0_ComBlock is
     \regs_out_reg[4][31]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     fifo_re_i : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_comblock_0_0_ComBlock : entity is "ComBlock";
-end design_1_comblock_0_0_ComBlock;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ComBlock;
 
-architecture STRUCTURE of design_1_comblock_0_0_ComBlock is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ComBlock is
   signal \^data_r_reg[1][3]_2\ : STD_LOGIC;
   signal fifo_in_clear_reg_n_0 : STD_LOGIC;
   signal fifo_out_clear_reg_n_0 : STD_LOGIC;
@@ -9739,7 +9727,7 @@ begin
       I5 => \^reg0_o\(9),
       O => \regs_out_reg[3][9]_0\
     );
-\dram_g.dram_i\: entity work.design_1_comblock_0_0_tdpram
+\dram_g.dram_i\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram
      port map (
       ADDRBWRADDR(3 downto 0) => ADDRBWRADDR(3 downto 0),
       DOBDO(31 downto 0) => DOBDO(31 downto 0),
@@ -9760,7 +9748,7 @@ fifo_in_clear_reg: unisim.vcomponents.FDRE
       Q => fifo_in_clear_reg_n_0,
       R => '0'
     );
-\fifo_in_g.fifo_in_i\: entity work.design_1_comblock_0_0_FIFO
+\fifo_in_g.fifo_in_i\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FIFO
      port map (
       D(0) => D(0),
       Q(1 downto 0) => Q(1 downto 0),
@@ -9812,7 +9800,7 @@ fifo_out_clear_reg: unisim.vcomponents.FDRE
       Q => fifo_out_clear_reg_n_0,
       R => '0'
     );
-\fifo_out_g.fifo_out_i\: entity work.design_1_comblock_0_0_FIFO_0
+\fifo_out_g.fifo_out_i\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FIFO_0
      port map (
       \axi_araddr_reg[4]\ => \axi_araddr_reg[4]_0\,
       \axi_rdata[17]_i_7\ => \fifo_out_g.fifo_out_i_n_41\,
@@ -11616,7 +11604,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_comblock_0_0_axi_comblock is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_comblock is
   port (
     reg4_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
     axi_arready_reg : out STD_LOGIC;
@@ -11683,11 +11671,9 @@ entity design_1_comblock_0_0_axi_comblock is
     axif_wlast : in STD_LOGIC;
     axif_bready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_comblock_0_0_axi_comblock : entity is "axi_comblock";
-end design_1_comblock_0_0_axi_comblock;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_comblock;
 
-architecture STRUCTURE of design_1_comblock_0_0_axi_comblock is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_comblock is
   signal AXIL_inst_n_10 : STD_LOGIC;
   signal AXIL_inst_n_11 : STD_LOGIC;
   signal AXIL_inst_n_15 : STD_LOGIC;
@@ -11767,7 +11753,7 @@ architecture STRUCTURE of design_1_comblock_0_0_axi_comblock is
   signal \regs_out[4]_5\ : STD_LOGIC;
 begin
   reg4_o(31 downto 0) <= \^reg4_o\(31 downto 0);
-AXIF_inst: entity work.design_1_comblock_0_0_AXIF
+AXIF_inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_AXIF
      port map (
       ADDRBWRADDR(3 downto 0) => mem_adr(5 downto 2),
       DOBDO(31 downto 0) => mem_rd_dat(31 downto 0),
@@ -11794,7 +11780,7 @@ AXIF_inst: entity work.design_1_comblock_0_0_AXIF
       axif_wlast => axif_wlast,
       axif_wvalid => axif_wvalid
     );
-AXIL_inst: entity work.design_1_comblock_0_0_AXIL
+AXIL_inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_AXIL
      port map (
       D(0) => \fifo_in_g.fifo_in_i/rd_ptr\(0),
       E(0) => \regs_out[3]_2\,
@@ -11890,7 +11876,7 @@ AXIL_inst: entity work.design_1_comblock_0_0_AXIL
       reg_rd_ena => reg_rd_ena,
       \wr_ptr_r[5]_i_2\ => comblock_i_n_150
     );
-comblock_i: entity work.design_1_comblock_0_0_ComBlock
+comblock_i: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ComBlock
      port map (
       ADDRBWRADDR(3 downto 0) => mem_adr(5 downto 2),
       D(0) => \fifo_in_g.fifo_in_i/rd_ptr\(0),
@@ -12002,7 +11988,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_comblock_0_0 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   port (
     reg0_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
     reg1_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -12099,18 +12085,18 @@ entity design_1_comblock_0_0 is
     axif_rready : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
-  attribute NotValidForBitStream of design_1_comblock_0_0 : entity is true;
+  attribute NotValidForBitStream of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of design_1_comblock_0_0 : entity is "design_1_comblock_0_0,axi_comblock,{}";
+  attribute CHECK_LICENSE_TYPE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "design_1_comblock_0_0,axi_comblock,{}";
   attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of design_1_comblock_0_0 : entity is "yes";
+  attribute downgradeipidentifiedwarnings of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "yes";
   attribute ip_definition_source : string;
-  attribute ip_definition_source of design_1_comblock_0_0 : entity is "package_project";
+  attribute ip_definition_source of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "package_project";
   attribute x_core_info : string;
-  attribute x_core_info of design_1_comblock_0_0 : entity is "axi_comblock,Vivado 2019.1";
-end design_1_comblock_0_0;
+  attribute x_core_info of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "axi_comblock,Vivado 2019.1";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 
-architecture STRUCTURE of design_1_comblock_0_0 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   signal \<const0>\ : STD_LOGIC;
   signal \^axif_arid\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \^axif_awid\ : STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -12237,7 +12223,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-U0: entity work.design_1_comblock_0_0_axi_comblock
+U0: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_comblock
      port map (
       axi_arready_reg => axif_arready,
       axi_awready_reg => axif_awready,

@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
---Date        : Wed Aug  5 04:25:32 2020
+--Date        : Mon Sep  7 13:47:00 2020
 --Host        : DESKTOP-B2I46DP running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1928,7 +1928,7 @@ architecture STRUCTURE of design_1 is
     reg4_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
     ram_clk_i : in STD_LOGIC;
     ram_we_i : in STD_LOGIC;
-    ram_addr_i : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    ram_addr_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     ram_data_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
     ram_data_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
     fifo_clk_i : in STD_LOGIC;
@@ -1968,7 +1968,7 @@ architecture STRUCTURE of design_1 is
     axif_aclk : in STD_LOGIC;
     axif_aresetn : in STD_LOGIC;
     axif_awid : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    axif_awaddr : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    axif_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
     axif_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
     axif_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
     axif_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -1992,7 +1992,7 @@ architecture STRUCTURE of design_1 is
     axif_bvalid : out STD_LOGIC;
     axif_bready : in STD_LOGIC;
     axif_arid : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    axif_araddr : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    axif_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
     axif_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
     axif_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
     axif_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -2042,7 +2042,7 @@ architecture STRUCTURE of design_1 is
   component design_1_xlslice_0_2 is
   port (
     Din : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    Dout : out STD_LOGIC_VECTOR ( 9 downto 0 )
+    Dout : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component design_1_xlslice_0_2;
   component design_1_xlconstant_0_1 is
@@ -2180,7 +2180,7 @@ architecture STRUCTURE of design_1 is
   signal ps7_0_axi_periph_M01_AXI_WVALID : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xlconstant_0_dout : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal xlslice_0_Dout : STD_LOGIC_VECTOR ( 9 downto 0 );
+  signal xlslice_0_Dout : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_comblock_fifo_aempty_o_UNCONNECTED : STD_LOGIC;
   signal NLW_comblock_fifo_afull_o_UNCONNECTED : STD_LOGIC;
   signal NLW_comblock_fifo_empty_o_UNCONNECTED : STD_LOGIC;
@@ -2225,7 +2225,7 @@ begin
 RAMaddr_slice: component design_1_xlslice_0_2
      port map (
       Din(31 downto 0) => comblock_0_reg3_o(31 downto 0),
-      Dout(9 downto 0) => xlslice_0_Dout(9 downto 0)
+      Dout(3 downto 0) => xlslice_0_Dout(3 downto 0)
     );
 clkRam_slice: component design_1_clkfifo_slice_0
      port map (
@@ -2240,7 +2240,7 @@ clkfifo_slice: component design_1_xlslice_0_1
 comblock: component design_1_comblock_0_0
      port map (
       axif_aclk => processing_system7_0_FCLK_CLK0,
-      axif_araddr(11 downto 0) => ps7_0_axi_periph_M01_AXI_ARADDR(11 downto 0),
+      axif_araddr(5 downto 0) => ps7_0_axi_periph_M01_AXI_ARADDR(5 downto 0),
       axif_arburst(1 downto 0) => ps7_0_axi_periph_M01_AXI_ARBURST(1 downto 0),
       axif_arcache(3 downto 0) => ps7_0_axi_periph_M01_AXI_ARCACHE(3 downto 0),
       axif_aresetn => rst_ps7_0_100M_peripheral_aresetn(0),
@@ -2254,7 +2254,7 @@ comblock: component design_1_comblock_0_0
       axif_arsize(2 downto 0) => ps7_0_axi_periph_M01_AXI_ARSIZE(2 downto 0),
       axif_aruser(0) => '0',
       axif_arvalid => ps7_0_axi_periph_M01_AXI_ARVALID(0),
-      axif_awaddr(11 downto 0) => ps7_0_axi_periph_M01_AXI_AWADDR(11 downto 0),
+      axif_awaddr(5 downto 0) => ps7_0_axi_periph_M01_AXI_AWADDR(5 downto 0),
       axif_awburst(1 downto 0) => ps7_0_axi_periph_M01_AXI_AWBURST(1 downto 0),
       axif_awcache(3 downto 0) => ps7_0_axi_periph_M01_AXI_AWCACHE(3 downto 0),
       axif_awid(11 downto 0) => ps7_0_axi_periph_M01_AXI_AWID(11 downto 0),
@@ -2319,7 +2319,7 @@ comblock: component design_1_comblock_0_0
       fifo_underflow_o => NLW_comblock_fifo_underflow_o_UNCONNECTED,
       fifo_valid_o => NLW_comblock_fifo_valid_o_UNCONNECTED,
       fifo_we_i => xlconstant_0_dout(0),
-      ram_addr_i(9 downto 0) => xlslice_0_Dout(9 downto 0),
+      ram_addr_i(3 downto 0) => xlslice_0_Dout(3 downto 0),
       ram_clk_i => clkfifo_slice1_Dout(0),
       ram_data_i(31 downto 0) => comblock_0_reg4_o(31 downto 0),
       ram_data_o(31 downto 0) => comblock_0_ram_data_o(31 downto 0),

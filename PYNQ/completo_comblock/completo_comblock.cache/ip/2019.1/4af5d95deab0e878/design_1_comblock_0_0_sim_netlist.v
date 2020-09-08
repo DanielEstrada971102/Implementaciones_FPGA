@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Mon Sep  7 13:48:31 2020
+// Date        : Mon Sep  7 13:48:30 2020
 // Host        : DESKTOP-B2I46DP running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               C:/Users/danie/Documents/Implementaciones_FPGA/PYNQ/completo_comblock/completo_comblock.srcs/sources_1/bd/design_1/ip/design_1_comblock_0_0/design_1_comblock_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_comblock_0_0_sim_netlist.v
 // Design      : design_1_comblock_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,346 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_comblock_0_0,axi_comblock,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
-(* x_core_info = "axi_comblock,Vivado 2019.1" *) 
-(* NotValidForBitStream *)
-module design_1_comblock_0_0
-   (reg0_i,
-    reg1_i,
-    reg2_i,
-    reg0_o,
-    reg1_o,
-    reg2_o,
-    reg3_o,
-    reg4_o,
-    ram_clk_i,
-    ram_we_i,
-    ram_addr_i,
-    ram_data_i,
-    ram_data_o,
-    fifo_clk_i,
-    fifo_clear_i,
-    fifo_we_i,
-    fifo_data_i,
-    fifo_full_o,
-    fifo_afull_o,
-    fifo_overflow_o,
-    fifo_re_i,
-    fifo_data_o,
-    fifo_valid_o,
-    fifo_empty_o,
-    fifo_aempty_o,
-    fifo_underflow_o,
-    axil_aclk,
-    axil_aresetn,
-    axil_awaddr,
-    axil_awprot,
-    axil_awvalid,
-    axil_awready,
-    axil_wdata,
-    axil_wstrb,
-    axil_wvalid,
-    axil_wready,
-    axil_bresp,
-    axil_bvalid,
-    axil_bready,
-    axil_araddr,
-    axil_arprot,
-    axil_arvalid,
-    axil_arready,
-    axil_rdata,
-    axil_rresp,
-    axil_rvalid,
-    axil_rready,
-    axif_aclk,
-    axif_aresetn,
-    axif_awid,
-    axif_awaddr,
-    axif_awlen,
-    axif_awsize,
-    axif_awburst,
-    axif_awlock,
-    axif_awcache,
-    axif_awprot,
-    axif_awqos,
-    axif_awregion,
-    axif_awuser,
-    axif_awvalid,
-    axif_awready,
-    axif_wdata,
-    axif_wstrb,
-    axif_wlast,
-    axif_wuser,
-    axif_wvalid,
-    axif_wready,
-    axif_bid,
-    axif_bresp,
-    axif_buser,
-    axif_bvalid,
-    axif_bready,
-    axif_arid,
-    axif_araddr,
-    axif_arlen,
-    axif_arsize,
-    axif_arburst,
-    axif_arlock,
-    axif_arcache,
-    axif_arprot,
-    axif_arqos,
-    axif_arregion,
-    axif_aruser,
-    axif_arvalid,
-    axif_arready,
-    axif_rid,
-    axif_rdata,
-    axif_rresp,
-    axif_rlast,
-    axif_ruser,
-    axif_rvalid,
-    axif_rready);
-  (* x_interface_info = "ictp:user:IREGS:1.0 IN_REGS reg0_i" *) input [31:0]reg0_i;
-  (* x_interface_info = "ictp:user:IREGS:1.0 IN_REGS reg1_i" *) input [31:0]reg1_i;
-  (* x_interface_info = "ictp:user:IREGS:1.0 IN_REGS reg2_i" *) input [31:0]reg2_i;
-  (* x_interface_info = "ictp:user:OREGS:1.0 OUT_REGS reg0_o" *) output [31:0]reg0_o;
-  (* x_interface_info = "ictp:user:OREGS:1.0 OUT_REGS reg1_o" *) output [31:0]reg1_o;
-  (* x_interface_info = "ictp:user:OREGS:1.0 OUT_REGS reg2_o" *) output [31:0]reg2_o;
-  (* x_interface_info = "ictp:user:OREGS:1.0 OUT_REGS reg3_o" *) output [31:0]reg3_o;
-  (* x_interface_info = "ictp:user:OREGS:1.0 OUT_REGS reg4_o" *) output [31:0]reg4_o;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 ram_clk_i CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME ram_clk_i, ASSOCIATED_BUSIF IO_DRAM, ASSOCIATED_RESET fifo_clear_i, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input ram_clk_i;
-  (* x_interface_info = "ictp:user:SRAM:1.0 IO_DRAM ram_we_i" *) input ram_we_i;
-  (* x_interface_info = "ictp:user:SRAM:1.0 IO_DRAM ram_addr_i" *) input [3:0]ram_addr_i;
-  (* x_interface_info = "ictp:user:SRAM:1.0 IO_DRAM ram_data_i" *) input [31:0]ram_data_i;
-  (* x_interface_info = "ictp:user:SRAM:1.0 IO_DRAM ram_data_o" *) output [31:0]ram_data_o;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 fifo_clk_i CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME fifo_clk_i, ASSOCIATED_BUSIF IN_FIFO:OUT_FIFO, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *) input fifo_clk_i;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 fifo_clear_i RST" *) (* x_interface_parameter = "XIL_INTERFACENAME fifo_clear_i, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input fifo_clear_i;
-  (* x_interface_info = "ictp:user:IFIFO:1.0 IN_FIFO fifo_we_i" *) input fifo_we_i;
-  (* x_interface_info = "ictp:user:IFIFO:1.0 IN_FIFO fifo_data_i" *) input [31:0]fifo_data_i;
-  (* x_interface_info = "ictp:user:IFIFO:1.0 IN_FIFO fifo_full_o" *) output fifo_full_o;
-  (* x_interface_info = "ictp:user:IFIFO:1.0 IN_FIFO fifo_afull_o" *) output fifo_afull_o;
-  (* x_interface_info = "ictp:user:IFIFO:1.0 IN_FIFO fifo_overflow_o" *) output fifo_overflow_o;
-  (* x_interface_info = "ictp:user:OFIFO:1.0 OUT_FIFO fifo_re_i" *) input fifo_re_i;
-  (* x_interface_info = "ictp:user:OFIFO:1.0 OUT_FIFO fifo_data_o" *) output [31:0]fifo_data_o;
-  (* x_interface_info = "ictp:user:OFIFO:1.0 OUT_FIFO fifo_valid_o" *) output fifo_valid_o;
-  (* x_interface_info = "ictp:user:OFIFO:1.0 OUT_FIFO fifo_empty_o" *) output fifo_empty_o;
-  (* x_interface_info = "ictp:user:OFIFO:1.0 OUT_FIFO fifo_aempty_o" *) output fifo_aempty_o;
-  (* x_interface_info = "ictp:user:OFIFO:1.0 OUT_FIFO fifo_underflow_o" *) output fifo_underflow_o;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 axil_aclk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME axil_aclk, ASSOCIATED_RESET axil_aresetn, ASSOCIATED_BUSIF AXIL, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input axil_aclk;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 axil_aresetn RST" *) (* x_interface_parameter = "XIL_INTERFACENAME axil_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input axil_aresetn;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME AXIL, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 8, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [7:0]axil_awaddr;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL AWPROT" *) input [2:0]axil_awprot;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL AWVALID" *) input axil_awvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL AWREADY" *) output axil_awready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL WDATA" *) input [31:0]axil_wdata;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL WSTRB" *) input [3:0]axil_wstrb;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL WVALID" *) input axil_wvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL WREADY" *) output axil_wready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL BRESP" *) output [1:0]axil_bresp;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL BVALID" *) output axil_bvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL BREADY" *) input axil_bready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL ARADDR" *) input [7:0]axil_araddr;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL ARPROT" *) input [2:0]axil_arprot;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL ARVALID" *) input axil_arvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL ARREADY" *) output axil_arready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL RDATA" *) output [31:0]axil_rdata;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL RRESP" *) output [1:0]axil_rresp;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL RVALID" *) output axil_rvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL RREADY" *) input axil_rready;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 axif_aclk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME axif_aclk, ASSOCIATED_RESET axif_aresetn, ASSOCIATED_BUSIF AXIF, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input axif_aclk;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 axif_aresetn RST" *) (* x_interface_parameter = "XIL_INTERFACENAME axif_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input axif_aresetn;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWID" *) (* x_interface_parameter = "XIL_INTERFACENAME AXIF, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 12, ADDR_WIDTH 6, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 1, RUSER_WIDTH 1, BUSER_WIDTH 1, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [11:0]axif_awid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWADDR" *) input [5:0]axif_awaddr;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWLEN" *) input [7:0]axif_awlen;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWSIZE" *) input [2:0]axif_awsize;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWBURST" *) input [1:0]axif_awburst;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWLOCK" *) input axif_awlock;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWCACHE" *) input [3:0]axif_awcache;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWPROT" *) input [2:0]axif_awprot;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWQOS" *) input [3:0]axif_awqos;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWREGION" *) input [3:0]axif_awregion;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWUSER" *) input [0:0]axif_awuser;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWVALID" *) input axif_awvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWREADY" *) output axif_awready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF WDATA" *) input [31:0]axif_wdata;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF WSTRB" *) input [3:0]axif_wstrb;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF WLAST" *) input axif_wlast;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF WUSER" *) input [0:0]axif_wuser;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF WVALID" *) input axif_wvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF WREADY" *) output axif_wready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF BID" *) output [11:0]axif_bid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF BRESP" *) output [1:0]axif_bresp;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF BUSER" *) output [0:0]axif_buser;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF BVALID" *) output axif_bvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF BREADY" *) input axif_bready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARID" *) input [11:0]axif_arid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARADDR" *) input [5:0]axif_araddr;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARLEN" *) input [7:0]axif_arlen;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARSIZE" *) input [2:0]axif_arsize;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARBURST" *) input [1:0]axif_arburst;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARLOCK" *) input axif_arlock;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARCACHE" *) input [3:0]axif_arcache;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARPROT" *) input [2:0]axif_arprot;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARQOS" *) input [3:0]axif_arqos;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARREGION" *) input [3:0]axif_arregion;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARUSER" *) input [0:0]axif_aruser;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARVALID" *) input axif_arvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARREADY" *) output axif_arready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RID" *) output [11:0]axif_rid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RDATA" *) output [31:0]axif_rdata;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RRESP" *) output [1:0]axif_rresp;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RLAST" *) output axif_rlast;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RUSER" *) output [0:0]axif_ruser;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RVALID" *) output axif_rvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RREADY" *) input axif_rready;
-
-  wire \<const0> ;
-  wire axif_aclk;
-  wire [5:0]axif_araddr;
-  wire [1:0]axif_arburst;
-  wire axif_aresetn;
-  wire [11:0]axif_arid;
-  wire [7:0]axif_arlen;
-  wire axif_arready;
-  wire axif_arvalid;
-  wire [5:0]axif_awaddr;
-  wire [1:0]axif_awburst;
-  wire [11:0]axif_awid;
-  wire [7:0]axif_awlen;
-  wire axif_awready;
-  wire axif_awvalid;
-  wire axif_bready;
-  wire axif_bvalid;
-  wire [31:0]axif_rdata;
-  wire axif_rlast;
-  wire axif_rready;
-  wire axif_rvalid;
-  wire [31:0]axif_wdata;
-  wire axif_wlast;
-  wire axif_wready;
-  wire axif_wvalid;
-  wire axil_aclk;
-  wire [7:0]axil_araddr;
-  wire axil_aresetn;
-  wire axil_arready;
-  wire axil_arvalid;
-  wire [7:0]axil_awaddr;
-  wire axil_awready;
-  wire axil_awvalid;
-  wire axil_bready;
-  wire axil_bvalid;
-  wire [31:0]axil_rdata;
-  wire axil_rready;
-  wire axil_rvalid;
-  wire [31:0]axil_wdata;
-  wire axil_wready;
-  wire axil_wvalid;
-  wire fifo_aempty_o;
-  wire fifo_afull_o;
-  wire fifo_clear_i;
-  wire fifo_clk_i;
-  wire [31:0]fifo_data_i;
-  wire [31:0]fifo_data_o;
-  wire fifo_empty_o;
-  wire fifo_full_o;
-  wire fifo_overflow_o;
-  wire fifo_re_i;
-  wire fifo_underflow_o;
-  wire fifo_valid_o;
-  wire fifo_we_i;
-  wire [3:0]ram_addr_i;
-  wire ram_clk_i;
-  wire [31:0]ram_data_i;
-  wire [31:0]ram_data_o;
-  wire ram_we_i;
-  wire [31:0]reg0_i;
-  wire [31:0]reg0_o;
-  wire [31:0]reg1_i;
-  wire [31:0]reg1_o;
-  wire [31:0]reg2_i;
-  wire [31:0]reg2_o;
-  wire [31:0]reg3_o;
-  wire [31:0]reg4_o;
-
-  assign axif_bid[11:0] = axif_awid;
-  assign axif_bresp[1] = \<const0> ;
-  assign axif_bresp[0] = \<const0> ;
-  assign axif_rid[11:0] = axif_arid;
-  assign axif_rresp[1] = \<const0> ;
-  assign axif_rresp[0] = \<const0> ;
-  assign axil_bresp[1] = \<const0> ;
-  assign axil_bresp[0] = \<const0> ;
-  assign axil_rresp[1] = \<const0> ;
-  assign axil_rresp[0] = \<const0> ;
-  GND GND
-       (.G(\<const0> ));
-  design_1_comblock_0_0_axi_comblock U0
-       (.axi_arready_reg(axif_arready),
-        .axi_awready_reg(axif_awready),
-        .axi_rvalid_reg(axif_rvalid),
-        .axi_rvalid_reg_0(axil_rvalid),
-        .axi_wready_reg(axif_wready),
-        .axif_aclk(axif_aclk),
-        .axif_araddr(axif_araddr[5:2]),
-        .axif_arburst(axif_arburst),
-        .axif_aresetn(axif_aresetn),
-        .axif_arlen(axif_arlen),
-        .axif_arvalid(axif_arvalid),
-        .axif_awaddr(axif_awaddr[5:2]),
-        .axif_awburst(axif_awburst),
-        .axif_awlen(axif_awlen),
-        .axif_awvalid(axif_awvalid),
-        .axif_bready(axif_bready),
-        .axif_bvalid(axif_bvalid),
-        .axif_rdata(axif_rdata),
-        .axif_rlast(axif_rlast),
-        .axif_rready(axif_rready),
-        .axif_wdata(axif_wdata),
-        .axif_wlast(axif_wlast),
-        .axif_wvalid(axif_wvalid),
-        .axil_aclk(axil_aclk),
-        .axil_araddr(axil_araddr[7:2]),
-        .axil_aresetn(axil_aresetn),
-        .axil_arready(axil_arready),
-        .axil_arvalid(axil_arvalid),
-        .axil_awaddr(axil_awaddr[7:2]),
-        .axil_awready(axil_awready),
-        .axil_awvalid(axil_awvalid),
-        .axil_bready(axil_bready),
-        .axil_bvalid(axil_bvalid),
-        .axil_rdata(axil_rdata),
-        .axil_rready(axil_rready),
-        .axil_wdata(axil_wdata),
-        .axil_wready(axil_wready),
-        .axil_wvalid(axil_wvalid),
-        .fifo_aempty_o(fifo_aempty_o),
-        .fifo_afull_o(fifo_afull_o),
-        .fifo_clear_i(fifo_clear_i),
-        .fifo_clk_i(fifo_clk_i),
-        .fifo_data_i(fifo_data_i),
-        .fifo_data_o(fifo_data_o),
-        .fifo_empty_o(fifo_empty_o),
-        .fifo_full_o(fifo_full_o),
-        .fifo_overflow_o(fifo_overflow_o),
-        .fifo_re_i(fifo_re_i),
-        .fifo_underflow_o(fifo_underflow_o),
-        .fifo_valid_o(fifo_valid_o),
-        .fifo_we_i(fifo_we_i),
-        .ram_addr_i(ram_addr_i),
-        .ram_clk_i(ram_clk_i),
-        .ram_data_i(ram_data_i),
-        .ram_data_o(ram_data_o),
-        .ram_we_i(ram_we_i),
-        .reg0_i(reg0_i),
-        .reg0_o(reg0_o),
-        .reg1_i(reg1_i),
-        .reg1_o(reg1_o),
-        .reg2_i(reg2_i),
-        .reg2_o(reg2_o),
-        .reg3_o(reg3_o),
-        .reg4_o(reg4_o));
-endmodule
-
-(* ORIG_REF_NAME = "AXIF" *) 
-module design_1_comblock_0_0_AXIF
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_AXIF
    (axi_rvalid_reg_0,
     axi_arready_reg_0,
     axi_wready_reg_0,
@@ -1645,8 +1306,7 @@ module design_1_comblock_0_0_AXIF
         .O(WEBWE));
 endmodule
 
-(* ORIG_REF_NAME = "AXIL" *) 
-module design_1_comblock_0_0_AXIL
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_AXIL
    (axi_awready_reg_0,
     axi_wready_reg_0,
     axi_arready_reg_0,
@@ -3652,8 +3312,7 @@ module design_1_comblock_0_0_AXIL
         .O(\axi_awaddr_reg[7]_1 ));
 endmodule
 
-(* ORIG_REF_NAME = "ComBlock" *) 
-module design_1_comblock_0_0_ComBlock
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ComBlock
    (ram_data_o,
     DOBDO,
     ram_reg,
@@ -4286,7 +3945,7 @@ module design_1_comblock_0_0_ComBlock
         .I4(\axi_rdata_reg[0] [0]),
         .I5(reg0_o[9]),
         .O(\regs_out_reg[3][9]_0 ));
-  design_1_comblock_0_0_tdpram \dram_g.dram_i 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram \dram_g.dram_i 
        (.ADDRBWRADDR(ADDRBWRADDR),
         .DOBDO(DOBDO),
         .WEBWE(WEBWE),
@@ -4303,7 +3962,7 @@ module design_1_comblock_0_0_ComBlock
         .D(fifo_in_clear_reg_0),
         .Q(fifo_in_clear_reg_n_0),
         .R(1'b0));
-  design_1_comblock_0_0_FIFO \fifo_in_g.fifo_in_i 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FIFO \fifo_in_g.fifo_in_i 
        (.D(D),
         .Q(Q),
         .\axi_araddr_reg[3] (\axi_araddr_reg[3] ),
@@ -4348,7 +4007,7 @@ module design_1_comblock_0_0_ComBlock
         .D(fifo_out_clear_reg_0),
         .Q(fifo_out_clear_reg_n_0),
         .R(1'b0));
-  design_1_comblock_0_0_FIFO_0 \fifo_out_g.fifo_out_i 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FIFO_0 \fifo_out_g.fifo_out_i 
        (.\axi_araddr_reg[4] (\axi_araddr_reg[4]_0 ),
         .\axi_rdata[17]_i_7 (\fifo_out_g.fifo_out_i_n_41 ),
         .\axi_rdata[1]_i_3 (\axi_rdata_reg[0] [2]),
@@ -5664,8 +5323,7 @@ module design_1_comblock_0_0_ComBlock
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "FIFO" *) 
-module design_1_comblock_0_0_FIFO
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FIFO
    (ram_reg,
     Q,
     fifo_full_o,
@@ -6027,7 +5685,7 @@ module design_1_comblock_0_0_FIFO
         .D(fifo_full_o),
         .Q(full_r),
         .R(rst));
-  design_1_comblock_0_0_GraySync_2 \g_async.i_sync_rd2wr 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_2 \g_async.i_sync_rd2wr 
        (.DI({\g_async.i_sync_rd2wr_n_6 ,\g_async.i_sync_rd2wr_n_7 ,\g_async.i_sync_rd2wr_n_8 }),
         .Q(ptr[1:0]),
         .S({\g_async.i_sync_rd2wr_n_0 ,\g_async.i_sync_rd2wr_n_1 }),
@@ -6052,7 +5710,7 @@ module design_1_comblock_0_0_FIFO
         .full_r(full_r),
         .p_1_in(p_1_in[4:3]),
         .wr_ptr(wr_ptr[2]));
-  design_1_comblock_0_0_GraySync_3 \g_async.i_sync_wr2rd 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_3 \g_async.i_sync_wr2rd 
        (.DI(\g_async.i_sync_wr2rd_n_9 ),
         .O({\diff_ptr0_inferred__2/i__carry_n_4 ,\diff_ptr0_inferred__2/i__carry_n_5 ,\diff_ptr0_inferred__2/i__carry_n_6 ,\diff_ptr0_inferred__2/i__carry_n_7 }),
         .Q(Q),
@@ -6104,7 +5762,7 @@ module design_1_comblock_0_0_FIFO
         .I1(full_r),
         .I2(fifo_we_i),
         .O(i__carry_i_2_n_0));
-  design_1_comblock_0_0_tdpram__parameterized0_4 i_memory
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0_4 i_memory
        (.Q({\rd_ptr_r_reg_n_0_[4] ,\rd_ptr_r_reg_n_0_[3] ,\rd_ptr_r_reg_n_0_[2] ,Q}),
         .WEBWE(p_4_in),
         .axil_aclk(axil_aclk),
@@ -6328,7 +5986,7 @@ module design_1_comblock_0_0_FIFO
 endmodule
 
 (* ORIG_REF_NAME = "FIFO" *) 
-module design_1_comblock_0_0_FIFO_0
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FIFO_0
    (fifo_data_o,
     full_r,
     fifo_empty_o,
@@ -6716,7 +6374,7 @@ module design_1_comblock_0_0_FIFO_0
         .D(p_8_out),
         .Q(full_r),
         .R(rst));
-  design_1_comblock_0_0_GraySync \g_async.i_sync_rd2wr 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync \g_async.i_sync_rd2wr 
        (.DI({\g_async.i_sync_rd2wr_n_6 ,\g_async.i_sync_rd2wr_n_7 ,\g_async.i_sync_rd2wr_n_8 }),
         .Q(ptr[0]),
         .S({\g_async.i_sync_rd2wr_n_0 ,\g_async.i_sync_rd2wr_n_1 }),
@@ -6750,7 +6408,7 @@ module design_1_comblock_0_0_FIFO_0
         .p_1_in__0(p_1_in__0),
         .p_8_out(p_8_out),
         .wr_ptr(wr_ptr));
-  design_1_comblock_0_0_GraySync_1 \g_async.i_sync_wr2rd 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_1 \g_async.i_sync_wr2rd 
        (.DI({\g_async.i_sync_wr2rd_n_3 ,wr_in_rd_bin}),
         .O({\diff_ptr0_inferred__2/i___0_carry_n_4 ,\diff_ptr0_inferred__2/i___0_carry_n_5 ,\diff_ptr0_inferred__2/i___0_carry_n_6 }),
         .Q({p_0_in,ptr}),
@@ -6804,7 +6462,7 @@ module design_1_comblock_0_0_FIFO_0
        (.I0(ptr[0]),
         .I1(\wr_ptr_r_reg[3]_0 ),
         .O(i__carry_i_2__4_n_0));
-  design_1_comblock_0_0_tdpram__parameterized0 i_memory
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0 i_memory
        (.Q({\rd_ptr_r_reg_n_0_[4] ,\rd_ptr_r_reg_n_0_[3] ,\rd_ptr_r_reg_n_0_[2] ,\rd_ptr_r_reg_n_0_[1] ,\rd_ptr_r_reg_n_0_[0] }),
         .axil_aclk(axil_aclk),
         .axil_wdata(axil_wdata),
@@ -7050,8 +6708,7 @@ module design_1_comblock_0_0_FIFO_0
         .R(rst));
 endmodule
 
-(* ORIG_REF_NAME = "GraySync" *) 
-module design_1_comblock_0_0_GraySync
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync
    (S,
     \data_r_reg[1][3]_0 ,
     DI,
@@ -7618,7 +7275,7 @@ module design_1_comblock_0_0_GraySync
 endmodule
 
 (* ORIG_REF_NAME = "GraySync" *) 
-module design_1_comblock_0_0_GraySync_1
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_1
    (S,
     \data_r_reg[1][5]_0 ,
     DI,
@@ -8218,7 +7875,7 @@ module design_1_comblock_0_0_GraySync_1
 endmodule
 
 (* ORIG_REF_NAME = "GraySync" *) 
-module design_1_comblock_0_0_GraySync_2
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_2
    (S,
     \data_r_reg[1][5]_0 ,
     DI,
@@ -8809,7 +8466,7 @@ module design_1_comblock_0_0_GraySync_2
 endmodule
 
 (* ORIG_REF_NAME = "GraySync" *) 
-module design_1_comblock_0_0_GraySync_3
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GraySync_3
    (\data_r_reg[1][1]_0 ,
     S,
     \data_r_reg[1][2]_0 ,
@@ -9430,8 +9087,7 @@ module design_1_comblock_0_0_GraySync_3
         .O(\data_r_reg[1][2]_3 [0]));
 endmodule
 
-(* ORIG_REF_NAME = "axi_comblock" *) 
-module design_1_comblock_0_0_axi_comblock
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_comblock
    (reg4_o,
     axi_arready_reg,
     axi_awready_reg,
@@ -9702,7 +9358,7 @@ module design_1_comblock_0_0_axi_comblock
   wire \regs_out[3]_2 ;
   wire \regs_out[4]_5 ;
 
-  design_1_comblock_0_0_AXIF AXIF_inst
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_AXIF AXIF_inst
        (.ADDRBWRADDR(mem_adr),
         .DOBDO(mem_rd_dat),
         .WEBWE(mem_wr_ena),
@@ -9727,7 +9383,7 @@ module design_1_comblock_0_0_axi_comblock
         .axif_rready(axif_rready),
         .axif_wlast(axif_wlast),
         .axif_wvalid(axif_wvalid));
-  design_1_comblock_0_0_AXIL AXIL_inst
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_AXIL AXIL_inst
        (.D(\fifo_in_g.fifo_in_i/rd_ptr ),
         .E(\regs_out[3]_2 ),
         .Q(reg_rd_adr),
@@ -9819,7 +9475,7 @@ module design_1_comblock_0_0_axi_comblock
         .reg4_o(reg4_o),
         .reg_rd_ena(reg_rd_ena),
         .\wr_ptr_r[5]_i_2 (comblock_i_n_150));
-  design_1_comblock_0_0_ComBlock comblock_i
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ComBlock comblock_i
        (.ADDRBWRADDR(mem_adr),
         .D(\fifo_in_g.fifo_in_i/rd_ptr ),
         .DOBDO(mem_rd_dat),
@@ -9924,8 +9580,345 @@ module design_1_comblock_0_0_axi_comblock
         .\wr_ptr_r_reg[5]_0 (AXIL_inst_n_18));
 endmodule
 
-(* ORIG_REF_NAME = "tdpram" *) 
-module design_1_comblock_0_0_tdpram
+(* CHECK_LICENSE_TYPE = "design_1_comblock_0_0,axi_comblock,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
+(* x_core_info = "axi_comblock,Vivado 2019.1" *) 
+(* NotValidForBitStream *)
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
+   (reg0_i,
+    reg1_i,
+    reg2_i,
+    reg0_o,
+    reg1_o,
+    reg2_o,
+    reg3_o,
+    reg4_o,
+    ram_clk_i,
+    ram_we_i,
+    ram_addr_i,
+    ram_data_i,
+    ram_data_o,
+    fifo_clk_i,
+    fifo_clear_i,
+    fifo_we_i,
+    fifo_data_i,
+    fifo_full_o,
+    fifo_afull_o,
+    fifo_overflow_o,
+    fifo_re_i,
+    fifo_data_o,
+    fifo_valid_o,
+    fifo_empty_o,
+    fifo_aempty_o,
+    fifo_underflow_o,
+    axil_aclk,
+    axil_aresetn,
+    axil_awaddr,
+    axil_awprot,
+    axil_awvalid,
+    axil_awready,
+    axil_wdata,
+    axil_wstrb,
+    axil_wvalid,
+    axil_wready,
+    axil_bresp,
+    axil_bvalid,
+    axil_bready,
+    axil_araddr,
+    axil_arprot,
+    axil_arvalid,
+    axil_arready,
+    axil_rdata,
+    axil_rresp,
+    axil_rvalid,
+    axil_rready,
+    axif_aclk,
+    axif_aresetn,
+    axif_awid,
+    axif_awaddr,
+    axif_awlen,
+    axif_awsize,
+    axif_awburst,
+    axif_awlock,
+    axif_awcache,
+    axif_awprot,
+    axif_awqos,
+    axif_awregion,
+    axif_awuser,
+    axif_awvalid,
+    axif_awready,
+    axif_wdata,
+    axif_wstrb,
+    axif_wlast,
+    axif_wuser,
+    axif_wvalid,
+    axif_wready,
+    axif_bid,
+    axif_bresp,
+    axif_buser,
+    axif_bvalid,
+    axif_bready,
+    axif_arid,
+    axif_araddr,
+    axif_arlen,
+    axif_arsize,
+    axif_arburst,
+    axif_arlock,
+    axif_arcache,
+    axif_arprot,
+    axif_arqos,
+    axif_arregion,
+    axif_aruser,
+    axif_arvalid,
+    axif_arready,
+    axif_rid,
+    axif_rdata,
+    axif_rresp,
+    axif_rlast,
+    axif_ruser,
+    axif_rvalid,
+    axif_rready);
+  (* x_interface_info = "ictp:user:IREGS:1.0 IN_REGS reg0_i" *) input [31:0]reg0_i;
+  (* x_interface_info = "ictp:user:IREGS:1.0 IN_REGS reg1_i" *) input [31:0]reg1_i;
+  (* x_interface_info = "ictp:user:IREGS:1.0 IN_REGS reg2_i" *) input [31:0]reg2_i;
+  (* x_interface_info = "ictp:user:OREGS:1.0 OUT_REGS reg0_o" *) output [31:0]reg0_o;
+  (* x_interface_info = "ictp:user:OREGS:1.0 OUT_REGS reg1_o" *) output [31:0]reg1_o;
+  (* x_interface_info = "ictp:user:OREGS:1.0 OUT_REGS reg2_o" *) output [31:0]reg2_o;
+  (* x_interface_info = "ictp:user:OREGS:1.0 OUT_REGS reg3_o" *) output [31:0]reg3_o;
+  (* x_interface_info = "ictp:user:OREGS:1.0 OUT_REGS reg4_o" *) output [31:0]reg4_o;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 ram_clk_i CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME ram_clk_i, ASSOCIATED_BUSIF IO_DRAM, ASSOCIATED_RESET fifo_clear_i, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input ram_clk_i;
+  (* x_interface_info = "ictp:user:SRAM:1.0 IO_DRAM ram_we_i" *) input ram_we_i;
+  (* x_interface_info = "ictp:user:SRAM:1.0 IO_DRAM ram_addr_i" *) input [3:0]ram_addr_i;
+  (* x_interface_info = "ictp:user:SRAM:1.0 IO_DRAM ram_data_i" *) input [31:0]ram_data_i;
+  (* x_interface_info = "ictp:user:SRAM:1.0 IO_DRAM ram_data_o" *) output [31:0]ram_data_o;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 fifo_clk_i CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME fifo_clk_i, ASSOCIATED_BUSIF IN_FIFO:OUT_FIFO, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *) input fifo_clk_i;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 fifo_clear_i RST" *) (* x_interface_parameter = "XIL_INTERFACENAME fifo_clear_i, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input fifo_clear_i;
+  (* x_interface_info = "ictp:user:IFIFO:1.0 IN_FIFO fifo_we_i" *) input fifo_we_i;
+  (* x_interface_info = "ictp:user:IFIFO:1.0 IN_FIFO fifo_data_i" *) input [31:0]fifo_data_i;
+  (* x_interface_info = "ictp:user:IFIFO:1.0 IN_FIFO fifo_full_o" *) output fifo_full_o;
+  (* x_interface_info = "ictp:user:IFIFO:1.0 IN_FIFO fifo_afull_o" *) output fifo_afull_o;
+  (* x_interface_info = "ictp:user:IFIFO:1.0 IN_FIFO fifo_overflow_o" *) output fifo_overflow_o;
+  (* x_interface_info = "ictp:user:OFIFO:1.0 OUT_FIFO fifo_re_i" *) input fifo_re_i;
+  (* x_interface_info = "ictp:user:OFIFO:1.0 OUT_FIFO fifo_data_o" *) output [31:0]fifo_data_o;
+  (* x_interface_info = "ictp:user:OFIFO:1.0 OUT_FIFO fifo_valid_o" *) output fifo_valid_o;
+  (* x_interface_info = "ictp:user:OFIFO:1.0 OUT_FIFO fifo_empty_o" *) output fifo_empty_o;
+  (* x_interface_info = "ictp:user:OFIFO:1.0 OUT_FIFO fifo_aempty_o" *) output fifo_aempty_o;
+  (* x_interface_info = "ictp:user:OFIFO:1.0 OUT_FIFO fifo_underflow_o" *) output fifo_underflow_o;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 axil_aclk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME axil_aclk, ASSOCIATED_RESET axil_aresetn, ASSOCIATED_BUSIF AXIL, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input axil_aclk;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 axil_aresetn RST" *) (* x_interface_parameter = "XIL_INTERFACENAME axil_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input axil_aresetn;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME AXIL, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 8, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [7:0]axil_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL AWPROT" *) input [2:0]axil_awprot;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL AWVALID" *) input axil_awvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL AWREADY" *) output axil_awready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL WDATA" *) input [31:0]axil_wdata;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL WSTRB" *) input [3:0]axil_wstrb;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL WVALID" *) input axil_wvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL WREADY" *) output axil_wready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL BRESP" *) output [1:0]axil_bresp;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL BVALID" *) output axil_bvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL BREADY" *) input axil_bready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL ARADDR" *) input [7:0]axil_araddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL ARPROT" *) input [2:0]axil_arprot;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL ARVALID" *) input axil_arvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL ARREADY" *) output axil_arready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL RDATA" *) output [31:0]axil_rdata;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL RRESP" *) output [1:0]axil_rresp;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL RVALID" *) output axil_rvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIL RREADY" *) input axil_rready;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 axif_aclk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME axif_aclk, ASSOCIATED_RESET axif_aresetn, ASSOCIATED_BUSIF AXIF, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input axif_aclk;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 axif_aresetn RST" *) (* x_interface_parameter = "XIL_INTERFACENAME axif_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input axif_aresetn;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWID" *) (* x_interface_parameter = "XIL_INTERFACENAME AXIF, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 12, ADDR_WIDTH 6, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 1, RUSER_WIDTH 1, BUSER_WIDTH 1, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [11:0]axif_awid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWADDR" *) input [5:0]axif_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWLEN" *) input [7:0]axif_awlen;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWSIZE" *) input [2:0]axif_awsize;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWBURST" *) input [1:0]axif_awburst;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWLOCK" *) input axif_awlock;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWCACHE" *) input [3:0]axif_awcache;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWPROT" *) input [2:0]axif_awprot;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWQOS" *) input [3:0]axif_awqos;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWREGION" *) input [3:0]axif_awregion;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWUSER" *) input [0:0]axif_awuser;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWVALID" *) input axif_awvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF AWREADY" *) output axif_awready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF WDATA" *) input [31:0]axif_wdata;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF WSTRB" *) input [3:0]axif_wstrb;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF WLAST" *) input axif_wlast;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF WUSER" *) input [0:0]axif_wuser;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF WVALID" *) input axif_wvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF WREADY" *) output axif_wready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF BID" *) output [11:0]axif_bid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF BRESP" *) output [1:0]axif_bresp;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF BUSER" *) output [0:0]axif_buser;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF BVALID" *) output axif_bvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF BREADY" *) input axif_bready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARID" *) input [11:0]axif_arid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARADDR" *) input [5:0]axif_araddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARLEN" *) input [7:0]axif_arlen;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARSIZE" *) input [2:0]axif_arsize;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARBURST" *) input [1:0]axif_arburst;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARLOCK" *) input axif_arlock;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARCACHE" *) input [3:0]axif_arcache;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARPROT" *) input [2:0]axif_arprot;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARQOS" *) input [3:0]axif_arqos;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARREGION" *) input [3:0]axif_arregion;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARUSER" *) input [0:0]axif_aruser;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARVALID" *) input axif_arvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF ARREADY" *) output axif_arready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RID" *) output [11:0]axif_rid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RDATA" *) output [31:0]axif_rdata;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RRESP" *) output [1:0]axif_rresp;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RLAST" *) output axif_rlast;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RUSER" *) output [0:0]axif_ruser;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RVALID" *) output axif_rvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXIF RREADY" *) input axif_rready;
+
+  wire \<const0> ;
+  wire axif_aclk;
+  wire [5:0]axif_araddr;
+  wire [1:0]axif_arburst;
+  wire axif_aresetn;
+  wire [11:0]axif_arid;
+  wire [7:0]axif_arlen;
+  wire axif_arready;
+  wire axif_arvalid;
+  wire [5:0]axif_awaddr;
+  wire [1:0]axif_awburst;
+  wire [11:0]axif_awid;
+  wire [7:0]axif_awlen;
+  wire axif_awready;
+  wire axif_awvalid;
+  wire axif_bready;
+  wire axif_bvalid;
+  wire [31:0]axif_rdata;
+  wire axif_rlast;
+  wire axif_rready;
+  wire axif_rvalid;
+  wire [31:0]axif_wdata;
+  wire axif_wlast;
+  wire axif_wready;
+  wire axif_wvalid;
+  wire axil_aclk;
+  wire [7:0]axil_araddr;
+  wire axil_aresetn;
+  wire axil_arready;
+  wire axil_arvalid;
+  wire [7:0]axil_awaddr;
+  wire axil_awready;
+  wire axil_awvalid;
+  wire axil_bready;
+  wire axil_bvalid;
+  wire [31:0]axil_rdata;
+  wire axil_rready;
+  wire axil_rvalid;
+  wire [31:0]axil_wdata;
+  wire axil_wready;
+  wire axil_wvalid;
+  wire fifo_aempty_o;
+  wire fifo_afull_o;
+  wire fifo_clear_i;
+  wire fifo_clk_i;
+  wire [31:0]fifo_data_i;
+  wire [31:0]fifo_data_o;
+  wire fifo_empty_o;
+  wire fifo_full_o;
+  wire fifo_overflow_o;
+  wire fifo_re_i;
+  wire fifo_underflow_o;
+  wire fifo_valid_o;
+  wire fifo_we_i;
+  wire [3:0]ram_addr_i;
+  wire ram_clk_i;
+  wire [31:0]ram_data_i;
+  wire [31:0]ram_data_o;
+  wire ram_we_i;
+  wire [31:0]reg0_i;
+  wire [31:0]reg0_o;
+  wire [31:0]reg1_i;
+  wire [31:0]reg1_o;
+  wire [31:0]reg2_i;
+  wire [31:0]reg2_o;
+  wire [31:0]reg3_o;
+  wire [31:0]reg4_o;
+
+  assign axif_bid[11:0] = axif_awid;
+  assign axif_bresp[1] = \<const0> ;
+  assign axif_bresp[0] = \<const0> ;
+  assign axif_rid[11:0] = axif_arid;
+  assign axif_rresp[1] = \<const0> ;
+  assign axif_rresp[0] = \<const0> ;
+  assign axil_bresp[1] = \<const0> ;
+  assign axil_bresp[0] = \<const0> ;
+  assign axil_rresp[1] = \<const0> ;
+  assign axil_rresp[0] = \<const0> ;
+  GND GND
+       (.G(\<const0> ));
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_comblock U0
+       (.axi_arready_reg(axif_arready),
+        .axi_awready_reg(axif_awready),
+        .axi_rvalid_reg(axif_rvalid),
+        .axi_rvalid_reg_0(axil_rvalid),
+        .axi_wready_reg(axif_wready),
+        .axif_aclk(axif_aclk),
+        .axif_araddr(axif_araddr[5:2]),
+        .axif_arburst(axif_arburst),
+        .axif_aresetn(axif_aresetn),
+        .axif_arlen(axif_arlen),
+        .axif_arvalid(axif_arvalid),
+        .axif_awaddr(axif_awaddr[5:2]),
+        .axif_awburst(axif_awburst),
+        .axif_awlen(axif_awlen),
+        .axif_awvalid(axif_awvalid),
+        .axif_bready(axif_bready),
+        .axif_bvalid(axif_bvalid),
+        .axif_rdata(axif_rdata),
+        .axif_rlast(axif_rlast),
+        .axif_rready(axif_rready),
+        .axif_wdata(axif_wdata),
+        .axif_wlast(axif_wlast),
+        .axif_wvalid(axif_wvalid),
+        .axil_aclk(axil_aclk),
+        .axil_araddr(axil_araddr[7:2]),
+        .axil_aresetn(axil_aresetn),
+        .axil_arready(axil_arready),
+        .axil_arvalid(axil_arvalid),
+        .axil_awaddr(axil_awaddr[7:2]),
+        .axil_awready(axil_awready),
+        .axil_awvalid(axil_awvalid),
+        .axil_bready(axil_bready),
+        .axil_bvalid(axil_bvalid),
+        .axil_rdata(axil_rdata),
+        .axil_rready(axil_rready),
+        .axil_wdata(axil_wdata),
+        .axil_wready(axil_wready),
+        .axil_wvalid(axil_wvalid),
+        .fifo_aempty_o(fifo_aempty_o),
+        .fifo_afull_o(fifo_afull_o),
+        .fifo_clear_i(fifo_clear_i),
+        .fifo_clk_i(fifo_clk_i),
+        .fifo_data_i(fifo_data_i),
+        .fifo_data_o(fifo_data_o),
+        .fifo_empty_o(fifo_empty_o),
+        .fifo_full_o(fifo_full_o),
+        .fifo_overflow_o(fifo_overflow_o),
+        .fifo_re_i(fifo_re_i),
+        .fifo_underflow_o(fifo_underflow_o),
+        .fifo_valid_o(fifo_valid_o),
+        .fifo_we_i(fifo_we_i),
+        .ram_addr_i(ram_addr_i),
+        .ram_clk_i(ram_clk_i),
+        .ram_data_i(ram_data_i),
+        .ram_data_o(ram_data_o),
+        .ram_we_i(ram_we_i),
+        .reg0_i(reg0_i),
+        .reg0_o(reg0_o),
+        .reg1_i(reg1_i),
+        .reg1_o(reg1_o),
+        .reg2_i(reg2_i),
+        .reg2_o(reg2_o),
+        .reg3_o(reg3_o),
+        .reg4_o(reg4_o));
+endmodule
+
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram
    (ram_data_o,
     DOBDO,
     ram_clk_i,
@@ -10041,7 +10034,7 @@ module design_1_comblock_0_0_tdpram
 endmodule
 
 (* ORIG_REF_NAME = "tdpram" *) 
-module design_1_comblock_0_0_tdpram__parameterized0
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0
    (fifo_data_o,
     fifo_clk_i,
     axil_aclk,
@@ -10126,7 +10119,7 @@ module design_1_comblock_0_0_tdpram__parameterized0
 endmodule
 
 (* ORIG_REF_NAME = "tdpram" *) 
-module design_1_comblock_0_0_tdpram__parameterized0_4
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_tdpram__parameterized0_4
    (ram_reg_0,
     p_4_out,
     WEBWE,

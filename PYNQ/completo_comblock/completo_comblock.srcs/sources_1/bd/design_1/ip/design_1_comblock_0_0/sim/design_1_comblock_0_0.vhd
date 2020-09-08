@@ -65,7 +65,7 @@ ENTITY design_1_comblock_0_0 IS
     reg4_o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     ram_clk_i : IN STD_LOGIC;
     ram_we_i : IN STD_LOGIC;
-    ram_addr_i : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+    ram_addr_i : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     ram_data_i : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     ram_data_o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     fifo_clk_i : IN STD_LOGIC;
@@ -105,7 +105,7 @@ ENTITY design_1_comblock_0_0 IS
     axif_aclk : IN STD_LOGIC;
     axif_aresetn : IN STD_LOGIC;
     axif_awid : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-    axif_awaddr : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
+    axif_awaddr : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
     axif_awlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     axif_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     axif_awburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -129,7 +129,7 @@ ENTITY design_1_comblock_0_0 IS
     axif_bvalid : OUT STD_LOGIC;
     axif_bready : IN STD_LOGIC;
     axif_arid : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-    axif_araddr : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
+    axif_araddr : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
     axif_arlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     axif_arsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     axif_arburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -218,7 +218,7 @@ ARCHITECTURE design_1_comblock_0_0_arch OF design_1_comblock_0_0 IS
       reg15_o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       ram_clk_i : IN STD_LOGIC;
       ram_we_i : IN STD_LOGIC;
-      ram_addr_i : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      ram_addr_i : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       ram_data_i : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       ram_data_o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       fifo_clk_i : IN STD_LOGIC;
@@ -258,7 +258,7 @@ ARCHITECTURE design_1_comblock_0_0_arch OF design_1_comblock_0_0 IS
       axif_aclk : IN STD_LOGIC;
       axif_aresetn : IN STD_LOGIC;
       axif_awid : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      axif_awaddr : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
+      axif_awaddr : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
       axif_awlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       axif_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       axif_awburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -282,7 +282,7 @@ ARCHITECTURE design_1_comblock_0_0_arch OF design_1_comblock_0_0 IS
       axif_bvalid : OUT STD_LOGIC;
       axif_bready : IN STD_LOGIC;
       axif_arid : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      axif_araddr : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
+      axif_araddr : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
       axif_arlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       axif_arsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       axif_arburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -350,8 +350,8 @@ ARCHITECTURE design_1_comblock_0_0_arch OF design_1_comblock_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF axif_awsize: SIGNAL IS "xilinx.com:interface:aximm:1.0 AXIF AWSIZE";
   ATTRIBUTE X_INTERFACE_INFO OF axif_awlen: SIGNAL IS "xilinx.com:interface:aximm:1.0 AXIF AWLEN";
   ATTRIBUTE X_INTERFACE_INFO OF axif_awaddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 AXIF AWADDR";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF axif_awid: SIGNAL IS "XIL_INTERFACENAME AXIF, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 12, ADDR_WIDTH 12, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 1, RUSER_WIDTH 1, BUSER_WIDTH 1, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1" & 
-", NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF axif_awid: SIGNAL IS "XIL_INTERFACENAME AXIF, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 12, ADDR_WIDTH 6, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 1, RUSER_WIDTH 1, BUSER_WIDTH 1, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1," & 
+" NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF axif_awid: SIGNAL IS "xilinx.com:interface:aximm:1.0 AXIF AWID";
   ATTRIBUTE X_INTERFACE_PARAMETER OF axif_aresetn: SIGNAL IS "XIL_INTERFACENAME axif_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF axif_aresetn: SIGNAL IS "xilinx.com:signal:reset:1.0 axif_aresetn RST";
@@ -422,16 +422,16 @@ BEGIN
       REGS_OUT_DEPTH => 5,
       DRAM_IO_ENA => true,
       DRAM_IO_DWIDTH => 32,
-      DRAM_IO_AWIDTH => 10,
-      DRAM_IO_DEPTH => 1024,
+      DRAM_IO_AWIDTH => 4,
+      DRAM_IO_DEPTH => 20,
       FIFO_IN_ENA => true,
       FIFO_IN_DWIDTH => 32,
-      FIFO_IN_DEPTH => 1024,
+      FIFO_IN_DEPTH => 20,
       FIFO_IN_AFOFFSET => 1,
       FIFO_IN_AEOFFSET => 1,
       FIFO_OUT_ENA => true,
       FIFO_OUT_DWIDTH => 32,
-      FIFO_OUT_DEPTH => 1024,
+      FIFO_OUT_DEPTH => 20,
       FIFO_OUT_AFOFFSET => 1,
       FIFO_OUT_AEOFFSET => 1,
       C_AXIF_ID_WIDTH => 12,
