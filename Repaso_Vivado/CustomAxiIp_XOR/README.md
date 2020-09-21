@@ -1,10 +1,10 @@
-AXI compatile XOR IP 
+# AXI compatile XOR IP 
 
 En este apartado se mostrarán los pasos para la creación, a partir de un código HDL y usando el Vivado IDE, de un módulo IP con interfaz AXI4-Lite para conectar al IP Zynq7 *Processing System*.
 
 Para este ejemplo se va a generar un módulo IP que realice la operación booleana XOR entre cada componente de un par de vectores de 4 bits, los cuales, serán ingresados por el procesador por medio del AXI Bus. Un esquema simplificado de lo anterior se presenta a continuación.
 
-<img src="/.images/appendixA.jpg" width=x400>
+<img src="/.images/appendixA.jpg" width=x200>
 
 Lo primero es generar la funcionalidad XOR en VHDL, para ello, se genera una entidad muy simple de 2 señales de entrada (A, B) y una de salida (C). El código [XORgate]{https://github.com/DanielEstrada971102/Implementaciones_FPGA/blob/master/Repaso_Vivado/CustomAxiIp_XOR/XORgate.vhd} describe entonces, la operación XOR entre cada bit de las señales A y B y retorna el resultado en C.  
 
@@ -16,14 +16,14 @@ Esto abre una ventana que brinda las opciones de, empaquetar el proyecto actual 
 
 2. Se escoge crear un nuevo módulo AXI4, se rellenan los detalles del periférico y se establece una sola interfaz AXI4-Lite esclava de 4 registros. 
     
-<img src="/.images/AXICustomIP_generation.png" width=x400>
+<img src="/.images/AXICustomIP_generation.png" width=x380>
 
 Con estas especificaciones se abre automáticamente el *IP Packager* de Vivado y en él se habrá generado el cascarón en VHDL que describe la interfaz AXI4 (Figura \ref{fig:AxiCustProcess}(a)). Dentro de este código base, se puede entonces hacer la instanciación del primero módulo XOR y sus señales conectarlas a los registros que se generaron (Figura \ref{fig:AxiCustProcess}(d)), de esta forma, el moduló en VHDL XOR ya se ha convertido en AXI compatible, y conectando el procesador a este, es posible escribir las señales A y B. Se finaliza el proceso estableciendo algunos parámetros más y con esto ya se puede empaquetar el IP para usarse en el proyecto.
     
 3. Se añade el archivo en donde se definió la compuerta XOR y se instancia dentro del archivo "myAXI_XOR_v1_0_S0_AXI.vh" (Figura \ref{fig:AxiCustProcess}(b)). Se conectan los 4 bits menos significativos de los registros 1 y 2 a las entradas de la instancia (A y B) y la salida de la instancia (c) se conecta a una Señal de salida "OutResult" (Figura \ref{fig:AxiCustProcess}(c)).  Lo último es dejar la señal de salida como un Pin externo, este, será conectado luego a los Ledes de la tarjeta (Figura \ref{fig:AxiCustProcess}(d)). Para finalizar este proceso, se asigna la categoría del módulo a "*AXI peripheral/Low Speed Peripheral*" y se empaqueta el IP (Figura \ref{fig:AxiCustProcess}(e)).
     
-<img src="/.images/AXICustomIP_Process.png width=x700>
+<img src="/.images/AXICustomIP_process.png" width=x500>
    
 4. Con el AXI XOR ya disponible en el catálogo de IPs, solo resta generar un diseño de bloques en vivado y conectar una instancia de este módulo a una del Zynq7 *processing systems* por medio de un AXI *interconnect* (Figura \ref{fig:AxiCustBD}).
    
-<img src="/.images/AXICustomIP_BD.png width=x700>
+<img src="/.images/AXICustomIP_BD.png" width=x500>
