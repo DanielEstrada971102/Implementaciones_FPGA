@@ -1,3 +1,16 @@
 *.jou
 *.backout
+<<<<<<< HEAD
+<<<<<<< HEAD
 *.log
+UCC_clk/
+UCC_V2_optimized/
+NA/
+_pycache_/
+=======
+*.log
+>>>>>>> 4c38c0fb0eb349eb840d75bd4cfc374ba54eb5f1
+base/
+=======
+*.log
+>>>>>>> 4c38c0fb0eb349eb840d75bd4cfc374ba54eb5f1
